@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
@@ -38,7 +38,7 @@
   mashiro_option.site_url = "http://blog.yzcthinktwice.com";
   mashiro_option.v_appId = "X4RYByUB7qJCaciH0Xm08Tu3-gzGzoHsz";
   mashiro_option.v_appKey = "4M4E9Lbb7Xlv29voEEsd0W4i";
-  mashiro_option.mathjax = "0";
+  mashiro_option.mathjax = "1";
   mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
   mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
 
@@ -60,7 +60,7 @@
   <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#FE9600}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#FE9600}::-webkit-scrollbar-thumb{background:#FE9600}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#FE9600}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#FE9600}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
   </style>
 </head>
-
+</html>
 <body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
   <div class="scrollbar" id="bar">
   </div>
@@ -211,28 +211,28 @@
                   <ul class="sub-menu">
                     
                       <li>
-                        <a href="/categories/%E7%AE%97%E6%B3%95/">
+                        <a href="/categories/算法/">
                           <i class="fa fa-code" aria-hidden="true"></i>
                           算法
                         </a>
                       </li>
                     
                       <li>
-                        <a href="/categories/%E6%97%A5%E8%AE%B0/">
+                        <a href="/categories/日记/">
                           <i class="fa fa-file-text-o" aria-hidden="true"></i>
                           日记
                         </a>
                       </li>
                     
                       <li>
-                        <a href="/categories/%E8%B5%84%E6%BA%90/">
+                        <a href="/categories/资源/">
                           <i class="fa fa-cloud-download" aria-hidden="true"></i>
                           资源
                         </a>
                       </li>
                     
                       <li>
-                        <a href="/categories/%E8%BD%AC%E8%BD%BD/">
+                        <a href="/categories/转载/">
                           <i class="fa fa-book" aria-hidden="true"></i>
                           转载
                         </a>
@@ -243,7 +243,7 @@
               </li>
             
               <li>
-                <a href="javascript:;" target="_blank" rel="noopener">
+                <a href="javascript:;">
                   <span class="faa-parent animated-hover">
                     <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
                     清单
@@ -267,7 +267,7 @@
                       </li>
                     
                       <li>
-                        <a href="/tags/%E5%9B%BE%E9%9B%86/">
+                        <a href="/tags/图集/">
                           <i class="fa fa-photo" aria-hidden="true"></i>
                           图集
                         </a>
@@ -320,7 +320,7 @@
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://wx4.sinaimg.cn/large/ad5e9c11ly1g8ea34iterj21hc0u0x6z.jpg);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://wx4.sinaimg.cn/large/ad5e9c11ly1g8ea34iterj21hc0u0x6z.jpg">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
@@ -355,7 +355,7 @@
 <ol>
 <li>路径压缩&amp;按秩合并</li>
 </ol>
-<pre><code class="cpp">int getf(int x){
+<pre><code class="lang-cpp">int getf(int x){
     if(f[x]==x) return x;
     return f[x]=getf(f[x]);
 }
@@ -365,20 +365,21 @@ void unite(int x,int y){
     if(rk[fx]&lt;rk[fy]) f[fx]=fy;
     else f[fy]=fx;
     if(rk[fx]==rk[fy]) rk[fx]++;
-}</code></pre>
+}
+</code></pre>
 <p>路径压缩应该很多人都加了吧。。。</p>
-<ol start="2">
+<ol>
 <li>四个方向（上下左右）-&gt;两个方向（下右）</li>
 </ol>
 <p>边是双向的，而且是网格图，因此是有个层次性的，无需重复地双向都unite</p>
-<ol start="3">
+<ol>
 <li>将每个路标的fa与第一个路标的fa比较</li>
 </ol>
 <p>可以节约一半的getf</p>
 <hr>
 <p>另外，感觉自己的码风还挺好理解的。。。</p>
 <hr>
-<pre><code class="cpp">#include &lt;bits/stdc++.h&gt;
+<pre><code class="lang-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 inline int read(int &amp;x){
     char c=getchar();bool f=0;x=0;
@@ -439,7 +440,8 @@ signed main(){
         else l=mid+1;
     }
     write(ans);
-}</code></pre>
+}
+</code></pre>
 <hr>
 <p>另外，我这份代码是用c++交的，c++11以上会ce</p>
 
@@ -470,11 +472,28 @@ signed main(){
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/2019/10/28/P3294 [SCOI2016]背单词/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://wx2.sinaimg.cn/large/ad5e9c11ly1g8ea7a0tlpj21040pjhdv.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://wx2.sinaimg.cn/large/ad5e9c11ly1g8ea7a0tlpj21040pjhdv.jpg">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                P3294 [SCOI2016]背单词</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
         
           
-            <div class="post-nepre full next">
+            <div class="post-nepre half next">
           
-            <a href="/2019/10/26/CF%E5%86%8D%E6%AC%A1%E8%A2%ABskip/" rel="next">
+            <a href="/2019/10/26/CF再次被skip/" rel="next">
               <div class="background">
                 <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://wx2.sinaimg.cn/large/ad5e9c11ly1g8c0jkgdayj20xc0irqje.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://wx2.sinaimg.cn/large/ad5e9c11ly1g8c0jkgdayj20xc0irqje.jpg">
               </div>
@@ -692,28 +711,28 @@ $(document).ready(function() {
           <ul class="sub-menu">
             
               <li>
-                <a href="/categories/%E7%AE%97%E6%B3%95/">
+                <a href="/categories/算法/">
                   <i class="fa fa-code" aria-hidden="true"></i>
                   算法
                 </a>
               </li>
             
               <li>
-                <a href="/categories/%E6%97%A5%E8%AE%B0/">
+                <a href="/categories/日记/">
                   <i class="fa fa-file-text-o" aria-hidden="true"></i>
                   日记
                 </a>
               </li>
             
               <li>
-                <a href="/categories/%E8%B5%84%E6%BA%90/">
+                <a href="/categories/资源/">
                   <i class="fa fa-cloud-download" aria-hidden="true"></i>
                   资源
                 </a>
               </li>
             
               <li>
-                <a href="/categories/%E8%BD%AC%E8%BD%BD/">
+                <a href="/categories/转载/">
                   <i class="fa fa-book" aria-hidden="true"></i>
                   转载
                 </a>
@@ -724,7 +743,7 @@ $(document).ready(function() {
       </li>
     
       <li>
-        <a href="javascript:;" target="_blank" rel="noopener">
+        <a href="javascript:;">
           <span class="faa-parent animated-hover">
             <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
             清单
@@ -748,7 +767,7 @@ $(document).ready(function() {
               </li>
             
               <li>
-                <a href="/tags/%E5%9B%BE%E9%9B%86/">
+                <a href="/tags/图集/">
                   <i class="fa fa-photo" aria-hidden="true"></i>
                   图集
                 </a>
@@ -856,5 +875,22 @@ $(document).ready(function() {
     })
   });
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<!-- <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
 </body>
 </html>

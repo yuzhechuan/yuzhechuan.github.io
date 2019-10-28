@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>THINK TWICE</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://blog.yzcthinktwice.com/"/>
+  <updated>2019-10-28T14:43:52.641Z</updated>
+  <id>http://blog.yzcthinktwice.com/</id>
+  
+  <author>
+    <name>yzc</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>P3294 [SCOI2016]背单词</title>
+    <link href="http://blog.yzcthinktwice.com/2019/10/28/P3294%20%5BSCOI2016%5D%E8%83%8C%E5%8D%95%E8%AF%8D/"/>
+    <id>http://blog.yzcthinktwice.com/2019/10/28/P3294 [SCOI2016]背单词/</id>
+    <published>2019-10-28T14:28:01.000Z</published>
+    <updated>2019-10-28T14:43:52.641Z</updated>
+    
+    <summary type="html">
+    
+      P3294 [SCOI2016]背单词 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="洛谷" scheme="http://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="字典树" scheme="http://blog.yzcthinktwice.com/tags/%E5%AD%97%E5%85%B8%E6%A0%91/"/>
+    
+      <category term="贪心" scheme="http://blog.yzcthinktwice.com/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>P2658 【汽车拉力比赛】</title>
+    <link href="http://blog.yzcthinktwice.com/2019/10/27/P2658%20%E3%80%90%E6%B1%BD%E8%BD%A6%E6%8B%89%E5%8A%9B%E6%AF%94%E8%B5%9B%E3%80%91/"/>
+    <id>http://blog.yzcthinktwice.com/2019/10/27/P2658 【汽车拉力比赛】/</id>
+    <published>2019-10-27T14:49:01.000Z</published>
+    <updated>2019-10-28T14:30:01.592Z</updated>
+    
+    <summary type="html">
+    
+      P2658 【汽车拉力比赛】题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="洛谷" scheme="http://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="二分答案" scheme="http://blog.yzcthinktwice.com/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF再次被skip</title>
+    <link href="http://blog.yzcthinktwice.com/2019/10/26/CF%E5%86%8D%E6%AC%A1%E8%A2%ABskip/"/>
+    <id>http://blog.yzcthinktwice.com/2019/10/26/CF再次被skip/</id>
+    <published>2019-10-26T15:22:01.000Z</published>
+    <updated>2019-10-26T15:28:13.021Z</updated>
+    
+    <summary type="html">
+    
+      CF再次被skip
+    
+    </summary>
+    
+      <category term="日记" scheme="http://blog.yzcthinktwice.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo-Theme-Sakura</title>
+    <link href="http://blog.yzcthinktwice.com/2018/12/12/Hexo-Theme-Sakura/"/>
+    <id>http://blog.yzcthinktwice.com/2018/12/12/Hexo-Theme-Sakura/</id>
+    <published>2018-12-12T14:16:01.000Z</published>
+    <updated>2019-10-25T15:38:55.245Z</updated>
+    
+    <summary type="html">
+    
+      hexo-sakura主题使用教程
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="web" scheme="http://blog.yzcthinktwice.com/tags/web/"/>
+    
+      <category term="悦读" scheme="http://blog.yzcthinktwice.com/tags/%E6%82%A6%E8%AF%BB/"/>
+    
+  </entry>
+  
+</feed>

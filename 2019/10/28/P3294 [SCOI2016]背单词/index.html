@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">comment | THINK TWICE</title>
+  <title itemprop="name">P3294 [SCOI2016]背单词 | THINK TWICE</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -314,37 +314,239 @@
   </div>
 </header>
 
-        <div class="pattern-center-blank"></div>
-  
-    <div class="pattern-center ">
-      <div class="pattern-attachment-img">
-        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/comment.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
-      </div>
-      <header class="pattern-header ">
-        <h1 class="entry-title">
-        留言板</h1>
-      </header>
-    </div>
-  
-  <div id="content" class="site-content">
-    <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
-      
-<div class="entry-content">
-  <div class="poem-wrap">
-    <div class="poem-border poem-left">
-    </div>
-    <div class="poem-border poem-right">
-    </div>
-    <h1>
-    念两句诗</h1>
-    <p id="poem">
-    叙别梦、扬州一觉。</p>
-    <p id="info">
-    【宋代】吴文英《夜游宫·人去西楼雁杳》</p>
-  </div>
-</div>
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
 
-      <!-- .entry-content -->
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://wx2.sinaimg.cn/large/ad5e9c11ly1g8ea7a0tlpj21040pjhdv.jpg);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://wx2.sinaimg.cn/large/ad5e9c11ly1g8ea7a0tlpj21040pjhdv.jpg">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      P3294 [SCOI2016]背单词</h1>
+      <p class="entry-census">
+        <span>
+          <a href="https://blog.yzcthinktwice.com/">
+            <img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png">
+          </a>
+        </span>
+        <span>
+          <a href="https://blog.yzcthinktwice.com/">yzc</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2019-10-28<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
+  </div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h1 id="P3294-【SCOI2016】背单词"><a href="#P3294-【SCOI2016】背单词" class="headerlink" title="P3294 【SCOI2016】背单词"></a><a href="https://www.luogu.org/problem/P3294" target="_blank" rel="noopener">P3294 【SCOI2016】背单词</a></h1><hr>
+<h3 id="题意（已用贪心思路简化）"><a href="#题意（已用贪心思路简化）" class="headerlink" title="题意（已用贪心思路简化）"></a>题意（已用贪心思路简化）</h3><p>给定n个单词$s_i$，请重排序列，使每个单词的存在的后缀都在<strong>前面</strong></p>
+<p>设$s_j$为离$s_i$最近的后缀字符串</p>
+<p>定义$a_i=i-j$</p>
+<p>$ans=min(\sum a_i)$</p>
+<hr>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>后缀显然没有前缀来的容易处理，所以自然想到翻转每个单词，建出trie树</p>
+<p>下面是个例子：</p>
+<pre><code class="lang-cpp">6
+a
+ca
+ea
+gda
+hda
+ifb
+</code></pre>
+<h4 id="1-建出trie树-红点是颠倒后每个单词的末尾，注意根也是）："><a href="#1-建出trie树-红点是颠倒后每个单词的末尾，注意根也是）：" class="headerlink" title="1. 建出trie树(红点是颠倒后每个单词的末尾，注意根也是）："></a>1. 建出trie树(红点是颠倒后每个单词的末尾，注意根也是）：</h4><p><img src="https://s2.ax1x.com/2019/10/28/K6m0Rf.png" alt></p>
+<pre><code class="lang-cpp">    void ins(char *s){
+        int x=0;
+        for(int i=0;s[i];i++){
+            if(!a[x].nt[s[i]-&#39;a&#39;]) a[x].nt[s[i]-&#39;a&#39;]=++cnt;
+            x=a[x].nt[s[i]-&#39;a&#39;];
+        }
+        a[x].tag=1; //tag==1说明是红点
+    }
+</code></pre>
+<h4 id="2-重构树"><a href="#2-重构树" class="headerlink" title="2. 重构树"></a>2. 重构树</h4><p>跳过白点，保留红点（白点无用，可以忽略）</p>
+<p><img src="https://s2.ax1x.com/2019/10/28/K6mwJP.png" alt></p>
+<pre><code class="lang-cpp">    void doit(int x){
+        if(a[x].tag&amp;&amp;x){
+            g[last[x]].push_back(x); //g[x][]存重构树中点x的儿子们
+            last[x]=x; //last[x]是原树里x节点上方离它最近的红点（包括自己）
+        }
+        for(int i=0;i&lt;26;i++) if(a[x].nt[i]){
+            last[a[x].nt[i]]=last[x];
+            doit(a[x].nt[i]);
+        }
+    }
+</code></pre>
+<h4 id="3-dfs遍历重构树，并将直接祖先相同的子树按节点数从小到大排序"><a href="#3-dfs遍历重构树，并将直接祖先相同的子树按节点数从小到大排序" class="headerlink" title="3. dfs遍历重构树，并将直接祖先相同的子树按节点数从小到大排序"></a>3. dfs遍历重构树，并将直接祖先相同的子树按节点数从小到大排序</h4><p><img src="https://s2.ax1x.com/2019/10/28/K6uGEd.png" alt></p>
+<pre><code class="lang-cpp">inline bool cmp(const int &amp;x,const int &amp;y){
+    return sz[x]&lt;sz[y];
+}
+void dfs(int x){
+    sz[x]=1; //sz[x]是以x为根的子树的大小
+    for(int i=0;i&lt;g[x].size();i++){
+        dfs(g[x][i]);
+        sz[x]+=sz[g[x][i]];
+    }
+    sort(g[x].begin(),g[x].end(),cmp);
+}
+</code></pre>
+<h4 id="4-根据题意遍历重构树，用dfs序得到答案"><a href="#4-根据题意遍历重构树，用dfs序得到答案" class="headerlink" title="4. 根据题意遍历重构树，用dfs序得到答案"></a>4. 根据题意遍历重构树，用dfs序得到答案</h4><pre><code class="lang-cpp">void getans(int x){
+    int dfn=cnt++; //dfn是父亲的dfs序，cnt是节点自己的dfs序
+    for(int i=0;i&lt;g[x].size();i++){
+        ans+=cnt-dfn; //两者相减就是题意里的ai
+        getans(g[x][i]);
+    }
+}
+</code></pre>
+<hr>
+<h3 id="思路背后的理由"><a href="#思路背后的理由" class="headerlink" title="思路背后的理由"></a>思路背后的理由</h3><h4 id="Q1-为什么题意可以这样简化？"><a href="#Q1-为什么题意可以这样简化？" class="headerlink" title="Q1. 为什么题意可以这样简化？"></a>Q1. 为什么题意可以这样简化？</h4><p>三条规则，规则一显然是可以被避免且没有后两种优的，规则二可以看做规则三的特殊情况，简单起见，只考虑规则三即可</p>
+<h4 id="Q2-排序的正确性？"><a href="#Q2-排序的正确性？" class="headerlink" title="Q2. 排序的正确性？"></a>Q2. 排序的正确性？</h4><p>花费与最后一个填入的后缀有关,那么这个后缀的位置离当前位置越近越好,也就是应该有尽量少的单词夹在两个中间,所以我们应该选下属单词最少的那个进行拓展，而下属单词的多少就等价于重构树中子树的大小。</p>
+<h4 id="Q3-dfs序的正确性？"><a href="#Q3-dfs序的正确性？" class="headerlink" title="Q3. dfs序的正确性？"></a>Q3. dfs序的正确性？</h4><p>这里引用 @坐山客 的题解：</p>
+<blockquote>
+<p>考虑重新建树之后，i节点的子树中的所有节点的后缀都是i</p>
+<p>如果同一深度上有不止一棵子树，那么我们先在一棵上取出一个叶子节点j，再取出一个根节点i，我们发现如果j&gt;i的话肯定不如i&lt;j优秀</p>
+<p>因为调整之后i的子树上所有节点对花费的贡献-=子树大小，j对花费的贡献+1，所以我们可以看到j&gt;i的花费&lt;=i&gt;j的情况</p>
+<p>最后我们经过所有的调整可以发现序列变成了dfs序</p>
+<p>所以dfs序最优</p>
+</blockquote>
+<hr>
+<h3 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h3><p>将以上各步骤代码合在一起就是：</p>
+<p><strong>tips. ANS要用long long!!!</strong></p>
+<pre><code class="lang-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+inline int read(int &amp;x){
+    char c=getchar();bool f=0;x=0;
+    while(!isdigit(c)) f|=c==&#39;-&#39;,c=getchar();
+    while(isdigit(c)) x=(x&lt;&lt;1)+(x&lt;&lt;3)+(c^48),c=getchar();
+    if(f) x=-x;return x;
+}
+inline void write(long long x){
+    if(x&lt;0) putchar(&#39;-&#39;),write(-x);
+    else{if(x&gt;9) write(x/10);putchar(&#39;0&#39;+x%10);}
+}
+const int L=5.1e5+5;
+struct node{ //trie树的每个节点
+    int nt[26];
+    bool tag;
+};
+long long ans;
+int cnt,last[L],sz[L],n;
+vector&lt;int&gt; g[L];
+char s[L];
+struct trie{ //trie及所需操作
+    node a[L];
+    int cnt;
+    void ins(char *s){ //建树
+        int x=0;
+        for(int i=0;s[i];i++){
+            if(!a[x].nt[s[i]-&#39;a&#39;]) a[x].nt[s[i]-&#39;a&#39;]=++cnt;
+            x=a[x].nt[s[i]-&#39;a&#39;];
+        }
+        a[x].tag=1;
+    }
+    void doit(int x){ //重构树
+        if(a[x].tag&amp;&amp;x){
+            g[last[x]].push_back(x);
+            last[x]=x;
+        }
+        for(int i=0;i&lt;26;i++) if(a[x].nt[i]){
+            last[a[x].nt[i]]=last[x];
+            doit(a[x].nt[i]);
+        }
+    }
+}tr;
+
+inline bool cmp(const int &amp;x,const int &amp;y){
+    return sz[x]&lt;sz[y];
+}
+void dfs(int x){ //重排重构树
+    sz[x]=1;
+    for(int i=0;i&lt;g[x].size();i++){
+        dfs(g[x][i]);
+        sz[x]+=sz[g[x][i]];
+    }
+    sort(g[x].begin(),g[x].end(),cmp);
+}
+void getans(int x){ //统计答案
+    int dfn=cnt++;
+    for(int i=0;i&lt;g[x].size();i++){
+        ans+=cnt-dfn;
+        getans(g[x][i]);
+    }
+}
+signed main(){
+    read(n);
+    for(int i=1;i&lt;=n;i++){
+        scanf(&quot;%s&quot;,s);
+        reverse(s,s+strlen(s)); //反转单词
+        tr.ins(s);
+    }
+    tr.a[0].tag=1; //根也是红点
+    tr.doit(0);
+    dfs(0);
+    getans(0);
+    write(ans);
+}
+</code></pre>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.06/img/alisq.jpg"></li>
+                <li class="wechat-code"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.06/img/wesq.png"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2019/10/27/P2658 【汽车拉力比赛】/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://wx4.sinaimg.cn/large/ad5e9c11ly1g8ea34iterj21hc0u0x6z.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://wx4.sinaimg.cn/large/ad5e9c11ly1g8ea34iterj21hc0u0x6z.jpg">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                P2658 【汽车拉力比赛】</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
       
 <div id="vcomments"></div>
 <script>
@@ -360,43 +562,25 @@
   }
 </script>
 
-      <div class="single-reward">
-        <div class="reward-open">赏
-          <div class="reward-main">
-            <ul class="reward-row">
-              <li class="alipay-code"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.06/img/alisq.jpg"></li>
-              <li class="wechat-code"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.06/img/wesq.png"></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-      <footer class="post-footer">
-        <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-        <div class="post-tags">
-        </div>
-        <div class="post-share">
-          <div class="social-share sharehidden share-component"></div>
-          <i class="iconfont show-share icon-forward"></i>
-        </div>
-      </footer><!-- .entry-footer -->
-    </article>
-      <!-- #post-## -->
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-          <a href="/about/" class="profile gravatar"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.06/img/my.png" itemprop="image" alt="TWICE" height="70" width="70"></a>
+          <a href="https://blog.yzcthinktwice.com/" class="profile gravatar"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png" itemprop="image" alt="yzc" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="http://blog.yzcthinktwice.com" itemprop="url" rel="author">TWICE</a>
+            <a href="https://blog.yzcthinktwice.com/" itemprop="url" rel="author">yzc</a>
             </h3>
           </div>
         </div>
         <hr>
-        <p><i class="iconfont icon-write"></i>Never Stop Coding!</p>
+        <p><i class="iconfont icon-write"></i>OIer</p>
       </section>
+    </main><!-- #main -->
   </div><!-- #primary -->
 </div>
+
+
+
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>
