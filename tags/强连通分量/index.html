@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">P2658 【汽车拉力比赛】 | THINK TWICE</title>
+  <title itemprop="name">Tag: 强连通分量 | THINK TWICE</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -314,234 +314,64 @@
   </div>
 </header>
 
-      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+      
 <div class="pattern-center-blank"></div>
-
-  <div class="pattern-center single-center">
-    <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.07/img/post/467.png);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.07/img/post/467.png">
-    </div>
-    <header class="pattern-header single-header">
-      <h1 class="entry-title">
-      P2658 【汽车拉力比赛】</h1>
-      <p class="entry-census">
-        <span>
-          <a href="https://blog.yzcthinktwice.com/">
-            <img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png">
-          </a>
-        </span>
-        <span>
-          <a href="https://blog.yzcthinktwice.com/">yzc</a>
-        </span>
-        <span class="bull">
-        ·</span>
-        2019-10-27<span class="bull">
-        ·</span>
-      <span id="busuanzi_value_page_pv"></span>次阅读</p>
-    </header>
+<div class="pattern-center ">
+  <div class="pattern-attachment-img">
+    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="强连通分量.img" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
   </div>
-
+  <header class="pattern-header ">
+    <h1 class="cat-title">强连通分量</h1>
+  </header>
+</div>
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-        <div class="toc"></div>
-        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
-        
-        <div class="entry-content">
-          <h1 id="P2658-【汽车拉力比赛】"><a href="#P2658-【汽车拉力比赛】" class="headerlink" title="P2658 【汽车拉力比赛】"></a><a href="https://www.luogu.org/problem/P2658" target="_blank" rel="noopener">P2658 【汽车拉力比赛】</a></h1><p>并查集的思路很多人已经讲过了，我这里提供几个并查集方法的（常数）优化</p>
-<hr>
-<ol>
-<li>路径压缩&amp;按秩合并</li>
-</ol>
-<pre><code class="lang-cpp">int getf(int x){
-    if(f[x]==x) return x;
-    return f[x]=getf(f[x]);
-}
-void unite(int x,int y){
-    int fx=getf(x),fy=getf(y);
-    if(fx==fy) return;
-    if(rk[fx]&lt;rk[fy]) f[fx]=fy;
-    else f[fy]=fx;
-    if(rk[fx]==rk[fy]) rk[fx]++;
-}
-</code></pre>
-<p>路径压缩应该很多人都加了吧。。。</p>
-<ol>
-<li>四个方向（上下左右）-&gt;两个方向（下右）</li>
-</ol>
-<p>边是双向的，而且是网格图，因此是有个层次性的，无需重复地双向都unite</p>
-<ol>
-<li>将每个路标的fa与第一个路标的fa比较</li>
-</ol>
-<p>可以节约一半的getf</p>
-<hr>
-<p>另外，感觉自己的码风还挺好理解的。。。</p>
-<hr>
-<pre><code class="lang-cpp">#include &lt;bits/stdc++.h&gt;
-using namespace std;
-inline int read(int &amp;x){
-    char c=getchar();bool f=0;x=0;
-    while(!isdigit(c)) f|=c==&#39;-&#39;,c=getchar();
-    while(isdigit(c)) x=(x&lt;&lt;1)+(x&lt;&lt;3)+(c^48),c=getchar();
-    if(f) x=-x;return x;
-}
-inline void write(int x){
-    if(x&lt;0) putchar(&#39;-&#39;),write(-x);
-    else{if(x&gt;9) write(x/10);putchar(&#39;0&#39;+x%10);}
-}
-const int N=505;
-int n,m,f[N*N],ans,rk[N*N],a[N][N],l,r;
-vector&lt;int&gt; tag;
-inline int hash(int x,int y){
-    return (x-1)*m+y;
-}
-inline int getf(int x){
-    if(f[x]==x) return x;
-    return f[x]=getf(f[x]); //路径压缩
-}
-inline void unite(int x,int y){
-    int fx=getf(x),fy=getf(y);
-    if(fx==fy) return;
-    if(rk[fx]&lt;rk[fy]) f[fx]=fy; //按秩合并
-    else f[fy]=fx;
-    if(rk[fx]==rk[fy]) rk[fx]++;
-}
-inline bool check(int k){
-    for(int i=1;i&lt;=n;i++)
-        for(int j=1;j&lt;=m;j++)
-            f[hash(i,j)]=hash(i,j),rk[hash(i,j)]=1; //并查集初始化
-    for(int i=1;i&lt;=n;i++)
-        for(int j=1;j&lt;=m;j++){
-            if(abs(a[i][j]-a[i+1][j])&lt;=k&amp;&amp;i+1&lt;=n) //向下unite(hash(i,j),hash(i+1,j));
-            if(abs(a[i][j]-a[i][j+1])&lt;=k&amp;&amp;j+1&lt;=m) //向右 unite(hash(i,j),hash(i,j+1));
-        }
-    int fa=getf(tag[0]); //先得到第一个fa
-    for(int i=1;i&lt;tag.size();i++) if(getf(tag[i])!=fa) //后面的与第一个比较
-        return 0;
-    return 1;
-}
-signed main(){
-    read(n);read(m);
-    for(int i=1;i&lt;=n;i++)
-        for(int j=1;j&lt;=m;j++){
-            read(a[i][j]);
-            r=max(r,a[i][j]);
-        }
-    for(int i=1;i&lt;=n;i++)
-        for(int j=1,x;j&lt;=m;j++){
-            read(x);
-            if(x) tag.push_back(hash(i,j)); //我用vector存路标
-        }
-    while(l&lt;=r){
-        int mid=(l+r)&gt;&gt;1;
-        if(check(mid)) r=mid-1,ans=mid;
-        else l=mid+1;
-    }
-    write(ans);
-}
-</code></pre>
-<hr>
-<p>另外，我这份代码是用c++交的，c++11以上会ce</p>
-
-        </div>
-        <!-- .entry-content -->
-        <div class="single-reward">
-          <div class="reward-open">赏
-            <div class="reward-main">
-              <ul class="reward-row">
-                <li class="alipay-code"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.06/img/alisq.jpg"></li>
-                <li class="wechat-code"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.06/img/wesq.png"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-        <footer class="post-footer">
-          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-          <div class="post-tags">
-          </div>
-          <div class="post-share">
-            <div class="social-share sharehidden share-component"></div>
-            <i class="iconfont show-share icon-forward"></i>
-          </div>
-        </footer><!-- .entry-footer -->
-      </article>
-      <!-- #post-## -->
-      <div class="toc" style="background: none;"></div>
-      <section class="post-squares nextprev">
-        
-          
-            <div class="post-nepre half previous">
-          
-            <a href="/2019/10/28/P3294 [SCOI2016]背单词/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.07/img/post/471.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.07/img/post/471.png">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                P3294 [SCOI2016]背单词</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-        
-          
-            <div class="post-nepre half next">
-          
-            <a href="/2019/10/26/CF再次被skip/" rel="next">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.07/img/post/467.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.07/img/post/467.jpg">
-              </div>
-              <span class="label">
-              Next Post</span>
-              <div class="info">
-                <h3>
-                CF再次被skip</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-      </section>
       
-<div id="vcomments"></div>
-<script>
-  window.onload = function(){
-      var valine = new Valine();
-      valine.init({
-        el: '#vcomments',
-        appId: "X4RYByUB7qJCaciH0Xm08Tu3-gzGzoHsz",
-        appKey: "4M4E9Lbb7Xlv29voEEsd0W4i",
-        path: window.location.pathname,
-        placeholder: "你是我一生只会遇见一次的惊喜 ..."
-      })
-  }
-</script>
-
-      <section class="author-profile">
-        <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-          <a href="https://blog.yzcthinktwice.com/" class="profile gravatar"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png" itemprop="image" alt="yzc" height="70" width="70"></a>
-          <div class="meta">
-            <span class="title">Author</span>
-            <h3 itemprop="name">
-            <a href="https://blog.yzcthinktwice.com/" itemprop="url" rel="author">yzc</a>
-            </h3>
-          </div>
+  <!-- 首页默认取最最新文章集 -->
+  
+    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <div class="post-entry">
+    <div class="feature">
+      <a href="/2019/10/29/CF1239D Catowice City/">
+        <div class="overlay">
+          <i class="iconfont icon-text">
+          </i>
         </div>
-        <hr>
-        <p><i class="iconfont icon-write"></i>OIer</p>
-      </section>
-    </main><!-- #main -->
-  </div><!-- #primary -->
+        <img width="150" height="150" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.07/img/post/474.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
+      </a>
+    </div>
+    <h1 class="entry-title">
+    <a href="/2019/10/29/CF1239D Catowice City/">
+    CF1239D Catowice City</a>
+    </h1>
+    <div class="p-time">
+      <i class="iconfont icon-time">
+      </i>
+    2019-10-29</div>
+    <p>
+    CF1239D Catowice City 题解</p>
+    <footer class="entry-footer">
+      <div class="post-more">
+        <a href="/2019/10/29/CF1239D Catowice City/">
+          <i class="iconfont icon-caidan">
+          </i>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <hr>
+</article>
+  
+
+
+      <div class="clearer">
+      </div>
+    </main>
+    <!--  -->
+    
+  </div>
 </div>
-
-
-
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>

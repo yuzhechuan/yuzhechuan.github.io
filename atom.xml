@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.yzcthinktwice.com/"/>
-  <updated>2019-10-28T14:43:52.641Z</updated>
+  <updated>2019-10-29T14:14:36.379Z</updated>
   <id>http://blog.yzcthinktwice.com/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CF1239D Catowice City</title>
+    <link href="http://blog.yzcthinktwice.com/2019/10/29/CF1239D%20Catowice%20City/"/>
+    <id>http://blog.yzcthinktwice.com/2019/10/29/CF1239D Catowice City/</id>
+    <published>2019-10-29T14:11:01.000Z</published>
+    <updated>2019-10-29T14:14:36.379Z</updated>
+    
+    <summary type="html">
+    
+      CF1239D Catowice City 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="缩点" scheme="http://blog.yzcthinktwice.com/tags/%E7%BC%A9%E7%82%B9/"/>
+    
+      <category term="强连通分量" scheme="http://blog.yzcthinktwice.com/tags/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>P3294 [SCOI2016]背单词</title>
     <link href="http://blog.yzcthinktwice.com/2019/10/28/P3294%20%5BSCOI2016%5D%E8%83%8C%E5%8D%95%E8%AF%8D/"/>
     <id>http://blog.yzcthinktwice.com/2019/10/28/P3294 [SCOI2016]背单词/</id>
     <published>2019-10-28T14:28:01.000Z</published>
-    <updated>2019-10-28T14:43:52.641Z</updated>
+    <updated>2019-10-29T14:13:23.307Z</updated>
     
     <summary type="html">
     
@@ -45,7 +69,7 @@
     <link href="http://blog.yzcthinktwice.com/2019/10/27/P2658%20%E3%80%90%E6%B1%BD%E8%BD%A6%E6%8B%89%E5%8A%9B%E6%AF%94%E8%B5%9B%E3%80%91/"/>
     <id>http://blog.yzcthinktwice.com/2019/10/27/P2658 【汽车拉力比赛】/</id>
     <published>2019-10-27T14:49:01.000Z</published>
-    <updated>2019-10-28T14:30:01.592Z</updated>
+    <updated>2019-10-29T14:13:35.075Z</updated>
     
     <summary type="html">
     
@@ -67,7 +91,7 @@
     <link href="http://blog.yzcthinktwice.com/2019/10/26/CF%E5%86%8D%E6%AC%A1%E8%A2%ABskip/"/>
     <id>http://blog.yzcthinktwice.com/2019/10/26/CF再次被skip/</id>
     <published>2019-10-26T15:22:01.000Z</published>
-    <updated>2019-10-26T15:28:13.021Z</updated>
+    <updated>2019-10-29T14:08:55.617Z</updated>
     
     <summary type="html">
     
