@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">CF再次被skip | THINK TWICE</title>
+  <title itemprop="name">LIS，LCS与树状数组 | THINK TWICE</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -320,11 +320,11 @@
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.08/img/post/467_1.webp);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.08/img/post/467_1.webp">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.09/img/post/489.webp);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.09/img/post/489.webp">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      CF再次被skip</h1>
+      LIS，LCS与树状数组</h1>
       <p class="entry-census">
         <span>
           <a href="https://blog.yzcthinktwice.com/">
@@ -336,7 +336,7 @@
         </span>
         <span class="bull">
         ·</span>
-        2019-10-26<span class="bull">
+        2019-11-3<span class="bull">
         ·</span>
       <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
@@ -350,9 +350,139 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <p>时隔多日，今天又来打打CF，本来可以上蓝的说。。。</p>
-<p>结果sb又把自己skip了，一晚上白给</p>
-<p>自闭了QAQ</p>
+          <p>模拟赛中出到了类似题，特意在网上搜索学习，并有所感想</p>
+<p>本文由<a href="https://www.cnblogs.com/liu-runda/p/6193690.html" target="_blank" rel="noopener">此</a>获得启发，特此感谢</p>
+<hr>
+<h3 id="PART1-LIS"><a href="#PART1-LIS" class="headerlink" title="PART1. LIS"></a>PART1. LIS</h3><p>从<a href="https://www.luogu.org/problem/P1439" target="_blank" rel="noopener">P1439 【模板】最长公共子序列</a>开始</p>
+<p>50pt的$O(n^2)$算法很容易想，即设f[i]表示到i结束的最长LIS的长度</p>
+<script type="math/tex; mode=display">f[i]=\max \left \{ f[j] | a_j<a_i\cap j<i\right \} +1</script><p>再来看100pt的限制，要求的是$O(n log n)$的算法</p>
+<p>我们发现n方算法的复杂度瓶颈在于那个max，但同时我们有注意到$j&lt;i$这个条件，这意味着max是可以前缀维护的</p>
+<p>前缀最大可以用树状数组维护（当然本题打分块，线段树也可以），记录比排名第i的元素小的数前面有几个出现了</p>
+<p>代码很好实现，要注意的是，当数字很大时要先离散化一下再搞</p>
+<p>当然，LIS还可以用二分做，但适用范围较小，这里就不再赘述了</p>
+<hr>
+<h3 id="PART2-LCS"><a href="#PART2-LCS" class="headerlink" title="PART2. LCS"></a>PART2. LCS</h3><p>（下文将把LCS中的两个串称为A和B）</p>
+<p>LCS与LIS很类似，通常有两种思路，下面将分别从不同的例题进行讲解</p>
+<h5 id="WAY1-将B串元素按各自在A串中的位置进行映射，转化成一个LIS问题"><a href="#WAY1-将B串元素按各自在A串中的位置进行映射，转化成一个LIS问题" class="headerlink" title="WAY1. 将B串元素按各自在A串中的位置进行映射，转化成一个LIS问题"></a>WAY1. 将B串元素按各自在A串中的位置进行映射，转化成一个LIS问题</h5><h6 id="例题：UVA10635-Prince-and-Princess"><a href="#例题：UVA10635-Prince-and-Princess" class="headerlink" title="例题：UVA10635 Prince and Princess"></a>例题：<a href="https://www.luogu.org/problem/UVA10635" target="_blank" rel="noopener">UVA10635 Prince and Princess</a></h6><p>题意：给你两个串，求最长公共子序列</p>
+<p>我们将LIS问题与LCS问题作比较，发现LIS其实是LCS的一个特殊版本，即<strong>A串中的元素递增且都在B中出现，求AB的LCS</strong></p>
+<p>既然是特殊版本，那我们把不特殊的搞特殊了不就好了吗？</p>
+<p>既然LIS中数的顺序是1、2、3。。。，那我们就把LCS中数的顺序理解为$A_1、A_2、A_3。。。$</p>
+<p>这样十分自然的只需要遍历一遍A，记录各元素在新顺序里的位置，再将B串映射过去跑一边LIS就好了</p>
+<pre><code class="lang-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+template&lt;class t&gt; inline t read(t &amp;x){
+    char c=getchar();bool f=0;x=0;
+    while(!isdigit(c)) f|=c==&#39;-&#39;,c=getchar();
+    while(isdigit(c)) x=(x&lt;&lt;1)+(x&lt;&lt;3)+(c^48),c=getchar();
+    if(f) x=-x;return x;
+}
+template&lt;class t&gt; inline void write(t x){
+    if(x&lt;0) putchar(&#39;-&#39;),write(-x);
+    else{if(x&gt;9) write(x/10);putchar(&#39;0&#39;+x%10);}
+}
+const int N=5e5+5;
+int n,a[N],b[N],p,q,pos[N],f[N];
+struct BIT{
+    #define lowbit(x) (x&amp;(-x))
+    int a[N];
+    void clear(){
+        memset(a,0,sizeof a);
+    }
+    void up(int x,int v){
+        while(x&lt;=n){
+            a[x]=max(a[x],v);
+            x+=lowbit(x);
+        }
+    }
+    int que(int x){
+        int res=0;
+        while(x){
+            res=max(res,a[x]);
+            x-=lowbit(x);
+        }
+        return res;
+    }
+}ma;
+void doit(){
+    int ans=0;
+    read(n),read(p),read(q);
+    p++;q++;
+    n=p;
+    ma.clear();
+    memset(pos,0,sizeof pos);
+    for(int i=1;i&lt;=p;i++) read(a[i]),pos[a[i]]=i; //记录各元素在A中位置
+    for(int i=1;i&lt;=q;i++) read(b[i]),b[i]=pos[b[i]]; //映射
+    for(int i=1;i&lt;=q;i++) if(b[i]){
+        f[i]=ma.que(b[i]-1)+1; //累计各元素前有几个比它小的出现过了
+        ans=max(ans,f[i]);
+        ma.up(b[i],f[i]);
+    }
+    write(ans);puts(&quot;&quot;);
+}
+signed main(){
+    int t;
+    read(t);
+    for(int i=1;i&lt;=t;i++) printf(&quot;Case %d: &quot;,i),doit();
+}
+</code></pre>
+<h5 id="WAY2-从n方dp出发，进行优化"><a href="#WAY2-从n方dp出发，进行优化" class="headerlink" title="WAY2. 从n方dp出发，进行优化"></a>WAY2. 从n方dp出发，进行优化</h5><h6 id="例题：P4303-AHOI2006-基因匹配"><a href="#例题：P4303-AHOI2006-基因匹配" class="headerlink" title="例题：P4303 [AHOI2006]基因匹配"></a>例题：<a href="https://www.luogu.org/problem/P4303" target="_blank" rel="noopener">P4303 [AHOI2006]基因匹配</a></h6><p>题意：给你两个串，保证串中的每个元素都会出现5次，求最长公共子序列</p>
+<p>如果用way1，我们发现重复的数字会使映射变得很麻烦</p>
+<p>这时我们重新考虑$O(n^2)$的dp，设f[i][j]表示允许使用A的前i个元素，B的前j个元素（其中第i个，第j个元素不要求必须使用），所能得到的最长公共子序列</p>
+<script type="math/tex; mode=display">f[i][j]=\max\left \{ f[i-1][j],f[i][j-1],f[i-1][j-1]+[a_i==b_j] \right \}</script><p>空间会炸，但此时无法使用滚存，我们不得不修改dp状态，考虑从f[i-1][]求出f[i][]，即设f[i][j]表示允许使用第一个序列的前i个元素，第二个序列的前j个元素（其中第一个序列第i个元素不必须使用，第二个序列第j个元素<strong>必须</strong>使用）</p>
+<p>这样第一维就可以被滚掉了，假如$A_i=B_k$，那么修改f[k]即可。</p>
+<script type="math/tex; mode=display">f[k]=\max_{i=1}^{k-1}f[i] +1</script><p>空间问题解决了，但时间还会炸，与LIS相同的套路，复杂度瓶颈还是在于max，同样用树状数组维护前缀最大即可</p>
+<pre><code class="lang-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+template&lt;class t&gt; inline t read(t &amp;x){
+    char c=getchar();bool f=0;x=0;
+    while(!isdigit(c)) f|=c==&#39;-&#39;,c=getchar();
+    while(isdigit(c)) x=(x&lt;&lt;1)+(x&lt;&lt;3)+(c^48),c=getchar();
+    if(f) x=-x;return x;
+}
+template&lt;class t&gt; inline void write(t x){
+    if(x&lt;0) putchar(&#39;-&#39;),write(-x);
+    else{if(x&gt;9) write(x/10);putchar(&#39;0&#39;+x%10);}
+}
+const int N=1e5+5;
+int a[N],b[N],n,f[N],ans;
+vector&lt;int&gt; p[N/5];
+struct BIT{
+    #define lowbit(x) (x&amp;(-x))
+    int a[N];
+    void up(int x,int v){
+        while(x&lt;=n){
+            a[x]=max(a[x],v);
+            x+=lowbit(x);
+        }
+    }
+    int que(int x){
+        int res=0;
+        while(x){
+            res=max(res,a[x]);
+            x-=lowbit(x);
+        }
+        return res;
+    }
+}ma;
+signed main(){
+    read(n);
+    n*=5;
+    for(int i=1,x;i&lt;=n;i++) p[read(x)].push_back(i); //记录每个元素的位置k
+    for(int i=1;i&lt;=n;i++) read(b[i]);
+    for(int i=1;i&lt;=n;i++)
+        for(int j=4;j&gt;=0;j--){ //各出现5次
+            int pos=p[b[i]][j];
+            f[pos]=ma.que(pos-1)+1; //对该位置前面的进行修改
+            ma.up(pos,f[pos]);
+        }
+    for(int i=1;i&lt;=n;i++) ans=max(ans,f[i]); //遍历dp数组取极值
+    write(ans);
+}
+</code></pre>
+<h3 id="PART3-一道例题"><a href="#PART3-一道例题" class="headerlink" title="PART3. 一道例题"></a>PART3. 一道例题</h3><p>模拟赛中出现了一道LCS模板题，只是我当时没看出来。。。</p>
+<p><a href="https://www.luogu.org/problem/P3657" target="_blank" rel="noopener">P3657 [USACO17FEB]Why Did the Cow Cross the Road II P</a></p>
+<p>大致思路是把问题看成将普通LCS的相等的条件改为差的绝对值&lt;=4</p>
+<p>题解我另写了，代码、思路的见<a href>这里</a></p>
 
         </div>
         <!-- .entry-content -->
@@ -381,36 +511,19 @@
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
-          
-            <div class="post-nepre half previous">
-          
-            <a href="/2019/10/27/P2658 【汽车拉力比赛】/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.08/img/post/474.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.08/img/post/474.webp">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                P2658 【汽车拉力比赛】</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
         
           
-            <div class="post-nepre half next">
+            <div class="post-nepre full next">
           
-            <a href="/2018/12/12/Hexo-Theme-Sakura/" rel="next">
+            <a href="/2019/11/03/P3657 [USACO17FEB]Why Did the Cow Cross the Road II P/" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.09/img/post/308.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.09/img/post/308.webp">
               </div>
               <span class="label">
               Next Post</span>
               <div class="info">
                 <h3>
-                Hexo-Theme-Sakura</h3>
+                P3657 [USACO17FEB]Why Did the Cow Cross the Road II P</h3>
                 <hr>
               </div>
             </a>

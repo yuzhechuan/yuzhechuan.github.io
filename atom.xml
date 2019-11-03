@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.yzcthinktwice.com/"/>
-  <updated>2019-10-29T14:14:36.379Z</updated>
+  <updated>2019-11-03T13:58:10.651Z</updated>
   <id>http://blog.yzcthinktwice.com/</id>
   
   <author>
@@ -17,11 +17,85 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>LIS，LCS与树状数组</title>
+    <link href="http://blog.yzcthinktwice.com/2019/11/03/LIS%EF%BC%8CLCS%E4%B8%8E%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
+    <id>http://blog.yzcthinktwice.com/2019/11/03/LIS，LCS与树状数组/</id>
+    <published>2019-11-03T12:50:01.000Z</published>
+    <updated>2019-11-03T13:58:10.651Z</updated>
+    
+    <summary type="html">
+    
+      关于LIS，LCS等一类可以用树状数组优化的DP
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="树状数组" scheme="http://blog.yzcthinktwice.com/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
+    
+      <category term="LCS" scheme="http://blog.yzcthinktwice.com/tags/LCS/"/>
+    
+      <category term="教程" scheme="http://blog.yzcthinktwice.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="LIS" scheme="http://blog.yzcthinktwice.com/tags/LIS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>P3657 [USACO17FEB]Why Did the Cow Cross the Road II P</title>
+    <link href="http://blog.yzcthinktwice.com/2019/11/03/P3657%20%5BUSACO17FEB%5DWhy%20Did%20the%20Cow%20Cross%20the%20Road%20II%20P/"/>
+    <id>http://blog.yzcthinktwice.com/2019/11/03/P3657 [USACO17FEB]Why Did the Cow Cross the Road II P/</id>
+    <published>2019-11-03T12:28:01.000Z</published>
+    <updated>2019-11-03T13:57:33.202Z</updated>
+    
+    <summary type="html">
+    
+      Why Did the Cow Cross the Road II P 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="洛谷" scheme="http://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="树状数组" scheme="http://blog.yzcthinktwice.com/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
+    
+      <category term="DP" scheme="http://blog.yzcthinktwice.com/tags/DP/"/>
+    
+      <category term="USACO" scheme="http://blog.yzcthinktwice.com/tags/USACO/"/>
+    
+      <category term="LCS" scheme="http://blog.yzcthinktwice.com/tags/LCS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF上蓝！</title>
+    <link href="http://blog.yzcthinktwice.com/2019/11/02/CF%E4%B8%8A%E8%93%9D%EF%BC%81/"/>
+    <id>http://blog.yzcthinktwice.com/2019/11/02/CF上蓝！/</id>
+    <published>2019-11-01T23:30:00.000Z</published>
+    <updated>2019-11-03T13:58:40.879Z</updated>
+    
+    <summary type="html">
+    
+      CF上蓝
+    
+    </summary>
+    
+      <category term="日记" scheme="http://blog.yzcthinktwice.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CF1239D Catowice City</title>
     <link href="http://blog.yzcthinktwice.com/2019/10/29/CF1239D%20Catowice%20City/"/>
     <id>http://blog.yzcthinktwice.com/2019/10/29/CF1239D Catowice City/</id>
     <published>2019-10-29T14:11:01.000Z</published>
-    <updated>2019-10-29T14:14:36.379Z</updated>
+    <updated>2019-11-03T12:41:47.119Z</updated>
     
     <summary type="html">
     
@@ -45,7 +119,7 @@
     <link href="http://blog.yzcthinktwice.com/2019/10/28/P3294%20%5BSCOI2016%5D%E8%83%8C%E5%8D%95%E8%AF%8D/"/>
     <id>http://blog.yzcthinktwice.com/2019/10/28/P3294 [SCOI2016]背单词/</id>
     <published>2019-10-28T14:28:01.000Z</published>
-    <updated>2019-10-29T14:13:23.307Z</updated>
+    <updated>2019-11-03T12:32:31.509Z</updated>
     
     <summary type="html">
     
@@ -69,7 +143,7 @@
     <link href="http://blog.yzcthinktwice.com/2019/10/27/P2658%20%E3%80%90%E6%B1%BD%E8%BD%A6%E6%8B%89%E5%8A%9B%E6%AF%94%E8%B5%9B%E3%80%91/"/>
     <id>http://blog.yzcthinktwice.com/2019/10/27/P2658 【汽车拉力比赛】/</id>
     <published>2019-10-27T14:49:01.000Z</published>
-    <updated>2019-10-29T14:13:35.075Z</updated>
+    <updated>2019-11-03T12:32:16.255Z</updated>
     
     <summary type="html">
     
@@ -91,7 +165,7 @@
     <link href="http://blog.yzcthinktwice.com/2019/10/26/CF%E5%86%8D%E6%AC%A1%E8%A2%ABskip/"/>
     <id>http://blog.yzcthinktwice.com/2019/10/26/CF再次被skip/</id>
     <published>2019-10-26T15:22:01.000Z</published>
-    <updated>2019-10-29T14:08:55.617Z</updated>
+    <updated>2019-11-03T13:58:39.138Z</updated>
     
     <summary type="html">
     
@@ -101,6 +175,8 @@
     
       <category term="日记" scheme="http://blog.yzcthinktwice.com/categories/%E6%97%A5%E8%AE%B0/"/>
     
+    
+      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
     
   </entry>
   

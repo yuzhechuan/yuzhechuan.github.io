@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">CF再次被skip | THINK TWICE</title>
+  <title itemprop="name">P3657 [USACO17FEB]Why Did the Cow Cross the Road II P | THINK TWICE</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -320,11 +320,11 @@
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.08/img/post/467_1.webp);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.08/img/post/467_1.webp">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.09/img/post/308.webp);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.09/img/post/308.webp">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      CF再次被skip</h1>
+      P3657 [USACO17FEB]Why Did the Cow Cross the Road II P</h1>
       <p class="entry-census">
         <span>
           <a href="https://blog.yzcthinktwice.com/">
@@ -336,7 +336,7 @@
         </span>
         <span class="bull">
         ·</span>
-        2019-10-26<span class="bull">
+        2019-11-3<span class="bull">
         ·</span>
       <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
@@ -350,9 +350,68 @@
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <p>时隔多日，今天又来打打CF，本来可以上蓝的说。。。</p>
-<p>结果sb又把自己skip了，一晚上白给</p>
-<p>自闭了QAQ</p>
+          <h1 id="P3657-Why-Did-the-Cow-Cross-the-Road-II-P"><a href="#P3657-Why-Did-the-Cow-Cross-the-Road-II-P" class="headerlink" title="P3657 Why Did the Cow Cross the Road II P"></a><a href="https://www.luogu.org/problem/P3657" target="_blank" rel="noopener">P3657 Why Did the Cow Cross the Road II P</a></h1><hr>
+<p>LCS是本题比较直观的一种思路，即将普通LCS（最长公共子序列）的相等的条件改为差的绝对值&lt;=4</p>
+<p>众所周知，求LCS有两种$O(nlogn)$方法</p>
+<p>一种是映射，另一种是DP优化</p>
+<p>因为差的绝对值&lt;=4的条件会使映射变得复杂，我们这里采用DP优化的方法</p>
+<p>该方法具体可以见<a href="https://www.cnblogs.com/liu-runda/p/6193690.html" target="_blank" rel="noopener">[noip科普]关于LIS和一类可以用树状数组优化的DP</a></p>
+<p>要注意的是，该方法中要记录b[]中各值可合法对应的值在a[]的位置，这个位置是需要通过排序来保证有序的</p>
+<pre><code class="lang-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+template&lt;class t&gt; inline t read(t &amp;x){
+    char c=getchar();bool f=0;x=0;
+    while(!isdigit(c)) f|=c==&#39;-&#39;,c=getchar();
+    while(isdigit(c)) x=(x&lt;&lt;1)+(x&lt;&lt;3)+(c^48),c=getchar();
+    if(f) x=-x;return x;
+}
+template&lt;class t&gt; inline void write(t x){
+    if(x&lt;0) putchar(&#39;-&#39;),write(-x);
+    else{if(x&gt;9) write(x/10);putchar(&#39;0&#39;+x%10);}
+}
+const int N=1e5+5;
+int a[N],b[N],n,f[N],ans,pos[N];
+vector&lt;int&gt; p[N];
+struct BIT{ //树状数组模板
+    #define lowbit(x) (x&amp;(-x))
+    int a[N];
+    void up(int x,int v){
+        while(x&lt;=n){
+            a[x]=max(a[x],v);
+            x+=lowbit(x);
+        }
+    }
+    int que(int x){
+        int res=0;
+        while(x){
+            res=max(res,a[x]);
+            x-=lowbit(x);
+        }
+        return res;
+    }
+}ma;
+signed main(){
+    read(n);
+    for(int i=1,x;i&lt;=n;i++){
+        read(x);
+        pos[x]=i; //记录某值的位置
+    }
+    for(int i=1;i&lt;=n;i++){
+        read(b[i]);
+        for(int j=max(1,b[i]-4);j&lt;=min(n,b[i]+4);j++)
+            p[i].push_back(pos[j]); //记录b[]值合法对应值的位置
+        sort(p[i].begin(),p[i].end()); //排序使之保证有序
+    }
+    for(int i=1;i&lt;=n;i++)
+        for(int j=p[i].size()-1;j&gt;=0;j--){ //按位置搞LCS
+            int pos=p[i][j];
+            f[pos]=ma.que(pos-1)+1;
+            ma.up(pos,f[pos]);
+        }
+    for(int i=1;i&lt;=n;i++) ans=max(ans,f[i]); //得到答案
+    write(ans);
+}
+</code></pre>
 
         </div>
         <!-- .entry-content -->
@@ -384,15 +443,15 @@
           
             <div class="post-nepre half previous">
           
-            <a href="/2019/10/27/P2658 【汽车拉力比赛】/" rel="prev">
+            <a href="/2019/11/03/LIS，LCS与树状数组/" rel="prev">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.08/img/post/474.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.08/img/post/474.webp">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.09/img/post/489.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.09/img/post/489.webp">
               </div>
               <span class="label">
               Previous Post</span>
               <div class="info">
                 <h3>
-                P2658 【汽车拉力比赛】</h3>
+                LIS，LCS与树状数组</h3>
                 <hr>
               </div>
             </a>
@@ -402,15 +461,15 @@
           
             <div class="post-nepre half next">
           
-            <a href="/2018/12/12/Hexo-Theme-Sakura/" rel="next">
+            <a href="/2019/11/02/CF上蓝！/" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.09/img/post/480.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.09/img/post/480.webp">
               </div>
               <span class="label">
               Next Post</span>
               <div class="info">
                 <h3>
-                Hexo-Theme-Sakura</h3>
+                CF上蓝！</h3>
                 <hr>
               </div>
             </a>
