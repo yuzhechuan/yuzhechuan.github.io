@@ -180,4 +180,50 @@
     
   </entry>
   
+  <entry>
+    <title>HDU5521 Meeting</title>
+    <link href="http://blog.yzcthinktwice.com/2019/07/17/HDU5521%20Meeting/"/>
+    <id>http://blog.yzcthinktwice.com/2019/07/17/HDU5521 Meeting/</id>
+    <published>2019-07-17T14:11:01.000Z</published>
+    <updated>2019-11-10T09:06:07.797Z</updated>
+    
+    <summary type="html">
+    
+      HDU5521 Meeting 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="HDU" scheme="http://blog.yzcthinktwice.com/tags/HDU/"/>
+    
+      <category term="最短路" scheme="http://blog.yzcthinktwice.com/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
+    
+      <category term="思维" scheme="http://blog.yzcthinktwice.com/tags/%E6%80%9D%E7%BB%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1194D 1-2-K Game</title>
+    <link href="http://blog.yzcthinktwice.com/2019/07/15/CF1194D%201-2-K%20Game/"/>
+    <id>http://blog.yzcthinktwice.com/2019/07/15/CF1194D 1-2-K Game/</id>
+    <published>2019-07-15T14:11:01.000Z</published>
+    <updated>2019-11-10T09:05:44.729Z</updated>
+    
+    <summary type="html">
+    
+      CF1194D 1-2-K Game 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="博弈论" scheme="http://blog.yzcthinktwice.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+  </entry>
+  
 </feed>
