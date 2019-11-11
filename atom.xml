@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.yzcthinktwice.com/"/>
-  <updated>2019-11-03T13:58:10.651Z</updated>
+  <updated>2019-11-11T14:43:37.735Z</updated>
   <id>http://blog.yzcthinktwice.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nim游戏及变体</title>
+    <link href="http://blog.yzcthinktwice.com/2019/11/11/nim%E6%B8%B8%E6%88%8F%E5%8F%8A%E5%8F%98%E4%BD%93/"/>
+    <id>http://blog.yzcthinktwice.com/2019/11/11/nim游戏及变体/</id>
+    <published>2019-11-11T13:58:01.000Z</published>
+    <updated>2019-11-11T14:43:37.735Z</updated>
+    
+    <summary type="html">
+    
+      介绍并总结了nim游戏及其变体
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="博弈论" scheme="http://blog.yzcthinktwice.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+      <category term="教程" scheme="http://blog.yzcthinktwice.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="nim游戏" scheme="http://blog.yzcthinktwice.com/tags/nim%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>LIS，LCS与树状数组</title>
