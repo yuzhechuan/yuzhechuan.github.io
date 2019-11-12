@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.yzcthinktwice.com/"/>
-  <updated>2019-11-11T14:43:37.735Z</updated>
+  <updated>2019-11-12T14:02:19.104Z</updated>
   <id>http://blog.yzcthinktwice.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>P3398 仓鼠找sugar</title>
+    <link href="http://blog.yzcthinktwice.com/2019/11/12/P3398%20%E4%BB%93%E9%BC%A0%E6%89%BEsugar/"/>
+    <id>http://blog.yzcthinktwice.com/2019/11/12/P3398 仓鼠找sugar/</id>
+    <published>2019-11-12T13:33:01.000Z</published>
+    <updated>2019-11-12T14:02:19.104Z</updated>
+    
+    <summary type="html">
+    
+      P3398 仓鼠找sugar 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="洛谷" scheme="http://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="LCA" scheme="http://blog.yzcthinktwice.com/tags/LCA/"/>
+    
+  </entry>
   
   <entry>
     <title>nim游戏及变体</title>
