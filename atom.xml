@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.yzcthinktwice.com/"/>
-  <updated>2019-11-24T00:59:19.680Z</updated>
+  <updated>2019-11-24T14:55:30.157Z</updated>
   <id>http://blog.yzcthinktwice.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ABC126E Rem of Sum is Num</title>
+    <link href="http://blog.yzcthinktwice.com/2019/11/24/ABC126E%20Rem%20of%20Sum%20is%20Num/"/>
+    <id>http://blog.yzcthinktwice.com/2019/11/24/ABC126E Rem of Sum is Num/</id>
+    <published>2019-11-24T14:31:01.000Z</published>
+    <updated>2019-11-24T14:55:30.157Z</updated>
+    
+    <summary type="html">
+    
+      ABC126E Rem of Sum is Num 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="AtCoder" scheme="http://blog.yzcthinktwice.com/tags/AtCoder/"/>
+    
+      <category term="数学" scheme="http://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>CF1223C Save the Nature</title>
