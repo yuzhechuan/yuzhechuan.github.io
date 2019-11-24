@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.yzcthinktwice.com/"/>
-  <updated>2019-11-13T13:03:09.712Z</updated>
+  <updated>2019-11-24T00:59:19.680Z</updated>
   <id>http://blog.yzcthinktwice.com/</id>
   
   <author>
@@ -15,6 +15,118 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CF1223C Save the Nature</title>
+    <link href="http://blog.yzcthinktwice.com/2019/11/22/CF1223C%20Save%20the%20Nature/"/>
+    <id>http://blog.yzcthinktwice.com/2019/11/22/CF1223C Save the Nature/</id>
+    <published>2019-11-22T01:16:01.000Z</published>
+    <updated>2019-11-24T00:59:19.680Z</updated>
+    
+    <summary type="html">
+    
+      CF1223C Save the Nature 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="二分答案" scheme="http://blog.yzcthinktwice.com/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF949C Data Center Maintenance</title>
+    <link href="http://blog.yzcthinktwice.com/2019/11/21/CF949C%20Data%20Center%20Maintenance/"/>
+    <id>http://blog.yzcthinktwice.com/2019/11/21/CF949C Data Center Maintenance/</id>
+    <published>2019-11-21T06:36:01.000Z</published>
+    <updated>2019-11-24T00:59:07.046Z</updated>
+    
+    <summary type="html">
+    
+      CF949C Data Center Maintenance 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="tarjan" scheme="http://blog.yzcthinktwice.com/tags/tarjan/"/>
+    
+      <category term="强联通分量" scheme="http://blog.yzcthinktwice.com/tags/%E5%BC%BA%E8%81%94%E9%80%9A%E5%88%86%E9%87%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>P1156 垃圾陷阱</title>
+    <link href="http://blog.yzcthinktwice.com/2019/11/19/P1156%20%E5%9E%83%E5%9C%BE%E9%99%B7%E9%98%B1/"/>
+    <id>http://blog.yzcthinktwice.com/2019/11/19/P1156 垃圾陷阱/</id>
+    <published>2019-11-19T01:22:45.000Z</published>
+    <updated>2019-11-24T01:25:38.053Z</updated>
+    
+    <summary type="html">
+    
+      P1220 关路灯 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="洛谷" scheme="http://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="dp" scheme="http://blog.yzcthinktwice.com/tags/dp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>P1220 关路灯</title>
+    <link href="http://blog.yzcthinktwice.com/2019/11/19/P1220%20%E5%85%B3%E8%B7%AF%E7%81%AF/"/>
+    <id>http://blog.yzcthinktwice.com/2019/11/19/P1220 关路灯/</id>
+    <published>2019-11-19T00:34:04.000Z</published>
+    <updated>2019-11-24T01:18:30.241Z</updated>
+    
+    <summary type="html">
+    
+      P1220 关路灯 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="洛谷" scheme="http://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="dp" scheme="http://blog.yzcthinktwice.com/tags/dp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>P1373 小a和uim之大逃离</title>
+    <link href="http://blog.yzcthinktwice.com/2019/11/19/P1373%20%E5%B0%8Fa%E5%92%8Cuim%E4%B9%8B%E5%A4%A7%E9%80%83%E7%A6%BB/"/>
+    <id>http://blog.yzcthinktwice.com/2019/11/19/P1373 小a和uim之大逃离/</id>
+    <published>2019-11-18T23:53:01.000Z</published>
+    <updated>2019-11-24T01:12:26.968Z</updated>
+    
+    <summary type="html">
+    
+      P1373 小a和uim之大逃离 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="洛谷" scheme="http://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="dp" scheme="http://blog.yzcthinktwice.com/tags/dp/"/>
+    
+  </entry>
   
   <entry>
     <title>P3398 仓鼠找sugar</title>

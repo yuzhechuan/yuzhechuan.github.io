@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Tag: CF | THINK TWICE</title>
+  <title itemprop="name">P1156 垃圾陷阱 | THINK TWICE</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -317,229 +317,206 @@
   </div>
 </header>
 
-      
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
-<div class="pattern-center ">
-  <div class="pattern-attachment-img">
-    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="CF.img" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.2/img/post/493.webp);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.2/img/post/493.webp">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      P1156 垃圾陷阱</h1>
+      <p class="entry-census">
+        <span>
+          <a href="https://blog.yzcthinktwice.com/">
+            <img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png">
+          </a>
+        </span>
+        <span>
+          <a href="https://blog.yzcthinktwice.com/">yzc</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2019-11-19<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
   </div>
-  <header class="pattern-header ">
-    <h1 class="cat-title">CF</h1>
-  </header>
-</div>
+
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h1 id="P1156-垃圾陷阱"><a href="#P1156-垃圾陷阱" class="headerlink" title="P1156 垃圾陷阱"></a><a href="https://www.luogu.org/problem/P1156" target="_blank" rel="noopener">P1156 垃圾陷阱</a></h1><hr>
+<p>先将垃圾按时间排序</p>
+<p>分类讨论</p>
+<p>先假设能逃出去</p>
+<p>设f[i][j]表示前i个垃圾叠成高度j时的最长生存时间</p>
+<p>初始f[0][0]=10</p>
+<p>类背包转移</p>
+<p>注意濒死也是能转移的，即f[][]&lt;0才无法转移</p>
+<p>转移时超过高度就输出当前时间</p>
+<p>再模拟逃不出去</p>
+<p>计算最长存活时间</p>
+<hr>
+<pre><code class="lang-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+template&lt;class t&gt; inline t read(t &amp;x){
+    x=0;char c=getchar();bool f=0;
+    while(!isdigit(c)) f|=c==&#39;-&#39;,c=getchar();
+    while(isdigit(c)) x=(x&lt;&lt;1)+(x&lt;&lt;3)+(c^48),c=getchar();
+    if(f) x=-x;return x;
+}
+template&lt;class t&gt; inline void write(t x){
+    if(x&lt;0){putchar(&#39;-&#39;),write(-x);}
+    else{if(x&gt;9)write(x/10);putchar(&#39;0&#39;+x%10);}
+}
+const int N=105,M=105;
+int n,m,f[N][M];
+struct trash{
+    int t,f,h;
+    inline bool operator &lt; (const trash &amp;nt) const {
+        return t&lt;nt.t;
+    }
+}a[N];
+signed main(){
+    read(m);read(n);
+    for(int i=1;i&lt;=n;i++){
+        read(a[i].t);
+        read(a[i].f);
+        read(a[i].h);
+    }
+    sort(a+1,a+1+n);
+    memset(f,-1,sizeof f);
+    f[0][0]=10;
+    for(int i=1;i&lt;=n;i++){
+        for(int j=0;j&lt;=m;j++) if(f[i-1][j]&gt;=0){
+            if(j+a[i].h&gt;=m&amp;&amp;f[i-1][j]+a[i-1].t&gt;=a[i].t){
+                write(a[i].t);
+                return 0;
+            }
+            if(f[i-1][j]+a[i-1].t&gt;=a[i].t){
+                f[i][j+a[i].h]=f[i-1][j]+a[i-1].t-a[i].t;
+                f[i][j]=max(f[i][j],f[i-1][j]+a[i-1].t-a[i].t+a[i].f);
+            }
+        }
+    }
+    m=10;
+    for(int i=1;i&lt;=n;i++){
+        if(m+a[i-1].t&lt;a[i].t){
+            write(m+a[i-1].t);
+            return 0;
+        }
+        m-=a[i].t-a[i-1].t;
+        m+=a[i].f;
+    }
+    write(m+a[n].t);
+}
+</code></pre>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.17/img/alisq.jpg"></li>
+                <li class="wechat-code"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.17/img/wesq.png"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+          
+            <div class="post-nepre half previous">
+          
+            <a href="/2019/11/21/CF949C Data Center Maintenance/" rel="prev">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.18/img/post/494.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.18/img/post/494.webp">
+              </div>
+              <span class="label">
+              Previous Post</span>
+              <div class="info">
+                <h3>
+                CF949C Data Center Maintenance</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+        
+          
+            <div class="post-nepre half next">
+          
+            <a href="/2019/11/19/P1220 关路灯/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.19/img/post/t11.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.19/img/post/t11.webp">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                P1220 关路灯</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
       
-  <!-- 首页默认取最最新文章集 -->
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2019/11/22/CF1223C Save the Nature/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.18/img/post/495.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2019/11/22/CF1223C Save the Nature/">
-    CF1223C Save the Nature</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2019-11-22</div>
-    <p>
-    CF1223C Save the Nature 题解</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2019/11/22/CF1223C Save the Nature/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2019/11/21/CF949C Data Center Maintenance/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.18/img/post/494.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2019/11/21/CF949C Data Center Maintenance/">
-    CF949C Data Center Maintenance</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2019-11-21</div>
-    <p>
-    CF949C Data Center Maintenance 题解</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2019/11/21/CF949C Data Center Maintenance/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2019/11/02/CF上蓝！/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.09/img/post/480.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2019/11/02/CF上蓝！/">
-    CF上蓝！</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2019-11-2</div>
-    <p>
-    CF上蓝</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2019/11/02/CF上蓝！/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2019/10/29/CF1239D Catowice City/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.091/img/post/467_2.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2019/10/29/CF1239D Catowice City/">
-    CF1239D Catowice City</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2019-10-29</div>
-    <p>
-    CF1239D Catowice City 题解</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2019/10/29/CF1239D Catowice City/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2019/10/26/CF再次被skip/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.08/img/post/467_1.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2019/10/26/CF再次被skip/">
-    CF再次被skip</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2019-10-26</div>
-    <p>
-    CF再次被skip</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2019/10/26/CF再次被skip/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2019/07/15/CF1194D 1-2-K Game/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.15/img/post/412.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2019/07/15/CF1194D 1-2-K Game/">
-    CF1194D 1-2-K Game</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2019-7-15</div>
-    <p>
-    CF1194D 1-2-K Game 题解</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2019/07/15/CF1194D 1-2-K Game/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "X4RYByUB7qJCaciH0Xm08Tu3-gzGzoHsz",
+        appKey: "4M4E9Lbb7Xlv29voEEsd0W4i",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
 
-
-      <div class="clearer">
-      </div>
-    </main>
-    <!--  -->
-    
-  </div>
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <a href="https://blog.yzcthinktwice.com/" class="profile gravatar"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png" itemprop="image" alt="yzc" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="https://blog.yzcthinktwice.com/" itemprop="url" rel="author">yzc</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>FIGHTER</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
+
+
+
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>
