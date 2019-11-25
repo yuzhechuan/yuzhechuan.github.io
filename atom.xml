@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.yzcthinktwice.com/"/>
-  <updated>2019-11-24T14:55:30.157Z</updated>
+  <updated>2019-11-25T12:44:08.583Z</updated>
   <id>http://blog.yzcthinktwice.com/</id>
   
   <author>
@@ -17,15 +17,61 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ABC126E Rem of Sum is Num</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/24/ABC126E%20Rem%20of%20Sum%20is%20Num/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/24/ABC126E Rem of Sum is Num/</id>
-    <published>2019-11-24T14:31:01.000Z</published>
-    <updated>2019-11-24T14:55:30.157Z</updated>
+    <title>YOJ1 二人从空中落下</title>
+    <link href="http://blog.yzcthinktwice.com/2019/11/25/YOJ1%20%E4%BA%8C%E4%BA%BA%E4%BB%8E%E7%A9%BA%E4%B8%AD%E8%90%BD%E4%B8%8B/"/>
+    <id>http://blog.yzcthinktwice.com/2019/11/25/YOJ1 二人从空中落下/</id>
+    <published>2019-11-25T12:04:01.000Z</published>
+    <updated>2019-11-25T12:44:08.583Z</updated>
     
     <summary type="html">
     
-      ABC126E Rem of Sum is Num 题解
+      YOJ1 二人从空中落下 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="dp" scheme="http://blog.yzcthinktwice.com/tags/dp/"/>
+    
+      <category term="YOJ" scheme="http://blog.yzcthinktwice.com/tags/YOJ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ABC146F Sugoroku</title>
+    <link href="http://blog.yzcthinktwice.com/2019/11/25/ABC146F%20Sugoroku/"/>
+    <id>http://blog.yzcthinktwice.com/2019/11/25/ABC146F Sugoroku/</id>
+    <published>2019-11-25T00:31:01.000Z</published>
+    <updated>2019-11-25T12:01:56.338Z</updated>
+    
+    <summary type="html">
+    
+      ABC146F Sugoroku 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="dp" scheme="http://blog.yzcthinktwice.com/tags/dp/"/>
+    
+      <category term="AtCoder" scheme="http://blog.yzcthinktwice.com/tags/AtCoder/"/>
+    
+      <category term="单调队列" scheme="http://blog.yzcthinktwice.com/tags/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ABC146E Rem of Sum is Num</title>
+    <link href="http://blog.yzcthinktwice.com/2019/11/24/ABC146E%20Rem%20of%20Sum%20is%20Num/"/>
+    <id>http://blog.yzcthinktwice.com/2019/11/24/ABC146E Rem of Sum is Num/</id>
+    <published>2019-11-24T14:31:01.000Z</published>
+    <updated>2019-11-25T11:49:22.800Z</updated>
+    
+    <summary type="html">
+    
+      ABC146E Rem of Sum is Num 题解
     
     </summary>
     
