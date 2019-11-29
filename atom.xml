@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.yzcthinktwice.com/"/>
-  <updated>2019-11-28T04:28:05.850Z</updated>
+  <updated>2019-11-29T11:53:16.123Z</updated>
   <id>http://blog.yzcthinktwice.com/</id>
   
   <author>
@@ -15,6 +15,72 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CF1260C Infinite Fence</title>
+    <link href="http://blog.yzcthinktwice.com/2019/11/29/CF1260C%20Infinite%20Fence/"/>
+    <id>http://blog.yzcthinktwice.com/2019/11/29/CF1260C Infinite Fence/</id>
+    <published>2019-11-29T11:16:01.000Z</published>
+    <updated>2019-11-29T11:53:16.123Z</updated>
+    
+    <summary type="html">
+    
+      CF1260C Infinite Fence 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="数学" scheme="http://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1149B Three Religions</title>
+    <link href="http://blog.yzcthinktwice.com/2019/11/29/CF1149B%20Three%20Religions/"/>
+    <id>http://blog.yzcthinktwice.com/2019/11/29/CF1149B Three Religions/</id>
+    <published>2019-11-29T11:08:01.000Z</published>
+    <updated>2019-11-29T12:02:25.582Z</updated>
+    
+    <summary type="html">
+    
+      CF1149B Three Religions 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="DP" scheme="http://blog.yzcthinktwice.com/tags/DP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1253E Antenna Coverage</title>
+    <link href="http://blog.yzcthinktwice.com/2019/11/29/CF1253E%20Antenna%20Coverage/"/>
+    <id>http://blog.yzcthinktwice.com/2019/11/29/CF1253E Antenna Coverage/</id>
+    <published>2019-11-29T11:06:01.000Z</published>
+    <updated>2019-11-29T12:02:27.676Z</updated>
+    
+    <summary type="html">
+    
+      CF1253E Antenna Coverage 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="DP" scheme="http://blog.yzcthinktwice.com/tags/DP/"/>
+    
+  </entry>
   
   <entry>
     <title>CF1257E The Contest</title>
@@ -409,72 +475,6 @@
       <category term="缩点" scheme="http://blog.yzcthinktwice.com/tags/%E7%BC%A9%E7%82%B9/"/>
     
       <category term="强连通分量" scheme="http://blog.yzcthinktwice.com/tags/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>P3294 [SCOI2016]背单词</title>
-    <link href="http://blog.yzcthinktwice.com/2019/10/28/P3294%20%5BSCOI2016%5D%E8%83%8C%E5%8D%95%E8%AF%8D/"/>
-    <id>http://blog.yzcthinktwice.com/2019/10/28/P3294 [SCOI2016]背单词/</id>
-    <published>2019-10-28T14:28:01.000Z</published>
-    <updated>2019-11-03T12:32:31.509Z</updated>
-    
-    <summary type="html">
-    
-      P3294 [SCOI2016]背单词 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="洛谷" scheme="http://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
-      <category term="字典树" scheme="http://blog.yzcthinktwice.com/tags/%E5%AD%97%E5%85%B8%E6%A0%91/"/>
-    
-      <category term="贪心" scheme="http://blog.yzcthinktwice.com/tags/%E8%B4%AA%E5%BF%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>P2658 【汽车拉力比赛】</title>
-    <link href="http://blog.yzcthinktwice.com/2019/10/27/P2658%20%E3%80%90%E6%B1%BD%E8%BD%A6%E6%8B%89%E5%8A%9B%E6%AF%94%E8%B5%9B%E3%80%91/"/>
-    <id>http://blog.yzcthinktwice.com/2019/10/27/P2658 【汽车拉力比赛】/</id>
-    <published>2019-10-27T14:49:01.000Z</published>
-    <updated>2019-11-03T12:32:16.255Z</updated>
-    
-    <summary type="html">
-    
-      P2658 【汽车拉力比赛】题解
-    
-    </summary>
-    
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="二分答案" scheme="http://blog.yzcthinktwice.com/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/"/>
-    
-      <category term="洛谷" scheme="http://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF再次被skip</title>
-    <link href="http://blog.yzcthinktwice.com/2019/10/26/CF%E5%86%8D%E6%AC%A1%E8%A2%ABskip/"/>
-    <id>http://blog.yzcthinktwice.com/2019/10/26/CF再次被skip/</id>
-    <published>2019-10-26T15:22:01.000Z</published>
-    <updated>2019-11-03T13:58:39.138Z</updated>
-    
-    <summary type="html">
-    
-      CF再次被skip
-    
-    </summary>
-    
-      <category term="日记" scheme="http://blog.yzcthinktwice.com/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
     
   </entry>
   

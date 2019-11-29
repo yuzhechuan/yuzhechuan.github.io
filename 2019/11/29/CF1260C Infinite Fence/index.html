@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">Tag: DP | THINK TWICE</title>
+  <title itemprop="name">CF1260C Infinite Fence | THINK TWICE</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -318,262 +318,168 @@
   </div>
 </header>
 
-      
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
 <div class="pattern-center-blank"></div>
-<div class="pattern-center ">
-  <div class="pattern-attachment-img">
-    <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="DP.img" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.27/img/post/502.webp);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.27/img/post/502.webp">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      CF1260C Infinite Fence</h1>
+      <p class="entry-census">
+        <span>
+          <a href="https://blog.yzcthinktwice.com/">
+            <img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png">
+          </a>
+        </span>
+        <span>
+          <a href="https://blog.yzcthinktwice.com/">yzc</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2019-11-29<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
   </div>
-  <header class="pattern-header ">
-    <h1 class="cat-title">DP</h1>
-  </header>
-</div>
+
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h1 id="CF1260C-Infinite-Fence"><a href="#CF1260C-Infinite-Fence" class="headerlink" title="CF1260C Infinite Fence"></a><a href="https://codeforces.com/contest/1260/problem/C" target="_blank" rel="noopener">CF1260C Infinite Fence</a></h1><hr>
+<p>数学结论题，现场却卡得我基本掉色</p>
+<p>难度在于对数学式的敏感度</p>
+<hr>
+<h3 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h3><p>假设r&lt;=b（如果不是就交换）</p>
+<p>首先思考r，b互质的情况，发现一定会存在第pos个木板涂蓝色，而第pos+1个木板涂成红色的情况</p>
+<p>也就是说$rx-by=1$一定有正整数解存在，这一点可以用裴蜀定理简单的证明</p>
+<p>（在<a href="https://www.luogu.com.cn/problem/P1082" target="_blank" rel="noopener">P1082 同余方程</a>的题解里，你也许可以得到更好的证明）</p>
+<p>这意味着如果要OBEY，那么区间[pos,pos+b]中的红色木板数量一定要小于k，也就是</p>
+<script type="math/tex; mode=display">(k-1)*r+1 \geq b</script><p>（该式的意思是pos以后的k-1块红木板要能够卡满，甚至超过这个长度为b的区间）</p>
+<p>此时又可以发现对于r，b不互质的情况，如果我们只看那些能被gcd(r,b)整除的木板，它们的情况又是与上述情况相同的</p>
+<p>换句话说，只要先将r，b都除去gcd(r,b)使两者互质，再套用上述判定式即可</p>
+<hr>
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><pre><code class="lang-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+template&lt;class t&gt; inline t read(t &amp;x){
+    x=0;char c=getchar();bool f=0;
+    while(!isdigit(c)) f|=c==&#39;-&#39;,c=getchar();
+    while(isdigit(c)) x=(x&lt;&lt;1)+(x&lt;&lt;3)+(c^48),c=getchar();
+    if(f) x=-x;return  x;
+}
+template&lt;class t&gt; inline void write(t x){
+    if(x&lt;0){putchar(&#39;-&#39;),write(-x);}
+    else{if(x&gt;9)write(x/10);putchar(&#39;0&#39;+x%10);}
+}
+
+#define int long long
+
+int t,r,b,k;
+
+void doit(){
+    read(r);read(b);read(k);
+    int gcd=__gcd(r,b);
+    r/=gcd;
+    b/=gcd;
+    if(r&gt;b) swap(r,b);
+    if((k-1)*r+1&gt;=b) puts(&quot;OBEY&quot;);
+    else puts(&quot;REBEL&quot;);
+}
+
+signed main(){
+    read(t);
+    while(t--) doit();
+}
+</code></pre>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.17/img/alisq.jpg"></li>
+                <li class="wechat-code"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.17/img/wesq.png"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2019/11/29/CF1149B Three Religions/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.275/img/post/501.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.275/img/post/501.webp">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                CF1149B Three Religions</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
       
-  <!-- 首页默认取最最新文章集 -->
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2019/11/29/CF1149B Three Religions/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.275/img/post/501.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2019/11/29/CF1149B Three Religions/">
-    CF1149B Three Religions</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2019-11-29</div>
-    <p>
-    CF1149B Three Religions 题解</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2019/11/29/CF1149B Three Religions/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2019/11/29/CF1253E Antenna Coverage/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.275/img/post/503.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2019/11/29/CF1253E Antenna Coverage/">
-    CF1253E Antenna Coverage</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2019-11-29</div>
-    <p>
-    CF1253E Antenna Coverage 题解</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2019/11/29/CF1253E Antenna Coverage/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2019/11/28/P3147 [USACO16OPEN]262144/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.26/img/post/499.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2019/11/28/P3147 [USACO16OPEN]262144/">
-    P3147 [USACO16OPEN]262144</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2019-11-28</div>
-    <p>
-    P3147 [USACO16OPEN]262144 题解</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2019/11/28/P3147 [USACO16OPEN]262144/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2019/11/19/P1156 垃圾陷阱/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.2/img/post/493.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2019/11/19/P1156 垃圾陷阱/">
-    P1156 垃圾陷阱</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2019-11-19</div>
-    <p>
-    P1220 关路灯 题解</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2019/11/19/P1156 垃圾陷阱/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2019/11/19/P1220 关路灯/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.19/img/post/t11.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2019/11/19/P1220 关路灯/">
-    P1220 关路灯</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2019-11-19</div>
-    <p>
-    P1220 关路灯 题解</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2019/11/19/P1220 关路灯/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2019/11/19/P1373 小a和uim之大逃离/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.18/img/post/387.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2019/11/19/P1373 小a和uim之大逃离/">
-    P1373 小a和uim之大逃离</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2019-11-19</div>
-    <p>
-    P1373 小a和uim之大逃离 题解</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2019/11/19/P1373 小a和uim之大逃离/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
-    <article class="post post-list" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="post-entry">
-    <div class="feature">
-      <a href="/2019/11/03/P3657 [USACO17FEB]Why Did the Cow Cross the Road II P/">
-        <div class="overlay">
-          <i class="iconfont icon-text">
-          </i>
-        </div>
-        <img width="150" height="150" src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.09/img/post/308.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
-      </a>
-    </div>
-    <h1 class="entry-title">
-    <a href="/2019/11/03/P3657 [USACO17FEB]Why Did the Cow Cross the Road II P/">
-    P3657 [USACO17FEB]Why Did the Cow Cross the Road II P</a>
-    </h1>
-    <div class="p-time">
-      <i class="iconfont icon-time">
-      </i>
-    2019-11-3</div>
-    <p>
-    Why Did the Cow Cross the Road II P 题解</p>
-    <footer class="entry-footer">
-      <div class="post-more">
-        <a href="/2019/11/03/P3657 [USACO17FEB]Why Did the Cow Cross the Road II P/">
-          <i class="iconfont icon-caidan">
-          </i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <hr>
-</article>
-  
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "X4RYByUB7qJCaciH0Xm08Tu3-gzGzoHsz",
+        appKey: "4M4E9Lbb7Xlv29voEEsd0W4i",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
 
-
-      <div class="clearer">
-      </div>
-    </main>
-    <!--  -->
-    
-  </div>
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <a href="https://blog.yzcthinktwice.com/" class="profile gravatar"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png" itemprop="image" alt="yzc" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="https://blog.yzcthinktwice.com/" itemprop="url" rel="author">yzc</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>fighter</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
+
+
+
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>
