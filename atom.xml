@@ -5,9 +5,9 @@
   <subtitle>YZC BLOG</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://blog.yzcthinktwice.com/"/>
+  <link href="https://blog.yzcthinktwice.com/"/>
   <updated>2019-11-29T11:53:16.123Z</updated>
-  <id>http://blog.yzcthinktwice.com/</id>
+  <id>https://blog.yzcthinktwice.com/</id>
   
   <author>
     <name>yzc</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>CF1260C Infinite Fence</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/29/CF1260C%20Infinite%20Fence/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/29/CF1260C Infinite Fence/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/29/CF1260C%20Infinite%20Fence/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/29/CF1260C Infinite Fence/</id>
     <published>2019-11-29T11:16:01.000Z</published>
     <updated>2019-11-29T11:53:16.123Z</updated>
     
@@ -29,21 +29,21 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
-      <category term="数学" scheme="http://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
+      <category term="数学" scheme="https://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>CF1149B Three Religions</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/29/CF1149B%20Three%20Religions/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/29/CF1149B Three Religions/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/29/CF1149B%20Three%20Religions/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/29/CF1149B Three Religions/</id>
     <published>2019-11-29T11:08:01.000Z</published>
-    <updated>2019-11-29T12:02:25.582Z</updated>
+    <updated>2019-12-01T01:43:15.767Z</updated>
     
     <summary type="html">
     
@@ -51,21 +51,21 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
-      <category term="DP" scheme="http://blog.yzcthinktwice.com/tags/DP/"/>
+      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
     
   </entry>
   
   <entry>
     <title>CF1253E Antenna Coverage</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/29/CF1253E%20Antenna%20Coverage/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/29/CF1253E Antenna Coverage/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/29/CF1253E%20Antenna%20Coverage/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/29/CF1253E Antenna Coverage/</id>
     <published>2019-11-29T11:06:01.000Z</published>
-    <updated>2019-11-29T12:02:27.676Z</updated>
+    <updated>2019-12-01T01:43:00.767Z</updated>
     
     <summary type="html">
     
@@ -73,19 +73,19 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
-      <category term="DP" scheme="http://blog.yzcthinktwice.com/tags/DP/"/>
+      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
     
   </entry>
   
   <entry>
     <title>CF1257E The Contest</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/28/CF1257E%20The%20Contest/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/28/CF1257E The Contest/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/28/CF1257E%20The%20Contest/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/28/CF1257E The Contest/</id>
     <published>2019-11-28T04:16:01.000Z</published>
     <updated>2019-11-28T04:28:05.850Z</updated>
     
@@ -95,23 +95,23 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
-      <category term="前缀" scheme="http://blog.yzcthinktwice.com/tags/%E5%89%8D%E7%BC%80/"/>
+      <category term="前缀" scheme="https://blog.yzcthinktwice.com/tags/%E5%89%8D%E7%BC%80/"/>
     
-      <category term="后缀" scheme="http://blog.yzcthinktwice.com/tags/%E5%90%8E%E7%BC%80/"/>
+      <category term="后缀" scheme="https://blog.yzcthinktwice.com/tags/%E5%90%8E%E7%BC%80/"/>
     
-      <category term="差分" scheme="http://blog.yzcthinktwice.com/tags/%E5%B7%AE%E5%88%86/"/>
+      <category term="差分" scheme="https://blog.yzcthinktwice.com/tags/%E5%B7%AE%E5%88%86/"/>
     
   </entry>
   
   <entry>
     <title>P3147 [USACO16OPEN]262144</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/28/P3147%20%5BUSACO16OPEN%5D262144/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/28/P3147 [USACO16OPEN]262144/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/28/P3147%20%5BUSACO16OPEN%5D262144/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/28/P3147 [USACO16OPEN]262144/</id>
     <published>2019-11-28T04:13:01.000Z</published>
     <updated>2019-11-28T04:29:42.849Z</updated>
     
@@ -121,21 +121,21 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="DP" scheme="http://blog.yzcthinktwice.com/tags/DP/"/>
+      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
     
-      <category term="USACO" scheme="http://blog.yzcthinktwice.com/tags/USACO/"/>
+      <category term="USACO" scheme="https://blog.yzcthinktwice.com/tags/USACO/"/>
     
   </entry>
   
   <entry>
     <title>LOJ6276 果树</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/28/LOJ6276%20%E6%9E%9C%E6%A0%91/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/28/LOJ6276 果树/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/28/LOJ6276%20%E6%9E%9C%E6%A0%91/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/28/LOJ6276 果树/</id>
     <published>2019-11-28T04:10:01.000Z</published>
-    <updated>2019-11-28T04:27:50.750Z</updated>
+    <updated>2019-12-01T01:42:43.372Z</updated>
     
     <summary type="html">
     
@@ -143,23 +143,23 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="LOJ" scheme="http://blog.yzcthinktwice.com/tags/LOJ/"/>
+      <category term="LOJ" scheme="https://blog.yzcthinktwice.com/tags/LOJ/"/>
     
-      <category term="线段树" scheme="http://blog.yzcthinktwice.com/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+      <category term="线段树" scheme="https://blog.yzcthinktwice.com/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
-      <category term="dfs序" scheme="http://blog.yzcthinktwice.com/tags/dfs%E5%BA%8F/"/>
+      <category term="dfs序" scheme="https://blog.yzcthinktwice.com/tags/dfs%E5%BA%8F/"/>
     
-      <category term="扫描线" scheme="http://blog.yzcthinktwice.com/tags/%E6%89%AB%E6%8F%8F%E7%BA%BF/"/>
+      <category term="扫描线" scheme="https://blog.yzcthinktwice.com/tags/%E6%89%AB%E6%8F%8F%E7%BA%BF/"/>
     
   </entry>
   
   <entry>
     <title>YOJ1 二人从空中落下</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/25/YOJ1%20%E4%BA%8C%E4%BA%BA%E4%BB%8E%E7%A9%BA%E4%B8%AD%E8%90%BD%E4%B8%8B/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/25/YOJ1 二人从空中落下/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/25/YOJ1%20%E4%BA%8C%E4%BA%BA%E4%BB%8E%E7%A9%BA%E4%B8%AD%E8%90%BD%E4%B8%8B/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/25/YOJ1 二人从空中落下/</id>
     <published>2019-11-25T12:04:01.000Z</published>
     <updated>2019-11-25T12:44:08.583Z</updated>
     
@@ -169,19 +169,19 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="dp" scheme="http://blog.yzcthinktwice.com/tags/dp/"/>
+      <category term="dp" scheme="https://blog.yzcthinktwice.com/tags/dp/"/>
     
-      <category term="YOJ" scheme="http://blog.yzcthinktwice.com/tags/YOJ/"/>
+      <category term="YOJ" scheme="https://blog.yzcthinktwice.com/tags/YOJ/"/>
     
   </entry>
   
   <entry>
     <title>ABC146F Sugoroku</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/25/ABC146F%20Sugoroku/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/25/ABC146F Sugoroku/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/25/ABC146F%20Sugoroku/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/25/ABC146F Sugoroku/</id>
     <published>2019-11-25T00:31:01.000Z</published>
     <updated>2019-11-25T12:01:56.338Z</updated>
     
@@ -191,21 +191,21 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="AtCoder" scheme="http://blog.yzcthinktwice.com/tags/AtCoder/"/>
+      <category term="AtCoder" scheme="https://blog.yzcthinktwice.com/tags/AtCoder/"/>
     
-      <category term="dp" scheme="http://blog.yzcthinktwice.com/tags/dp/"/>
+      <category term="dp" scheme="https://blog.yzcthinktwice.com/tags/dp/"/>
     
-      <category term="单调队列" scheme="http://blog.yzcthinktwice.com/tags/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/"/>
+      <category term="单调队列" scheme="https://blog.yzcthinktwice.com/tags/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/"/>
     
   </entry>
   
   <entry>
     <title>ABC146E Rem of Sum is Num</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/24/ABC146E%20Rem%20of%20Sum%20is%20Num/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/24/ABC146E Rem of Sum is Num/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/24/ABC146E%20Rem%20of%20Sum%20is%20Num/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/24/ABC146E Rem of Sum is Num/</id>
     <published>2019-11-24T14:31:01.000Z</published>
     <updated>2019-11-25T11:49:22.800Z</updated>
     
@@ -215,19 +215,19 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="AtCoder" scheme="http://blog.yzcthinktwice.com/tags/AtCoder/"/>
+      <category term="AtCoder" scheme="https://blog.yzcthinktwice.com/tags/AtCoder/"/>
     
-      <category term="数学" scheme="http://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
+      <category term="数学" scheme="https://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>CF1223C Save the Nature</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/22/CF1223C%20Save%20the%20Nature/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/22/CF1223C Save the Nature/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/22/CF1223C%20Save%20the%20Nature/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/22/CF1223C Save the Nature/</id>
     <published>2019-11-22T01:16:01.000Z</published>
     <updated>2019-11-24T00:59:19.680Z</updated>
     
@@ -237,19 +237,19 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
-      <category term="二分答案" scheme="http://blog.yzcthinktwice.com/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/"/>
+      <category term="二分答案" scheme="https://blog.yzcthinktwice.com/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/"/>
     
   </entry>
   
   <entry>
     <title>CF949C Data Center Maintenance</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/21/CF949C%20Data%20Center%20Maintenance/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/21/CF949C Data Center Maintenance/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/21/CF949C%20Data%20Center%20Maintenance/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/21/CF949C Data Center Maintenance/</id>
     <published>2019-11-21T06:36:01.000Z</published>
     <updated>2019-11-24T00:59:07.046Z</updated>
     
@@ -259,21 +259,21 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
-      <category term="tarjan" scheme="http://blog.yzcthinktwice.com/tags/tarjan/"/>
+      <category term="tarjan" scheme="https://blog.yzcthinktwice.com/tags/tarjan/"/>
     
-      <category term="强联通分量" scheme="http://blog.yzcthinktwice.com/tags/%E5%BC%BA%E8%81%94%E9%80%9A%E5%88%86%E9%87%8F/"/>
+      <category term="强联通分量" scheme="https://blog.yzcthinktwice.com/tags/%E5%BC%BA%E8%81%94%E9%80%9A%E5%88%86%E9%87%8F/"/>
     
   </entry>
   
   <entry>
     <title>P1156 垃圾陷阱</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/19/P1156%20%E5%9E%83%E5%9C%BE%E9%99%B7%E9%98%B1/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/19/P1156 垃圾陷阱/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/19/P1156%20%E5%9E%83%E5%9C%BE%E9%99%B7%E9%98%B1/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/19/P1156 垃圾陷阱/</id>
     <published>2019-11-19T01:22:45.000Z</published>
     <updated>2019-11-28T04:19:07.460Z</updated>
     
@@ -283,19 +283,19 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="DP" scheme="http://blog.yzcthinktwice.com/tags/DP/"/>
+      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
     
-      <category term="洛谷" scheme="http://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
     
   </entry>
   
   <entry>
     <title>P1220 关路灯</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/19/P1220%20%E5%85%B3%E8%B7%AF%E7%81%AF/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/19/P1220 关路灯/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/19/P1220%20%E5%85%B3%E8%B7%AF%E7%81%AF/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/19/P1220 关路灯/</id>
     <published>2019-11-19T00:34:04.000Z</published>
     <updated>2019-11-28T04:19:00.467Z</updated>
     
@@ -305,19 +305,19 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="DP" scheme="http://blog.yzcthinktwice.com/tags/DP/"/>
+      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
     
-      <category term="洛谷" scheme="http://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
     
   </entry>
   
   <entry>
     <title>P1373 小a和uim之大逃离</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/19/P1373%20%E5%B0%8Fa%E5%92%8Cuim%E4%B9%8B%E5%A4%A7%E9%80%83%E7%A6%BB/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/19/P1373 小a和uim之大逃离/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/19/P1373%20%E5%B0%8Fa%E5%92%8Cuim%E4%B9%8B%E5%A4%A7%E9%80%83%E7%A6%BB/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/19/P1373 小a和uim之大逃离/</id>
     <published>2019-11-18T23:53:01.000Z</published>
     <updated>2019-11-28T04:18:54.678Z</updated>
     
@@ -327,19 +327,19 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="DP" scheme="http://blog.yzcthinktwice.com/tags/DP/"/>
+      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
     
-      <category term="洛谷" scheme="http://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
     
   </entry>
   
   <entry>
     <title>P3398 仓鼠找sugar</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/12/P3398%20%E4%BB%93%E9%BC%A0%E6%89%BEsugar/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/12/P3398 仓鼠找sugar/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/12/P3398%20%E4%BB%93%E9%BC%A0%E6%89%BEsugar/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/12/P3398 仓鼠找sugar/</id>
     <published>2019-11-12T13:33:01.000Z</published>
     <updated>2019-11-13T13:03:09.712Z</updated>
     
@@ -349,19 +349,19 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="洛谷" scheme="http://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
     
-      <category term="LCA" scheme="http://blog.yzcthinktwice.com/tags/LCA/"/>
+      <category term="LCA" scheme="https://blog.yzcthinktwice.com/tags/LCA/"/>
     
   </entry>
   
   <entry>
     <title>nim游戏及变体</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/11/nim%E6%B8%B8%E6%88%8F%E5%8F%8A%E5%8F%98%E4%BD%93/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/11/nim游戏及变体/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/11/nim%E6%B8%B8%E6%88%8F%E5%8F%8A%E5%8F%98%E4%BD%93/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/11/nim游戏及变体/</id>
     <published>2019-11-11T13:58:01.000Z</published>
     <updated>2019-11-11T14:43:37.735Z</updated>
     
@@ -371,21 +371,21 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="博弈论" scheme="http://blog.yzcthinktwice.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+      <category term="博弈论" scheme="https://blog.yzcthinktwice.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
     
-      <category term="教程" scheme="http://blog.yzcthinktwice.com/tags/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="https://blog.yzcthinktwice.com/tags/%E6%95%99%E7%A8%8B/"/>
     
-      <category term="nim游戏" scheme="http://blog.yzcthinktwice.com/tags/nim%E6%B8%B8%E6%88%8F/"/>
+      <category term="nim游戏" scheme="https://blog.yzcthinktwice.com/tags/nim%E6%B8%B8%E6%88%8F/"/>
     
   </entry>
   
   <entry>
     <title>LIS，LCS与树状数组</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/03/LIS%EF%BC%8CLCS%E4%B8%8E%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/03/LIS，LCS与树状数组/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/03/LIS%EF%BC%8CLCS%E4%B8%8E%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/03/LIS，LCS与树状数组/</id>
     <published>2019-11-03T12:50:01.000Z</published>
     <updated>2019-11-03T13:58:10.651Z</updated>
     
@@ -395,23 +395,23 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="教程" scheme="http://blog.yzcthinktwice.com/tags/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="https://blog.yzcthinktwice.com/tags/%E6%95%99%E7%A8%8B/"/>
     
-      <category term="LIS" scheme="http://blog.yzcthinktwice.com/tags/LIS/"/>
+      <category term="LIS" scheme="https://blog.yzcthinktwice.com/tags/LIS/"/>
     
-      <category term="LCS" scheme="http://blog.yzcthinktwice.com/tags/LCS/"/>
+      <category term="LCS" scheme="https://blog.yzcthinktwice.com/tags/LCS/"/>
     
-      <category term="树状数组" scheme="http://blog.yzcthinktwice.com/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
+      <category term="树状数组" scheme="https://blog.yzcthinktwice.com/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   
   <entry>
     <title>P3657 [USACO17FEB]Why Did the Cow Cross the Road II P</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/03/P3657%20%5BUSACO17FEB%5DWhy%20Did%20the%20Cow%20Cross%20the%20Road%20II%20P/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/03/P3657 [USACO17FEB]Why Did the Cow Cross the Road II P/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/03/P3657%20%5BUSACO17FEB%5DWhy%20Did%20the%20Cow%20Cross%20the%20Road%20II%20P/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/03/P3657 [USACO17FEB]Why Did the Cow Cross the Road II P/</id>
     <published>2019-11-03T12:28:01.000Z</published>
     <updated>2019-11-28T04:14:31.451Z</updated>
     
@@ -421,23 +421,23 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="DP" scheme="http://blog.yzcthinktwice.com/tags/DP/"/>
+      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
     
-      <category term="LCS" scheme="http://blog.yzcthinktwice.com/tags/LCS/"/>
+      <category term="LCS" scheme="https://blog.yzcthinktwice.com/tags/LCS/"/>
     
-      <category term="树状数组" scheme="http://blog.yzcthinktwice.com/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
+      <category term="树状数组" scheme="https://blog.yzcthinktwice.com/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
     
-      <category term="USACO" scheme="http://blog.yzcthinktwice.com/tags/USACO/"/>
+      <category term="USACO" scheme="https://blog.yzcthinktwice.com/tags/USACO/"/>
     
   </entry>
   
   <entry>
     <title>CF上蓝！</title>
-    <link href="http://blog.yzcthinktwice.com/2019/11/02/CF%E4%B8%8A%E8%93%9D%EF%BC%81/"/>
-    <id>http://blog.yzcthinktwice.com/2019/11/02/CF上蓝！/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/11/02/CF%E4%B8%8A%E8%93%9D%EF%BC%81/"/>
+    <id>https://blog.yzcthinktwice.com/2019/11/02/CF上蓝！/</id>
     <published>2019-11-01T23:30:00.000Z</published>
     <updated>2019-11-03T13:58:40.879Z</updated>
     
@@ -447,17 +447,17 @@
     
     </summary>
     
-      <category term="日记" scheme="http://blog.yzcthinktwice.com/categories/%E6%97%A5%E8%AE%B0/"/>
+      <category term="日记" scheme="https://blog.yzcthinktwice.com/categories/%E6%97%A5%E8%AE%B0/"/>
     
     
-      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
   </entry>
   
   <entry>
     <title>CF1239D Catowice City</title>
-    <link href="http://blog.yzcthinktwice.com/2019/10/29/CF1239D%20Catowice%20City/"/>
-    <id>http://blog.yzcthinktwice.com/2019/10/29/CF1239D Catowice City/</id>
+    <link href="https://blog.yzcthinktwice.com/2019/10/29/CF1239D%20Catowice%20City/"/>
+    <id>https://blog.yzcthinktwice.com/2019/10/29/CF1239D Catowice City/</id>
     <published>2019-10-29T14:11:01.000Z</published>
     <updated>2019-11-03T14:07:38.324Z</updated>
     
@@ -467,14 +467,14 @@
     
     </summary>
     
-      <category term="算法" scheme="http://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="CF" scheme="http://blog.yzcthinktwice.com/tags/CF/"/>
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
-      <category term="缩点" scheme="http://blog.yzcthinktwice.com/tags/%E7%BC%A9%E7%82%B9/"/>
+      <category term="缩点" scheme="https://blog.yzcthinktwice.com/tags/%E7%BC%A9%E7%82%B9/"/>
     
-      <category term="强连通分量" scheme="http://blog.yzcthinktwice.com/tags/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F/"/>
+      <category term="强连通分量" scheme="https://blog.yzcthinktwice.com/tags/%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F/"/>
     
   </entry>
   
