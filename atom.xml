@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.yzcthinktwice.com/"/>
-  <updated>2019-12-03T12:50:20.741Z</updated>
+  <updated>2019-12-04T12:08:32.057Z</updated>
   <id>https://blog.yzcthinktwice.com/</id>
   
   <author>
@@ -17,11 +17,61 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>P2365 任务安排</title>
+    <link href="https://blog.yzcthinktwice.com/2019/12/04/P2365%20%E4%BB%BB%E5%8A%A1%E5%AE%89%E6%8E%92/"/>
+    <id>https://blog.yzcthinktwice.com/2019/12/04/P2365 任务安排/</id>
+    <published>2019-12-04T12:08:01.000Z</published>
+    <updated>2019-12-04T12:08:32.057Z</updated>
+    
+    <summary type="html">
+    
+      P2365 任务安排 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
+    
+      <category term="LOJ" scheme="https://blog.yzcthinktwice.com/tags/LOJ/"/>
+    
+      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="斜率优化" scheme="https://blog.yzcthinktwice.com/tags/%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>P2569 [SCOI2010]股票交易</title>
+    <link href="https://blog.yzcthinktwice.com/2019/12/04/P2569%20%5BSCOI2010%5D%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93/"/>
+    <id>https://blog.yzcthinktwice.com/2019/12/04/P2569 [SCOI2010]股票交易/</id>
+    <published>2019-12-04T12:08:00.000Z</published>
+    <updated>2019-12-04T12:09:21.030Z</updated>
+    
+    <summary type="html">
+    
+      P2569 [SCOI2010]股票交易 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
+    
+      <category term="单调队列" scheme="https://blog.yzcthinktwice.com/tags/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/"/>
+    
+      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>FLOW15 汽车加油驾驶问题</title>
     <link href="https://blog.yzcthinktwice.com/2019/12/03/FLOW15%20%E6%B1%BD%E8%BD%A6%E5%8A%A0%E6%B2%B9%E9%A9%BE%E9%A9%B6%E9%97%AE%E9%A2%98/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/03/FLOW15 汽车加油驾驶问题/</id>
     <published>2019-12-03T12:49:15.000Z</published>
-    <updated>2019-12-03T12:50:20.741Z</updated>
+    <updated>2019-12-04T11:59:29.224Z</updated>
     
     <summary type="html">
     
@@ -32,9 +82,9 @@
       <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="最短路" scheme="https://blog.yzcthinktwice.com/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
-    
       <category term="网络流二十四题" scheme="https://blog.yzcthinktwice.com/tags/%E7%BD%91%E7%BB%9C%E6%B5%81%E4%BA%8C%E5%8D%81%E5%9B%9B%E9%A2%98/"/>
+    
+      <category term="最短路" scheme="https://blog.yzcthinktwice.com/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
     
   </entry>
   
@@ -43,7 +93,7 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/03/FLOW14%20%E5%AD%A4%E5%B2%9B%E8%90%A5%E6%95%91%E9%97%AE%E9%A2%98/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/03/FLOW14 孤岛营救问题/</id>
     <published>2019-12-03T12:49:14.000Z</published>
-    <updated>2019-12-03T12:49:34.417Z</updated>
+    <updated>2019-12-04T11:59:41.864Z</updated>
     
     <summary type="html">
     
@@ -67,7 +117,7 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/03/FLOW12%20%E8%BD%AF%E4%BB%B6%E8%A1%A5%E4%B8%81%E9%97%AE%E9%A2%98/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/03/FLOW12 软件补丁问题/</id>
     <published>2019-12-03T12:48:12.000Z</published>
-    <updated>2019-12-03T12:48:29.166Z</updated>
+    <updated>2019-12-04T11:59:55.077Z</updated>
     
     <summary type="html">
     
@@ -78,11 +128,11 @@
       <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="最短路" scheme="https://blog.yzcthinktwice.com/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
-    
       <category term="网络流二十四题" scheme="https://blog.yzcthinktwice.com/tags/%E7%BD%91%E7%BB%9C%E6%B5%81%E4%BA%8C%E5%8D%81%E5%9B%9B%E9%A2%98/"/>
     
       <category term="状态压缩" scheme="https://blog.yzcthinktwice.com/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/"/>
+    
+      <category term="最短路" scheme="https://blog.yzcthinktwice.com/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
     
   </entry>
   
@@ -91,7 +141,7 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/03/FLOW7%20%E8%AF%95%E9%A2%98%E5%BA%93%E9%97%AE%E9%A2%98/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/03/FLOW7 试题库问题/</id>
     <published>2019-12-03T12:45:07.000Z</published>
-    <updated>2019-12-03T12:47:35.732Z</updated>
+    <updated>2019-12-04T12:00:09.413Z</updated>
     
     <summary type="html">
     
@@ -115,7 +165,7 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/03/FLOW6%20%E6%9C%80%E9%95%BF%E4%B8%8D%E4%B8%8B%E9%99%8D%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/03/FLOW6 最长不下降子序列问题/</id>
     <published>2019-12-03T12:45:06.000Z</published>
-    <updated>2019-12-03T12:45:10.755Z</updated>
+    <updated>2019-12-04T12:00:23.191Z</updated>
     
     <summary type="html">
     
@@ -137,7 +187,7 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/03/FLOW5%20%E5%9C%86%E6%A1%8C%E9%97%AE%E9%A2%98/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/03/FLOW5 圆桌问题/</id>
     <published>2019-12-03T12:43:05.000Z</published>
-    <updated>2019-12-03T12:44:14.874Z</updated>
+    <updated>2019-12-04T12:00:41.214Z</updated>
     
     <summary type="html">
     
@@ -159,7 +209,7 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/03/FLOW4%20%E9%AD%94%E6%9C%AF%E7%90%83%E9%97%AE%E9%A2%98/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/03/FLOW4 魔术球问题/</id>
     <published>2019-12-03T12:32:04.000Z</published>
-    <updated>2019-12-03T12:43:08.751Z</updated>
+    <updated>2019-12-04T12:00:54.071Z</updated>
     
     <summary type="html">
     
@@ -170,9 +220,9 @@
       <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="贪心" scheme="https://blog.yzcthinktwice.com/tags/%E8%B4%AA%E5%BF%83/"/>
-    
       <category term="网络流二十四题" scheme="https://blog.yzcthinktwice.com/tags/%E7%BD%91%E7%BB%9C%E6%B5%81%E4%BA%8C%E5%8D%81%E5%9B%9B%E9%A2%98/"/>
+    
+      <category term="贪心" scheme="https://blog.yzcthinktwice.com/tags/%E8%B4%AA%E5%BF%83/"/>
     
   </entry>
   
@@ -181,7 +231,7 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/03/FLOW3%20%E6%9C%80%E5%B0%8F%E8%B7%AF%E5%BE%84%E8%A6%86%E7%9B%96%E9%97%AE%E9%A2%98/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/03/FLOW3 最小路径覆盖问题/</id>
     <published>2019-12-03T12:31:03.000Z</published>
-    <updated>2019-12-03T12:31:20.398Z</updated>
+    <updated>2019-12-04T12:01:08.075Z</updated>
     
     <summary type="html">
     
@@ -203,7 +253,7 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/03/FLOW2%20%E5%A4%AA%E7%A9%BA%E9%A3%9E%E8%A1%8C%E8%AE%A1%E5%88%92%E9%97%AE%E9%A2%98/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/03/FLOW2 太空飞行计划问题/</id>
     <published>2019-12-03T12:30:02.000Z</published>
-    <updated>2019-12-03T12:30:20.710Z</updated>
+    <updated>2019-12-04T12:06:20.601Z</updated>
     
     <summary type="html">
     
@@ -225,7 +275,7 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/03/FLOW1%20%E9%A3%9E%E8%A1%8C%E5%91%98%E9%85%8D%E5%AF%B9%E6%96%B9%E6%A1%88%E9%97%AE%E9%A2%98/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/03/FLOW1 飞行员配对方案问题/</id>
     <published>2019-12-03T12:29:01.000Z</published>
-    <updated>2019-12-03T12:29:30.614Z</updated>
+    <updated>2019-12-04T12:06:14.573Z</updated>
     
     <summary type="html">
     
@@ -387,7 +437,7 @@
     <link href="https://blog.yzcthinktwice.com/2019/11/25/YOJ1%20%E4%BA%8C%E4%BA%BA%E4%BB%8E%E7%A9%BA%E4%B8%AD%E8%90%BD%E4%B8%8B/"/>
     <id>https://blog.yzcthinktwice.com/2019/11/25/YOJ1 二人从空中落下/</id>
     <published>2019-11-25T12:04:01.000Z</published>
-    <updated>2019-11-25T12:44:08.583Z</updated>
+    <updated>2019-12-04T11:44:00.115Z</updated>
     
     <summary type="html">
     
@@ -398,7 +448,7 @@
       <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="dp" scheme="https://blog.yzcthinktwice.com/tags/dp/"/>
+      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
     
       <category term="YOJ" scheme="https://blog.yzcthinktwice.com/tags/YOJ/"/>
     
@@ -409,7 +459,7 @@
     <link href="https://blog.yzcthinktwice.com/2019/11/25/ABC146F%20Sugoroku/"/>
     <id>https://blog.yzcthinktwice.com/2019/11/25/ABC146F Sugoroku/</id>
     <published>2019-11-25T00:31:01.000Z</published>
-    <updated>2019-11-25T12:01:56.338Z</updated>
+    <updated>2019-12-04T11:57:19.500Z</updated>
     
     <summary type="html">
     
@@ -420,55 +470,11 @@
       <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="AtCoder" scheme="https://blog.yzcthinktwice.com/tags/AtCoder/"/>
+      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
     
-      <category term="dp" scheme="https://blog.yzcthinktwice.com/tags/dp/"/>
+      <category term="AtCoder" scheme="https://blog.yzcthinktwice.com/tags/AtCoder/"/>
     
       <category term="单调队列" scheme="https://blog.yzcthinktwice.com/tags/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ABC146E Rem of Sum is Num</title>
-    <link href="https://blog.yzcthinktwice.com/2019/11/24/ABC146E%20Rem%20of%20Sum%20is%20Num/"/>
-    <id>https://blog.yzcthinktwice.com/2019/11/24/ABC146E Rem of Sum is Num/</id>
-    <published>2019-11-24T14:31:01.000Z</published>
-    <updated>2019-11-25T11:49:22.800Z</updated>
-    
-    <summary type="html">
-    
-      ABC146E Rem of Sum is Num 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="AtCoder" scheme="https://blog.yzcthinktwice.com/tags/AtCoder/"/>
-    
-      <category term="数学" scheme="https://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1223C Save the Nature</title>
-    <link href="https://blog.yzcthinktwice.com/2019/11/22/CF1223C%20Save%20the%20Nature/"/>
-    <id>https://blog.yzcthinktwice.com/2019/11/22/CF1223C Save the Nature/</id>
-    <published>2019-11-22T01:16:01.000Z</published>
-    <updated>2019-11-24T00:59:19.680Z</updated>
-    
-    <summary type="html">
-    
-      CF1223C Save the Nature 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-      <category term="二分答案" scheme="https://blog.yzcthinktwice.com/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/"/>
     
   </entry>
   
