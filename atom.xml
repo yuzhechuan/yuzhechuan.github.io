@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.yzcthinktwice.com/"/>
-  <updated>2019-12-10T12:12:59.631Z</updated>
+  <updated>2019-12-10T12:29:43.414Z</updated>
   <id>https://blog.yzcthinktwice.com/</id>
   
   <author>
@@ -17,37 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>P2515 [HAOI2010]软件安装</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/10/P2515%20%5BHAOI2010%5D%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/10/P2515 [HAOI2010]软件安装/</id>
-    <published>2019-12-10T12:12:00.000Z</published>
-    <updated>2019-12-10T12:12:59.631Z</updated>
-    
-    <summary type="html">
-    
-      P2515 [HAOI2010]软件安装 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
-    
-      <category term="缩点" scheme="https://blog.yzcthinktwice.com/tags/%E7%BC%A9%E7%82%B9/"/>
-    
-      <category term="dfs序" scheme="https://blog.yzcthinktwice.com/tags/dfs%E5%BA%8F/"/>
-    
-      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
-  </entry>
-  
-  <entry>
     <title>P4284 [SHOI2014]概率充电器</title>
     <link href="https://blog.yzcthinktwice.com/2019/12/10/P4284%20%5BSHOI2014%5D%E6%A6%82%E7%8E%87%E5%85%85%E7%94%B5%E5%99%A8/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/10/P4284 [SHOI2014]概率充电器/</id>
     <published>2019-12-10T12:11:00.000Z</published>
-    <updated>2019-12-10T12:11:59.462Z</updated>
+    <updated>2019-12-10T12:29:43.414Z</updated>
     
     <summary type="html">
     
@@ -58,31 +32,9 @@
       <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
-    
-      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
       <category term="概率期望" scheme="https://blog.yzcthinktwice.com/tags/%E6%A6%82%E7%8E%87%E6%9C%9F%E6%9C%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>P1485 火枪打怪</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/10/P1485%20%E7%81%AB%E6%9E%AA%E6%89%93%E6%80%AA/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/10/P1485 火枪打怪/</id>
-    <published>2019-12-10T12:10:00.000Z</published>
-    <updated>2019-12-10T12:11:04.672Z</updated>
-    
-    <summary type="html">
-    
-      P1485 火枪打怪 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="二分答案" scheme="https://blog.yzcthinktwice.com/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/"/>
     
       <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
     
@@ -115,7 +67,7 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/10/CF1245E%20Hyakugoku%20and%20Ladders/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/10/CF1245E Hyakugoku and Ladders/</id>
     <published>2019-12-10T12:08:00.000Z</published>
-    <updated>2019-12-10T12:08:18.682Z</updated>
+    <updated>2019-12-10T12:29:35.431Z</updated>
     
     <summary type="html">
     
@@ -126,9 +78,9 @@
       <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
-      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
       <category term="概率期望" scheme="https://blog.yzcthinktwice.com/tags/%E6%A6%82%E7%8E%87%E6%9C%9F%E6%9C%9B/"/>
     
@@ -172,9 +124,9 @@
       <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
       <category term="数学" scheme="https://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
   </entry>
   
@@ -183,7 +135,7 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/10/CF1227F1%20Wrong%20Answer%20on%20test%20233%20(Easy%20Version)/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/10/CF1227F1 Wrong Answer on test 233 (Easy Version)/</id>
     <published>2019-12-10T12:03:00.000Z</published>
-    <updated>2019-12-10T12:17:24.429Z</updated>
+    <updated>2019-12-10T12:29:51.105Z</updated>
     
     <summary type="html">
     
@@ -194,9 +146,9 @@
       <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
-      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
   </entry>
   
@@ -249,7 +201,7 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/10/ABC147E%20Balanced%20Path/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/10/ABC147E Balanced Path/</id>
     <published>2019-12-10T12:00:00.000Z</published>
-    <updated>2019-12-10T12:00:29.830Z</updated>
+    <updated>2019-12-10T12:29:25.728Z</updated>
     
     <summary type="html">
     
@@ -260,9 +212,9 @@
       <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
-    
       <category term="AtCoder" scheme="https://blog.yzcthinktwice.com/tags/AtCoder/"/>
+    
+      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
   </entry>
   
@@ -271,7 +223,7 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/10/CF1223E%20Paint%20the%20Tree/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/10/CF1223E Paint the Tree/</id>
     <published>2019-12-10T11:57:00.000Z</published>
-    <updated>2019-12-10T11:57:52.085Z</updated>
+    <updated>2019-12-10T12:29:11.949Z</updated>
     
     <summary type="html">
     
@@ -282,9 +234,9 @@
       <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
-      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
   </entry>
   
@@ -311,11 +263,59 @@
   </entry>
   
   <entry>
+    <title>P2515 [HAOI2010]软件安装</title>
+    <link href="https://blog.yzcthinktwice.com/2019/12/10/P2515%20%5BHAOI2010%5D%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
+    <id>https://blog.yzcthinktwice.com/2019/12/10/P2515 [HAOI2010]软件安装/</id>
+    <published>2019-12-10T11:12:00.000Z</published>
+    <updated>2019-12-10T12:26:29.194Z</updated>
+    
+    <summary type="html">
+    
+      P2515 [HAOI2010]软件安装 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+      <category term="缩点" scheme="https://blog.yzcthinktwice.com/tags/%E7%BC%A9%E7%82%B9/"/>
+    
+      <category term="dfs序" scheme="https://blog.yzcthinktwice.com/tags/dfs%E5%BA%8F/"/>
+    
+      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>P1485 火枪打怪</title>
+    <link href="https://blog.yzcthinktwice.com/2019/12/10/P1485%20%E7%81%AB%E6%9E%AA%E6%89%93%E6%80%AA/"/>
+    <id>https://blog.yzcthinktwice.com/2019/12/10/P1485 火枪打怪/</id>
+    <published>2019-12-10T11:10:00.000Z</published>
+    <updated>2019-12-10T12:24:26.389Z</updated>
+    
+    <summary type="html">
+    
+      P1485 火枪打怪 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="二分答案" scheme="https://blog.yzcthinktwice.com/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/"/>
+    
+      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>P2365 任务安排</title>
     <link href="https://blog.yzcthinktwice.com/2019/12/04/P2365%20%E4%BB%BB%E5%8A%A1%E5%AE%89%E6%8E%92/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/04/P2365 任务安排/</id>
     <published>2019-12-04T12:08:01.000Z</published>
-    <updated>2019-12-04T12:08:32.057Z</updated>
+    <updated>2019-12-10T12:28:54.261Z</updated>
     
     <summary type="html">
     
@@ -326,7 +326,7 @@
       <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
+      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
       <category term="LOJ" scheme="https://blog.yzcthinktwice.com/tags/LOJ/"/>
     
@@ -341,7 +341,7 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/04/P2569%20%5BSCOI2010%5D%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/04/P2569 [SCOI2010]股票交易/</id>
     <published>2019-12-04T12:08:00.000Z</published>
-    <updated>2019-12-04T12:09:21.030Z</updated>
+    <updated>2019-12-10T12:28:48.137Z</updated>
     
     <summary type="html">
     
@@ -352,7 +352,7 @@
       <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="DP" scheme="https://blog.yzcthinktwice.com/tags/DP/"/>
+      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
       <category term="单调队列" scheme="https://blog.yzcthinktwice.com/tags/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/"/>
     
