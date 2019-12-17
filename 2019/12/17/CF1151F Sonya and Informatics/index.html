@@ -368,43 +368,43 @@ var _hmt = _hmt || [];
         
         <div class="entry-content">
           <h1 id="CF1151F-Sonya-and-Informatics"><a href="#CF1151F-Sonya-and-Informatics" class="headerlink" title="CF1151F Sonya and Informatics"></a><a href="https://codeforces.com/contest/1151/problem/F" target="_blank" rel="noopener">CF1151F Sonya and Informatics</a></h1><hr>
-<p>�����Ż�dp�����⣬dp״̬ʮ������</p>
+<p>矩阵优化dp超好题，dp状态十分巧妙</p>
 <hr>
-<h3 id="��⣺"><a href="#��⣺" class="headerlink" title="��⣺"></a>��⣺</h3><h4 id="DP���֣�"><a href="#DP���֣�" class="headerlink" title="DP���֣�"></a>DP���֣�</h4><p>��ĿҪ���ų�һ���ǽ����У�����ֻ��0��1������ζ��Ҫ������0����1��ǰ�棬����Ϊ0��1��������ȷ���ģ�������Щλ�ø�0����Щλ�ø�1Ҳ��ȷ����</p>
-<p>��$m$��ʾ������0�ĸ���������֪��1~m�е�0��m+1~n�е�1�ǺϷ��ģ���֮���Ϸ�</p>
-<p>״̬�������$f[i][j]$��ʾ����$i$�κ�ǰ$m$��λ����$j$��0</p>
-<p>��ƾ״̬�е�һ��$j$�����ǾͿ���֪��1~m��0��1�ĸ�����m+1~n��0��1�ĸ��������仰˵��֪���˺Ϸ������ĸ���</p>
-<p>��$cnt$��ʾ������ǰ$m$������0�ĸ�������ʼ��$f[0][cnt]=1$����ʾ����״��</p>
-<p>����ת�ƣ����׷���ÿ�ν�����������$f[i][j]$ֻ����$f[i-1][j-1]$��$f[i-1][j+1]$��$f[i-1][j]$�õ������Խ������·������ۣ�</p>
+<h3 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h3><h4 id="DP部分："><a href="#DP部分：" class="headerlink" title="DP部分："></a>DP部分：</h4><p>题目要求排成一个非降序列，由于只有0和1，这意味着要将所有0放在1的前面，又因为0和1的数量是确定的，所以哪些位置给0，哪些位置给1也是确定的</p>
+<p>记$m$表示序列中0的个数，我们知道1~m中的0和m+1~n中的1是合法的，反之不合法</p>
+<p>状态很巧妙，设$f[i][j]$表示交换$i$次后，前$m$个位置有$j$个0</p>
+<p>光凭状态中的一个$j$，我们就可以知道1~m中0和1的个数，m+1~n中0和1的个数，换句话说，知道了合法的数的个数</p>
+<p>记$cnt$表示数列中前$m$个数中0的个数，初始化$f[0][cnt]=1$，表示现有状况</p>
+<p>考虑转移，容易发现每次交换两个数，$f[i][j]$只会由$f[i-1][j-1]$，$f[i-1][j+1]$，$f[i-1][j]$得到，可以进行如下分类讨论：</p>
 <hr>
 <ul>
 <li>$f[i-1][j-1]<em>(m-(j-1))</em>(m-(j-1))$</li>
 </ul>
-<p>��ʾ��ǰ$m$�����е�0���$n-m$�����е�1�����������е�һ��$(m-(j-1))$����˼��ǰm������1�ĸ������ڶ�������˼�Ǻ�$n-m$������0�ĸ���</p>
+<p>表示将前$m$个数中的0与后$n-m$个数中的1做交换，其中第一个$(m-(j-1))$的意思是前m个数中1的个数，第二个的意思是后$n-m$个数中0的个数</p>
 <ul>
 <li>$f[i-1][j+1]<em>(j+1)</em>(n-m-(m-(j+1)))$</li>
 </ul>
-<p>���һ��ת���෴������ǰ$m$�����е�1���$n-m$�����е�0������</p>
+<p>与第一中转移相反，即将前$m$个数中的1与后$n-m$个数中的0做交换</p>
 <ul>
 <li>$f[i-1][j]<em>j</em>(m-j)$</li>
 </ul>
-<p>��ǰ$m$������ѡ����������<br><strong>��ע����һ��1һ��0����</strong></p>
+<p>在前$m$个数中选两个数交换<br><strong>（注意是一个1一个0！）</strong></p>
 <ul>
 <li>$f[i-1][j]<em>(m-j)</em>(n-m-(m-j))$</li>
 </ul>
-<p>�ں�$n-m$������ѡ����������<br><strong>��ע����һ��1һ��0����</strong></p>
+<p>在后$n-m$个数中选两个数交换<br><strong>（注意是一个1一个0！）</strong></p>
 <ul>
 <li>$f[i-1][j]<em>m</em>(m-1)/2$</li>
 </ul>
-<p>��ʾ������0������</p>
+<p>表示将两个0做交换</p>
 <ul>
 <li>$f[i-1][j]<em>(n-m)</em>(n-m-1)/2$</li>
 </ul>
-<p>��ʾ������1������</p>
+<p>表示将两个1做交换</p>
 <hr>
-<p>���$f[i][j]$��ֵ��������6����ת��֮��</p>
-<p>��������Ŀ��Ҫ��$ans=\frac{f[k][m]}{\sum\limits_{i=0}^{m}f[k][i]}$����ʾ$k$�ν������ǰ$m$��������0�ķ��������Ϸ������������ܵķ�����</p>
-<p>������͵õ���һ��$O(nk)$��dp�����水�շ������۵�˳��dp���룺</p>
+<p>最后$f[i][j]$的值就是以上6部分转移之和</p>
+<p>而根据题目的要求，$ans=\frac{f[k][m]}{\sum\limits_{i=0}^{m}f[k][i]}$，表示$k$次交换后的前$m$个数都是0的方案数（合法方案）除以总的方案数</p>
+<p>这样你就得到了一个$O(nk)$的dp，下面按照分类讨论的顺序dp代码：</p>
 <pre><code class="lang-cpp">int cnt=0;
 for(int i=1;i&lt;=m;i++)
     cnt+=(a[i]==0);
@@ -420,18 +420,18 @@ for(int i=1;i&lt;=k;i++)
     }
 </code></pre>
 <hr>
-<h4 id="�س˲��֣�"><a href="#�س˲��֣�" class="headerlink" title="�س˲��֣�"></a>�س˲��֣�</h4><p>ע�⵽$k$�ǳ��󣬶�$n$ȴ��С������ζ�Ż����Ż��Ŀռ�</p>
-<p>���¹۲�ת�Ʒ��̣�����$f[i][j]$���Ա�ʾΪ$f[i-1][j-1]<em>k_1+f[i-1][j]</em>k_2+f[i-1][j+1]*k_3$����ʽ������$k_1$��$k_2$��$k_3$������ֻ��$j$��صĳ���</p>
-<p>���<strong>ϵ���㶨����</strong>�����ʣ����Ǿس��Ż��ı�־</p>
-<p>�س�����������ɣ�$1<em>m$״̬����$A$����$m</em>m$ת�ƾ���$B$</p>
-<p>$A$��������ÿһ�׶ε�$f$���飬�±���$f$�����$j$������ͬ����˳�ʼ��$A_{cnt}=1$</p>
-<p>$B$��������$A$�Ӿ�״̬ת�Ƶ���״̬�ģ�$B_{i,j}$��ʾ��$A_i$ת�Ƶ�$A_j$��ϵ��</p>
-<p>����أ�ֻҪ��ϸ�ظ���ת�Ʒ��̽�ϵ�����$B$����ͺ���</p>
-<p>����������Ҫ��״̬$A’$�͵���$A*B^k$����˼��ת����$k$��</p>
-<p>������Ϊ�س˵Ľ���ɣ������ÿ�����</p>
-<p>���Ӷȱ��Ż�����$O(n^3\log k)$������$n^3$�Ǿس˵ģ�$\log k$�ǿ����ݵ�</p>
+<h4 id="矩乘部分："><a href="#矩乘部分：" class="headerlink" title="矩乘部分："></a>矩乘部分：</h4><p>注意到$k$非常大，而$n$却很小，这意味着还有优化的空间</p>
+<p>重新观察转移方程，发现$f[i][j]$可以表示为$f[i-1][j-1]<em>k_1+f[i-1][j]</em>k_2+f[i-1][j+1]*k_3$的形式，其中$k_1$，$k_2$，$k_3$是三个只与$j$相关的常数</p>
+<p>这个<strong>系数恒定不变</strong>的性质，就是矩乘优化的标志</p>
+<p>矩乘由两部分组成，$1<em>m$状态矩阵$A$，和$m</em>m$转移矩阵$B$</p>
+<p>$A$描述的是每一阶段的$f$数组，下标与$f$数组的$j$意义相同，因此初始化$A_{cnt}=1$</p>
+<p>$B$是用来将$A$从旧状态转移到新状态的，$B_{i,j}$表示从$A_i$转移到$A_j$的系数</p>
+<p>具体地，只要仔细地根据转移方程将系数填进$B$矩阵就好了</p>
+<p>这样答案所需要的状态$A’$就等于$A*B^k$，意思是转移了$k$次</p>
+<p>而又因为矩乘的结合律，可以用快速幂</p>
+<p>复杂度被优化到了$O(n^3\log k)$，其中$n^3$是矩乘的，$\log k$是快速幂的</p>
 <hr>
-<h3 id="���룺"><a href="#���룺" class="headerlink" title="���룺"></a>���룺</h3><pre><code class="lang-cpp">#include &lt;bits/stdc++.h&gt;
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><pre><code class="lang-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 template&lt;class t&gt; inline t read(t &amp;x){
     x=0;char c=getchar();bool f=0;
@@ -451,7 +451,7 @@ int n,k,m,cnt,a[N];
 struct mat{
     int a[N][N];
     mat(){memset(a,0,sizeof a);}
-    inline mat operator * (const mat &amp;nt) const { //���ؾ���˷�
+    inline mat operator * (const mat &amp;nt) const { //重载矩阵乘法
         mat res;
         for(int i=0;i&lt;=m;i++) for(int j=0;j&lt;=m;j++) for(int k=0;k&lt;=m;k++)
             res.a[i][j]=(1ll*res.a[i][j]+1ll*a[i][k]*nt.a[k][j]%mod)%mod;
@@ -459,7 +459,7 @@ struct mat{
     }
 }A,B;
 
-mat mpow(mat x,int y){ //���������
+mat mpow(mat x,int y){ //矩阵快速幂
     mat res;
     for(int i=0;i&lt;=m;i++)
         res.a[i][i]=1;
@@ -467,7 +467,7 @@ mat mpow(mat x,int y){ //���������
     return res;
 }
 
-int fpow(int x,int y){ //��ͨ�����ݣ���������Ԫ��
+int fpow(int x,int y){ //普通快速幂（用来求逆元）
     int res=1;
     for(;y;y&gt;&gt;=1,x=1ll*x*x%mod) if(y&amp;1) res=1ll*res*x%mod;
     return res;
@@ -482,7 +482,7 @@ signed main(){
     for(int i=1;i&lt;=m;i++)
         cnt+=(a[i]==0);
     A.a[0][cnt]=1;
-    for(int i=0;i&lt;=m;i++){ //ö�٣���ת�Ʒ�������ת�ƾ�����
+    for(int i=0;i&lt;=m;i++){ //枚举，把转移方程塞到转移矩阵里
         if(i!=0) B.a[i-1][i]=1ll*(m-(i-1))*(m-(i-1))%mod;
         B.a[i][i]=1ll*i*(m-i)%mod;
         B.a[i][i]=(1ll*B.a[i][i]+1ll*(m-i)*(n-m-(m-i))%mod)%mod;
@@ -494,7 +494,7 @@ signed main(){
     A=A*B;
     int sum=0;
     for(int i=0;i&lt;=m;i++)
-        sum=(1ll*sum+A.a[0][i])%mod; //ͳ���ܷ��������𰸵ķ�ĸ��
+        sum=(1ll*sum+A.a[0][i])%mod; //统计总方案数（答案的分母）
     write(1ll*A.a[0][m]*fpow(sum,mod-2)%mod);
 }
 </code></pre>

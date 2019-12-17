@@ -345,7 +345,7 @@ var _hmt = _hmt || [];
       <p class="entry-census">
         <span>
           <a href="https://blog.yzcthinktwice.com/">
-            <img src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png">
+            <img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png">
           </a>
         </span>
         <span>
@@ -368,17 +368,17 @@ var _hmt = _hmt || [];
         
         <div class="entry-content">
           <h1 id="CF1114F-Please-another-Queries-on-Array"><a href="#CF1114F-Please-another-Queries-on-Array" class="headerlink" title="CF1114F Please, another Queries on Array?"></a><a href="https://codeforces.com/contest/1114/problem/F" target="_blank" rel="noopener">CF1114F Please, another Queries on Array?</a></h1><hr>
-<p>״ѹ+������+���߶�����һ���ͺ���·������ </p>
+<p>状压+简单数论+简单线段树，一看就很套路。。。 </p>
 <hr>
-<h3 id="��⣺"><a href="#��⣺" class="headerlink" title="��⣺"></a>��⣺</h3><p>����˼��ŷ��������ͨ�ʽ$\varphi(x)=x*\prod\limits_{i=1}^{n}(1-\frac{1}{p_i})$������$p_i$��$x$��������</p>
-<p>Ҳ����˵����Ҫ���$\varphi(x)$��������Ҫ֪������ֵ$x$��������������$p_i$</p>
-<p>������ĿҪ��Ĳ�ѯ$\varphi(\prod \limits_{i=l}^{r} a_i)$�����������������Ҫ���������Ҳ��Ҫ֪������������$\prod \limits_{i=l}^{r} a_i$������$[l,r]$������Щ������</p>
-<p>�˻��������߶����򵥵�ά����������Щ��������ʲôά���أ�</p>
-<p>ע�⵽��Ŀ������$a_i$��$x$����С������о���Ļ������ߴ���������Է��֣��ⷶΧ��ֻ��<strong>62</strong>������</p>
-<p>�ⲻ������ʾҪ״ѹ��</p>
-<p>�����߶����Ͽ���longlong״ѹ�������ͺ���</p>
+<h3 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h3><p>首先思考欧拉函数的通项公式$\varphi(x)=x*\prod\limits_{i=1}^{n}(1-\frac{1}{p_i})$，其中$p_i$是$x$的质因数</p>
+<p>也就是说对于要求的$\varphi(x)$，我们需要知道它的值$x$，和它的质因数$p_i$</p>
+<p>考虑题目要求的查询$\varphi(\prod \limits_{i=l}^{r} a_i)$，根据上面的推理，要求出它我们也需要知道两样东西，$\prod \limits_{i=l}^{r} a_i$和区间$[l,r]$内有哪些质因数</p>
+<p>乘积可以用线段树简单的维护，那有哪些质因数用什么维护呢？</p>
+<p>注意到题目给出的$a_i$和$x$都很小，如果有经验的话（或者打个表）可以发现，这范围内只有<strong>62</strong>个质数</p>
+<p>这不就是提示要状压吗！</p>
+<p>于是线段树上开个longlong状压搞区间或就好了</p>
 <hr>
-<h3 id="���룺"><a href="#���룺" class="headerlink" title="���룺"></a>���룺</h3><pre><code class="lang-cpp">#include &lt;bits/stdc++.h&gt;
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><pre><code class="lang-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 template&lt;class t&gt; inline t read(t &amp;x){
     x=0;char c=getchar();bool f=0;
@@ -393,8 +393,8 @@ template&lt;class t&gt; inline void write(t x){
 
 #define int long long
 #define res pair&lt;int,int&gt;
-#define x first //x�ǲ�ѯ�ĳ˻�
-#define y second //y�ǲ�ѯ��״ѹ
+#define x first //x是查询的乘积
+#define y second //y是查询的状压
 
 const int mod=1e9+7;
 const int N=4e5+5;
@@ -421,8 +421,8 @@ void init(int n){
 }
 
 void pushup(int x){
-    a[x]=a[x&lt;&lt;1]*a[x&lt;&lt;1|1]%mod; //a�ǳ˻�
-    s[x]=s[x&lt;&lt;1]|s[x&lt;&lt;1|1]; //s��״ѹ
+    a[x]=a[x&lt;&lt;1]*a[x&lt;&lt;1|1]%mod; //a是乘积
+    s[x]=s[x&lt;&lt;1]|s[x&lt;&lt;1|1]; //s是状压
 }
 
 void build(int x,int l,int r){
@@ -441,14 +441,14 @@ void build(int x,int l,int r){
 
 void pushdown(int x,int l,int r){
     int mid=l+r&gt;&gt;1;
-    if(mtg[x]^1){ //����
+    if(mtg[x]^1){ //乘上
         (mtg[x&lt;&lt;1]*=mtg[x])%=mod;
         (mtg[x&lt;&lt;1|1]*=mtg[x])%=mod;
         (a[x&lt;&lt;1]*=fpow(mtg[x],mid-l+1,mod))%=mod;
         (a[x&lt;&lt;1|1]*=fpow(mtg[x],r-mid,mod))%=mod;
         mtg[x]=1;
     }
-    if(stg[x]){ //����
+    if(stg[x]){ //或上
         stg[x&lt;&lt;1]|=stg[x];
         stg[x&lt;&lt;1|1]|=stg[x];
         s[x&lt;&lt;1]|=stg[x];
@@ -457,7 +457,7 @@ void pushdown(int x,int l,int r){
     }
 }
 
-res merge(res x,res y){ //�𰸺ϲ�
+res merge(res x,res y){ //答案合并
     return res(x.x*y.x%mod,x.y|y.y);
 }
 
@@ -495,7 +495,7 @@ void doit(){
     read(l);read(r);
     if(s[0]==&#39;T&#39;){
         res tp=que(1,1,n,l,r);
-        for(int i=0;i&lt;pn;i++) if(tp.y&gt;&gt;i&amp;1)  //��ѹ
+        for(int i=0;i&lt;pn;i++) if(tp.y&gt;&gt;i&amp;1)  //解压
             tp.x=tp.x*inv[i]%mod*(p[i]-1)%mod;
         write(tp.x);puts(&quot;&quot;);
     }
@@ -513,7 +513,7 @@ signed main(){
     for(int i=1;i&lt;=n;i++){
         read(val[i]);
         for(int j=0;j&lt;pn;j++) if(val[i]%p[j]==0)
-            sit[i]|=1ll&lt;&lt;j; //�ֽ������Щ��������״ѹ
+            sit[i]|=1ll&lt;&lt;j; //分解出有哪些质因数搞状压
     }
     build(1,1,n);
     while(q--) doit();
@@ -583,7 +583,7 @@ signed main(){
 
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-          <a href="https://blog.yzcthinktwice.com/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png" itemprop="image" alt="yzc" height="70" width="70"></a>
+          <a href="https://blog.yzcthinktwice.com/" class="profile gravatar"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png" itemprop="image" alt="yzc" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">

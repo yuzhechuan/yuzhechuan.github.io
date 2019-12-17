@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">P3978 [TJOI2015]������ | THINK TWICE</title>
+  <title itemprop="name">P3978 [TJOI2015]概率论 | THINK TWICE</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -341,7 +341,7 @@ var _hmt = _hmt || [];
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      P3978 [TJOI2015]������</h1>
+      P3978 [TJOI2015]概率论</h1>
       <p class="entry-census">
         <span>
           <a href="https://blog.yzcthinktwice.com/">
@@ -367,14 +367,14 @@ var _hmt = _hmt || [];
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <h1 id="P3978-TJOI2015-������"><a href="#P3978-TJOI2015-������" class="headerlink" title="P3978 [TJOI2015]������"></a><a href="https://www.luogu.com.cn/problem/P3978" target="_blank" rel="noopener">P3978 [TJOI2015]������</a></h1><hr>
-<p>һ����ʽ�Ӻ��⣬����ȷʵ����д���ģ���rqyд��ʵ����̫���ˣ�����ͷų�<a href="https://www.luogu.com.cn/blog/rqy/solution-p3978" target="_blank" rel="noopener">�������</a></p>
-<p>�����ﲹ��˵��һ��$ans=\frac{g_n}{f_n}$��ԭ�� </p>
-<p>��Ŀ˵ÿ����������ͬ���Ǹ���$=\frac{1}{f_n}$</p>
-<p>���$i$��n�ڵ������$p_i$��Ҷ��</p>
-<p>���������������ԣ�$ans=\sum\limits_{i=1}^{f_n}\frac{p_i}{f_n}=\frac{\sum\limits_{i=1}^{f_n}p_i}{f_n}$</p>
-<p>����Ϊ$\sum\limits_{i=1}^{f_n}p_i=g_n$</p>
-<p>���Կɵ�$ans=\frac{g_n}{f_n}$ </p>
+          <h1 id="P3978-TJOI2015-概率论"><a href="#P3978-TJOI2015-概率论" class="headerlink" title="P3978 [TJOI2015]概率论"></a><a href="https://www.luogu.com.cn/problem/P3978" target="_blank" rel="noopener">P3978 [TJOI2015]概率论</a></h1><hr>
+<p>一道推式子好题，本来确实是想写题解的，但rqy写得实在是太好了，这里就放出<a href="https://www.luogu.com.cn/blog/rqy/solution-p3978" target="_blank" rel="noopener">她的题解</a></p>
+<p>我这里补充说明一下$ans=\frac{g_n}{f_n}$的原因： </p>
+<p>题目说每种树概率相同，那概率$=\frac{1}{f_n}$</p>
+<p>设第$i$种n节点的树有$p_i$个叶子</p>
+<p>根据期望的线性性，$ans=\sum\limits_{i=1}^{f_n}\frac{p_i}{f_n}=\frac{\sum\limits_{i=1}^{f_n}p_i}{f_n}$</p>
+<p>又因为$\sum\limits_{i=1}^{f_n}p_i=g_n$</p>
+<p>所以可得$ans=\frac{g_n}{f_n}$ </p>
 
         </div>
         <!-- .entry-content -->

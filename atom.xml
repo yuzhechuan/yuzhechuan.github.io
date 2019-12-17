@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.yzcthinktwice.com/"/>
-  <updated>2019-12-17T10:07:56.670Z</updated>
+  <updated>2019-12-17T14:10:05.140Z</updated>
   <id>https://blog.yzcthinktwice.com/</id>
   
   <author>
@@ -21,26 +21,26 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/17/CF1114F%20Please,%20another%20Queries%20on%20Array/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/17/CF1114F Please, another Queries on Array/</id>
     <published>2019-12-17T10:00:05.000Z</published>
-    <updated>2019-12-17T10:07:56.670Z</updated>
+    <updated>2019-12-17T14:10:05.140Z</updated>
     
     <summary type="html">
     
-      CF1114F Please, another Queries on Array? ���
+      CF1114F Please, another Queries on Array? 题解
     
     </summary>
     
-      <category term="�㷨" scheme="https://blog.yzcthinktwice.com/categories/%EF%BF%BD%E3%B7%A8/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
+    
+      <category term="数学" scheme="https://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
     
       <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
-      <category term="״ѹ" scheme="https://blog.yzcthinktwice.com/tags/%D7%B4%D1%B9/"/>
+      <category term="线段树" scheme="https://blog.yzcthinktwice.com/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
-      <category term="�߶���" scheme="https://blog.yzcthinktwice.com/tags/%EF%BF%BD%DF%B6%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
+      <category term="状压" scheme="https://blog.yzcthinktwice.com/tags/%E7%8A%B6%E5%8E%8B/"/>
     
-      <category term="��ѧ" scheme="https://blog.yzcthinktwice.com/tags/%EF%BF%BD%EF%BF%BD%D1%A7/"/>
-    
-      <category term="ŷ������" scheme="https://blog.yzcthinktwice.com/tags/y%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
+      <category term="欧拉函数" scheme="https://blog.yzcthinktwice.com/tags/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/"/>
     
   </entry>
   
@@ -49,22 +49,22 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/17/CF1151F%20Sonya%20and%20Informatics/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/17/CF1151F Sonya and Informatics/</id>
     <published>2019-12-17T10:00:04.000Z</published>
-    <updated>2019-12-17T10:06:51.745Z</updated>
+    <updated>2019-12-17T14:14:50.876Z</updated>
     
     <summary type="html">
     
-      CF1151F Sonya and Informatics ���
+      CF1151F Sonya and Informatics 题解
     
     </summary>
     
-      <category term="�㷨" scheme="https://blog.yzcthinktwice.com/categories/%EF%BF%BD%E3%B7%A8/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
+    
+      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
       <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
-      <category term="��̬�滮" scheme="https://blog.yzcthinktwice.com/tags/%EF%BF%BD%EF%BF%BD%CC%AC%EF%BF%BD%E6%BB%AE/"/>
-    
-      <category term="����˷�" scheme="https://blog.yzcthinktwice.com/tags/%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%CB%B7%EF%BF%BD/"/>
+      <category term="矩阵乘法" scheme="https://blog.yzcthinktwice.com/tags/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/"/>
     
   </entry>
   
@@ -73,46 +73,46 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/17/CF1272F%20Two%20Bracket%20Sequences/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/17/CF1272F Two Bracket Sequences/</id>
     <published>2019-12-17T10:00:03.000Z</published>
-    <updated>2019-12-17T10:05:59.273Z</updated>
+    <updated>2019-12-17T14:03:11.281Z</updated>
     
     <summary type="html">
     
-      CF1272F Two Bracket Sequences ���
+      CF1272F Two Bracket Sequences 题解
     
     </summary>
     
-      <category term="�㷨" scheme="https://blog.yzcthinktwice.com/categories/%EF%BF%BD%E3%B7%A8/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
+    
+      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
       <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-      <category term="��̬�滮" scheme="https://blog.yzcthinktwice.com/tags/%EF%BF%BD%EF%BF%BD%CC%AC%EF%BF%BD%E6%BB%AE/"/>
     
   </entry>
   
   <entry>
-    <title>P3978 [TJOI2015]������</title>
+    <title>P3978 [TJOI2015]概率论</title>
     <link href="https://blog.yzcthinktwice.com/2019/12/17/P3978%20%5BTJOI2015%5D%E6%A6%82%E7%8E%87%E8%AE%BA/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/17/P3978 [TJOI2015]概率论/</id>
     <published>2019-12-17T10:00:02.000Z</published>
-    <updated>2019-12-17T10:04:13.721Z</updated>
+    <updated>2019-12-17T14:14:10.188Z</updated>
     
     <summary type="html">
     
-      P3978 [TJOI2015]������ ���
+      P3978 [TJOI2015]概率论 题解
     
     </summary>
     
-      <category term="�㷨" scheme="https://blog.yzcthinktwice.com/categories/%EF%BF%BD%E3%B7%A8/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="��ѧ" scheme="https://blog.yzcthinktwice.com/tags/%EF%BF%BD%EF%BF%BD%D1%A7/"/>
+      <category term="数学" scheme="https://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
     
-      <category term="���" scheme="https://blog.yzcthinktwice.com/tags/%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
+      <category term="概率期望" scheme="https://blog.yzcthinktwice.com/tags/%E6%A6%82%E7%8E%87%E6%9C%9F%E6%9C%9B/"/>
     
-      <category term="ת��" scheme="https://blog.yzcthinktwice.com/tags/%D7%AA%EF%BF%BD%EF%BF%BD/"/>
+      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
     
-      <category term="��������" scheme="https://blog.yzcthinktwice.com/tags/%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
+      <category term="转载" scheme="https://blog.yzcthinktwice.com/tags/%E8%BD%AC%E8%BD%BD/"/>
     
   </entry>
   
@@ -121,24 +121,24 @@
     <link href="https://blog.yzcthinktwice.com/2019/12/17/P4197%20Peaks/"/>
     <id>https://blog.yzcthinktwice.com/2019/12/17/P4197 Peaks/</id>
     <published>2019-12-17T10:00:01.000Z</published>
-    <updated>2019-12-17T10:02:57.846Z</updated>
+    <updated>2019-12-17T14:11:54.779Z</updated>
     
     <summary type="html">
     
-      P4197 Peaks ���
+      P4197 Peaks 题解
     
     </summary>
     
-      <category term="�㷨" scheme="https://blog.yzcthinktwice.com/categories/%EF%BF%BD%E3%B7%A8/"/>
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="���" scheme="https://blog.yzcthinktwice.com/tags/%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
+      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
     
-      <category term="����" scheme="https://blog.yzcthinktwice.com/tags/%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
+      <category term="倍增" scheme="https://blog.yzcthinktwice.com/tags/%E5%80%8D%E5%A2%9E/"/>
     
-      <category term="Kruskal�ع���" scheme="https://blog.yzcthinktwice.com/tags/Kruskal%EF%BF%BD%D8%B9%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
+      <category term="Kruskal重构树" scheme="https://blog.yzcthinktwice.com/tags/Kruskal%E9%87%8D%E6%9E%84%E6%A0%91/"/>
     
-      <category term="�ɳ־û��߶���" scheme="https://blog.yzcthinktwice.com/tags/%EF%BF%BD%C9%B3%D6%BEu%EF%BF%BD%EF%BF%BD%DF%B6%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
+      <category term="可持久化线段树" scheme="https://blog.yzcthinktwice.com/tags/%E5%8F%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
   </entry>
   

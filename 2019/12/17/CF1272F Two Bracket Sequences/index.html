@@ -345,7 +345,7 @@ var _hmt = _hmt || [];
       <p class="entry-census">
         <span>
           <a href="https://blog.yzcthinktwice.com/">
-            <img src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png">
+            <img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png">
           </a>
         </span>
         <span>
@@ -368,28 +368,28 @@ var _hmt = _hmt || [];
         
         <div class="entry-content">
           <h1 id="CF1272F-Two-Bracket-Sequences"><a href="#CF1272F-Two-Bracket-Sequences" class="headerlink" title="CF1272F Two Bracket Sequences"></a><a href="https://codeforces.com/contest/1272/problem/F" target="_blank" rel="noopener">CF1272F Two Bracket Sequences</a></h1><hr>
-<h3 id="��⣺"><a href="#��⣺" class="headerlink" title="��⣺"></a>��⣺</h3><p>��$g[i][j][k]$��ʾҪʹ$S$��ƥ�䵽��$i$�����ţ�$T$��ƥ�䵽��$j$�����ţ����õ��Ĵ𰸴��ﻹ��$k$��������δƥ������Ҫ����������</p>
-<p>ͬʱ��¼$f[i][j][k]=\{i’,j’,k’\}$��ʾ$g[i][j][k]$�Ǵ�$g[i’][j’][k’]$ת������</p>
-<p>����ת�ƣ�</p>
-<p>������������Ҫ��״̬$\{i,j,k\}$�����Ӹ�������ת�Ƶ�״̬$\{ni,nj,nk\}$</p>
-<p>��Ϊ�����������ţ�����$nk=k+1$</p>
-<p>���$S_{i+1}$�������ţ���ô$ni=i+1$����˼��ƥ�䣩�������$ni=i$����˼�ǼӸ������ڵ����ţ�</p>
-<p>$T$��ͬ��</p>
-<p>�෴�ģ��������Ҫ�Ӹ������ţ���$nk=k-1$����Ϊ���Ե���һ�������ţ��������������ŵ����ͬ��</p>
-<p>���⣬��Ҫע��$nk$�����±߽磬��$nk\in[0,len_S+len_T]$</p>
-<p>�����У�������bfs�������dp���̣���$\{0,0,0\}$һ����һ�����ţ�����bfs�����ʣ����Ա�֤��һ�ε���ĳ��״̬ʱ����һ�������ŵģ������������٣�</p>
-<p>�������ǾͿ���ʡ��g������</p>
-<p>����ǻ���ͳ�ƴ�</p>
-<p>��Ȼ�ģ�״̬$\{len_S,len_T,0\}$��������Ҫ�Ĵ�״̬����ʾ$S$��$T$����ƥ�����ˣ���û��������ʣ��</p>
-<p>���ǾͿ��Դ������״̬��������$f$������ݵ�$\{0,0,0\}$Ϊֹ</p>
-<p>��������״̬ʱ$\{i,j,k\}$����Ҫ���ݵ�$\{i’,j’,k’\}$</p>
-<p>���$k&gt;k’$����˵���������״̬��һ��������</p>
-<p>����$k&lt;k’$��˵�����״̬��һ��������</p>
-<p>����Ӧ���żӵ��𰸴��������������</p>
+<h3 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h3><p>设$g[i][j][k]$表示要使$S$串匹配到第$i$个括号，$T$串匹配到第$j$个括号，所得到的答案串里还有$k$个左括号未匹配所需要的最少括号</p>
+<p>同时记录$f[i][j][k]=\{i’,j’,k’\}$表示$g[i][j][k]$是从$g[i’][j’][k’]$转移来的</p>
+<p>考虑转移：</p>
+<p>假设我们现在要在状态$\{i,j,k\}$上添加个左括号转移到状态$\{ni,nj,nk\}$</p>
+<p>因为是添加左括号，所以$nk=k+1$</p>
+<p>如果$S_{i+1}$是左括号，那么$ni=i+1$（意思是匹配），否则就$ni=i$（意思是加个不存在的括号）</p>
+<p>$T$串同理</p>
+<p>相反的，如果现在要加个右括号，那$nk=k-1$（因为可以抵消一个左括号），其余与左括号的情况同理</p>
+<p>另外，还要注意$nk$的上下边界，即$nk\in[0,len_S+len_T]$</p>
+<p>代码中，考虑用bfs进行这个dp过程，从$\{0,0,0\}$一步加一个括号，由于bfs的性质，可以保证第一次到达某种状态时，解一定是最优的（即括号数最少）</p>
+<p>这样我们就可以省略g数组了</p>
+<p>最后考虑回溯统计答案</p>
+<p>显然的，状态$\{len_S,len_T,0\}$是我们需要的答案状态，表示$S$和$T$串都匹配完了，且没有左括号剩余</p>
+<p>我们就可以从这个答案状态出发，沿$f$数组回溯到$\{0,0,0\}$为止</p>
+<p>假设现在状态时$\{i,j,k\}$，将要回溯到$\{i’,j’,k’\}$</p>
+<p>如果$k&gt;k’$，就说明现在这个状态是一个左括号</p>
+<p>否则$k&lt;k’$就说明这个状态是一个右括号</p>
+<p>把相应括号加到答案串里逆序输出即可</p>
 <hr>
-<p>��������д�˸��ṹ�壬ʵ����Ҳ������c++11�Դ��Ķ�Ԫ��tuple</p>
+<p>代码中我写了个结构体，实际上也可以用c++11自带的多元组tuple</p>
 <hr>
-<h3 id="���룺"><a href="#���룺" class="headerlink" title="���룺"></a>���룺</h3><pre><code class="lang-cpp">#include &lt;bits/stdc++.h&gt;
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><pre><code class="lang-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 template&lt;class t&gt; inline t read(t &amp;x){
     x=0;char c=getchar();bool f=0;
@@ -414,20 +414,20 @@ struct node{
 
 void bfs(){
     queue&lt;node&gt; q;
-    memset(f,-1,sizeof f); //һ��ʼ��û�߹�
-    f[0][0][0]=(node){0,0,0}; //��ʼ״̬
+    memset(f,-1,sizeof f); //一开始都没走过
+    f[0][0][0]=(node){0,0,0}; //起始状态
     q.push((node){0,0,0});
     while(!q.empty()){
         node x=q.front();q.pop();
         int i=x.i,j=x.j,k=x.k,ni,nj,nk;
-        ni=i+(a[i+1]==&#39;(&#39;); //�Ӹ������ţ�����д���Ծ�������˵~
+        ni=i+(a[i+1]==&#39;(&#39;); //加个左括号，这样写可以精简代码的说~
         nj=j+(b[j+1]==&#39;(&#39;);
         nk=k+1;
-        if(nk&lt;=n+m&amp;&amp;f[ni][nj][nk].i==-1){ //���仯��˼·��û�߹�������
+        if(nk&lt;=n+m&amp;&amp;f[ni][nj][nk].i==-1){ //记忆化的思路，没走过才能走
             f[ni][nj][nk]=x;
             q.push((node){ni,nj,nk});
         }
-        ni=i+(a[i+1]==&#39;)&#39;); //�Ӹ�������
+        ni=i+(a[i+1]==&#39;)&#39;); //加个右括号
         nj=j+(b[j+1]==&#39;)&#39;);
         nk=k-1;
         if(nk&gt;=0&amp;&amp;f[ni][nj][nk].i==-1){
@@ -442,7 +442,7 @@ signed main(){
     n=strlen(a+1);m=strlen(b+1);
     bfs();
     int i=n,j=m,k=0;
-    while(i||j||k){ //����
+    while(i||j||k){ //回溯
         node nxt=f[i][j][k];
         if(nxt.k&lt;k) ans=&quot;(&quot;+ans;
         else ans=&quot;)&quot;+ans;
@@ -508,7 +508,7 @@ signed main(){
               Next Post</span>
               <div class="info">
                 <h3>
-                P3978 [TJOI2015]������</h3>
+                P3978 [TJOI2015]概率论</h3>
                 <hr>
               </div>
             </a>
@@ -532,7 +532,7 @@ signed main(){
 
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-          <a href="https://blog.yzcthinktwice.com/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png" itemprop="image" alt="yzc" height="70" width="70"></a>
+          <a href="https://blog.yzcthinktwice.com/" class="profile gravatar"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png" itemprop="image" alt="yzc" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
