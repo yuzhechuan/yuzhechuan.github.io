@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.yzcthinktwice.com/"/>
-  <updated>2019-12-17T14:10:05.140Z</updated>
+  <updated>2019-12-30T13:27:18.484Z</updated>
   <id>https://blog.yzcthinktwice.com/</id>
   
   <author>
@@ -15,6 +15,238 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CF1270X Good Bye 2019</title>
+    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1270X%20Good%20Bye%202019/"/>
+    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1270X Good Bye 2019/</id>
+    <published>2019-12-30T15:59:04.000Z</published>
+    <updated>2019-12-30T13:27:18.484Z</updated>
+    
+    <summary type="html">
+    
+      CF1270X Good Bye 2019 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="总集" scheme="https://blog.yzcthinktwice.com/tags/%E6%80%BB%E9%9B%86/"/>
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1270D Strange Device</title>
+    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1270D%20Strange%20Device/"/>
+    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1270D Strange Device/</id>
+    <published>2019-12-30T15:59:03.000Z</published>
+    <updated>2019-12-30T13:28:45.703Z</updated>
+    
+    <summary type="html">
+    
+      CF1270D Strange Device 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="构造" scheme="https://blog.yzcthinktwice.com/tags/%E6%9E%84%E9%80%A0/"/>
+    
+      <category term="交互" scheme="https://blog.yzcthinktwice.com/tags/%E4%BA%A4%E4%BA%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1270E Divide Points</title>
+    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1270E%20Divide%20Points/"/>
+    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1270E Divide Points/</id>
+    <published>2019-12-30T15:59:02.000Z</published>
+    <updated>2019-12-30T13:28:36.785Z</updated>
+    
+    <summary type="html">
+    
+      CF1270E Divide Points 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="数学" scheme="https://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="构造" scheme="https://blog.yzcthinktwice.com/tags/%E6%9E%84%E9%80%A0/"/>
+    
+      <category term="几何" scheme="https://blog.yzcthinktwice.com/tags/%E5%87%A0%E4%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1270G Subset with Zero Sum</title>
+    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1270G%20Subset%20with%20Zero%20Sum/"/>
+    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1270G Subset with Zero Sum/</id>
+    <published>2019-12-30T15:59:01.000Z</published>
+    <updated>2019-12-30T13:29:14.900Z</updated>
+    
+    <summary type="html">
+    
+      CF1270G Subset with Zero Sum 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="构造" scheme="https://blog.yzcthinktwice.com/tags/%E6%9E%84%E9%80%A0/"/>
+    
+      <category term="基环树" scheme="https://blog.yzcthinktwice.com/tags/%E5%9F%BA%E7%8E%AF%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF700B Connecting Universities</title>
+    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF700B%20Connecting%20Universities/"/>
+    <id>https://blog.yzcthinktwice.com/2019/12/30/CF700B Connecting Universities/</id>
+    <published>2019-12-30T15:58:02.000Z</published>
+    <updated>2019-12-30T13:29:22.741Z</updated>
+    
+    <summary type="html">
+    
+      CF700B Connecting Universities 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1268B Domino for Young</title>
+    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1268B%20Domino%20for%20Young/"/>
+    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1268B Domino for Young/</id>
+    <published>2019-12-30T15:57:02.000Z</published>
+    <updated>2019-12-30T13:28:02.771Z</updated>
+    
+    <summary type="html">
+    
+      CF1268B Domino for Young 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1263E Editor</title>
+    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1263E%20Editor/"/>
+    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1263E Editor/</id>
+    <published>2019-12-30T15:56:02.000Z</published>
+    <updated>2019-12-30T13:27:38.720Z</updated>
+    
+    <summary type="html">
+    
+      CF1263E Editor 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="线段树" scheme="https://blog.yzcthinktwice.com/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+      <category term="括号序列" scheme="https://blog.yzcthinktwice.com/tags/%E6%8B%AC%E5%8F%B7%E5%BA%8F%E5%88%97/"/>
+    
+      <category term="前缀" scheme="https://blog.yzcthinktwice.com/tags/%E5%89%8D%E7%BC%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1266D Decreasing Debts</title>
+    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1266D%20Decreasing%20Debts/"/>
+    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1266D Decreasing Debts/</id>
+    <published>2019-12-30T15:55:02.000Z</published>
+    <updated>2019-12-30T13:28:14.534Z</updated>
+    
+    <summary type="html">
+    
+      CF1266D Decreasing Debts 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="图论" scheme="https://blog.yzcthinktwice.com/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+      <category term="构造" scheme="https://blog.yzcthinktwice.com/tags/%E6%9E%84%E9%80%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1067A Array Without Local Maximums</title>
+    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1067A%20Array%20Without%20Local%20Maximums/"/>
+    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1067A Array Without Local Maximums/</id>
+    <published>2019-12-30T15:54:02.000Z</published>
+    <updated>2019-12-30T13:27:51.899Z</updated>
+    
+    <summary type="html">
+    
+      CF1067A Array Without Local Maximums 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1271D Portals</title>
+    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1271D%20Portals/"/>
+    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1271D Portals/</id>
+    <published>2019-12-30T15:50:02.000Z</published>
+    <updated>2019-12-30T13:28:25.758Z</updated>
+    
+    <summary type="html">
+    
+      CF1271D Portals 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+      <category term="贪心" scheme="https://blog.yzcthinktwice.com/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+  </entry>
   
   <entry>
     <title>CF1114F Please, another Queries on Array?</title>
@@ -36,9 +268,9 @@
     
       <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
-      <category term="线段树" scheme="https://blog.yzcthinktwice.com/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
-    
       <category term="状压" scheme="https://blog.yzcthinktwice.com/tags/%E7%8A%B6%E5%8E%8B/"/>
+    
+      <category term="线段树" scheme="https://blog.yzcthinktwice.com/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
       <category term="欧拉函数" scheme="https://blog.yzcthinktwice.com/tags/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/"/>
     
@@ -60,9 +292,9 @@
       <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
       <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
       <category term="矩阵乘法" scheme="https://blog.yzcthinktwice.com/tags/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/"/>
     
@@ -84,9 +316,9 @@
       <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
       <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
   </entry>
   
@@ -204,9 +436,9 @@
       <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
       <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
       <category term="概率期望" scheme="https://blog.yzcthinktwice.com/tags/%E6%A6%82%E7%8E%87%E6%9C%9F%E6%9C%9B/"/>
     
@@ -253,236 +485,6 @@
       <category term="数学" scheme="https://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
     
       <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1227F1 Wrong Answer on test 233 (Easy Version)</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/10/CF1227F1%20Wrong%20Answer%20on%20test%20233%20(Easy%20Version)/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/10/CF1227F1 Wrong Answer on test 233 (Easy Version)/</id>
-    <published>2019-12-10T12:03:00.000Z</published>
-    <updated>2019-12-15T08:12:59.519Z</updated>
-    
-    <summary type="html">
-    
-      CF1227F1 Wrong Answer on test 233 (Easy Version) 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ABC147X</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/10/ABC147X/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/10/ABC147X/</id>
-    <published>2019-12-10T12:02:00.000Z</published>
-    <updated>2019-12-15T08:16:52.143Z</updated>
-    
-    <summary type="html">
-    
-      比赛ABC147 全题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="AtCoder" scheme="https://blog.yzcthinktwice.com/tags/AtCoder/"/>
-    
-      <category term="总集" scheme="https://blog.yzcthinktwice.com/tags/%E6%80%BB%E9%9B%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ABC147F Sum Difference</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/10/ABC147F%20Sum%20Difference/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/10/ABC147F Sum Difference/</id>
-    <published>2019-12-10T12:01:00.000Z</published>
-    <updated>2019-12-15T08:14:22.033Z</updated>
-    
-    <summary type="html">
-    
-      ABC147F Sum Difference 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="AtCoder" scheme="https://blog.yzcthinktwice.com/tags/AtCoder/"/>
-    
-      <category term="数学" scheme="https://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ABC147E Balanced Path</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/10/ABC147E%20Balanced%20Path/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/10/ABC147E Balanced Path/</id>
-    <published>2019-12-10T12:00:00.000Z</published>
-    <updated>2019-12-15T08:12:44.718Z</updated>
-    
-    <summary type="html">
-    
-      ABC147E Balanced Path 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="AtCoder" scheme="https://blog.yzcthinktwice.com/tags/AtCoder/"/>
-    
-      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1223E Paint the Tree</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/10/CF1223E%20Paint%20the%20Tree/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/10/CF1223E Paint the Tree/</id>
-    <published>2019-12-10T11:57:00.000Z</published>
-    <updated>2019-12-15T08:12:52.052Z</updated>
-    
-    <summary type="html">
-    
-      CF1223E Paint the Tree 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF799D Field expansion</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/10/CF799D%20Field%20expansion/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/10/CF799D Field expansion/</id>
-    <published>2019-12-10T11:56:00.000Z</published>
-    <updated>2019-12-15T08:14:18.166Z</updated>
-    
-    <summary type="html">
-    
-      CF799D Field expansion 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-      <category term="搜索" scheme="https://blog.yzcthinktwice.com/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>P2515 [HAOI2010]软件安装</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/10/P2515%20%5BHAOI2010%5D%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/10/P2515 [HAOI2010]软件安装/</id>
-    <published>2019-12-10T11:12:00.000Z</published>
-    <updated>2019-12-15T08:17:22.137Z</updated>
-    
-    <summary type="html">
-    
-      P2515 [HAOI2010]软件安装 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-      <category term="缩点" scheme="https://blog.yzcthinktwice.com/tags/%E7%BC%A9%E7%82%B9/"/>
-    
-      <category term="dfs序" scheme="https://blog.yzcthinktwice.com/tags/dfs%E5%BA%8F/"/>
-    
-      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>P1485 火枪打怪</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/10/P1485%20%E7%81%AB%E6%9E%AA%E6%89%93%E6%80%AA/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/10/P1485 火枪打怪/</id>
-    <published>2019-12-10T11:10:00.000Z</published>
-    <updated>2019-12-15T08:16:48.198Z</updated>
-    
-    <summary type="html">
-    
-      P1485 火枪打怪 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="二分答案" scheme="https://blog.yzcthinktwice.com/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/"/>
-    
-      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>P2365 任务安排</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/04/P2365%20%E4%BB%BB%E5%8A%A1%E5%AE%89%E6%8E%92/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/04/P2365 任务安排/</id>
-    <published>2019-12-04T12:08:01.000Z</published>
-    <updated>2019-12-15T08:16:59.358Z</updated>
-    
-    <summary type="html">
-    
-      P2365 任务安排 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-      <category term="LOJ" scheme="https://blog.yzcthinktwice.com/tags/LOJ/"/>
-    
-      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
-      <category term="斜率优化" scheme="https://blog.yzcthinktwice.com/tags/%E6%96%9C%E7%8E%87%E4%BC%98%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>P2569 [SCOI2010]股票交易</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/04/P2569%20%5BSCOI2010%5D%E8%82%A1%E7%A5%A8%E4%BA%A4%E6%98%93/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/04/P2569 [SCOI2010]股票交易/</id>
-    <published>2019-12-04T12:08:00.000Z</published>
-    <updated>2019-12-15T08:17:27.026Z</updated>
-    
-    <summary type="html">
-    
-      P2569 [SCOI2010]股票交易 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-      <category term="单调队列" scheme="https://blog.yzcthinktwice.com/tags/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/"/>
-    
-      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
     
   </entry>
   
