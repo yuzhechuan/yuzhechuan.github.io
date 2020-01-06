@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">CF455B A Lot of Games | THINK TWICE</title>
+  <title itemprop="name">开学! | THINK TWICE</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -337,15 +337,15 @@ var _hmt = _hmt || [];
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.32/img/post/524.webp);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.32/img/post/524.webp">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.08/img/post/467_1.webp);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.08/img/post/467_1.webp">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      CF455B A Lot of Games</h1>
+      开学!</h1>
       <p class="entry-census">
         <span>
           <a href="https://blog.yzcthinktwice.com/">
-            <img src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png">
+            <img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png">
           </a>
         </span>
         <span>
@@ -353,7 +353,7 @@ var _hmt = _hmt || [];
         </span>
         <span class="bull">
         ·</span>
-        2019-12-31<span class="bull">
+        2020-1-2<span class="bull">
         ·</span>
       <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
@@ -367,121 +367,7 @@ var _hmt = _hmt || [];
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <h1 id="CF455B-A-Lot-of-Games"><a href="#CF455B-A-Lot-of-Games" class="headerlink" title="CF455B A Lot of Games"></a><a href="https://codeforces.com/problemset/problem/455/B" target="_blank" rel="noopener">CF455B A Lot of Games</a></h1><hr>
-<p>一道trie树上博弈好题，考察了对于博弈状态的设计</p>
-<p>我是从<a href="https://www.cnblogs.com/yuiffy/p/3900707.html" target="_blank" rel="noopener">这篇题解</a>得到启示的</p>
-<hr>
-<h3 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h3><p>先只考虑其中一场博弈</p>
-<p>对于n个单词建出它们的trie树</p>
-<p>对于trie树上的每个节点设计四种状态：必胜，必败，胜败主动（由自己决定），胜败被动（由对手决定）</p>
-<p>由题意可得，叶子结点都是必胜态的，然后就会有四种转移：</p>
-<hr>
-<ol>
-<li><p>若儿子中有主动点，那么对手肯定会走那个点，所以当前点是被动点</p>
-</li>
-<li><p>若儿子中必胜必败两种点都有，那么对手可以随便选，所以当前点是被动点</p>
-</li>
-<li><p>若儿子中只有被动点，那么对手是真的被动，所以当前点是主动点</p>
-</li>
-<li><p>若儿子只有必胜点，当前点肯定是必败点；若儿子只有必败点，当前点肯定是必胜点</p>
-</li>
-</ol>
-<hr>
-<p>由下往上处理出每个点的博弈态后，我们对于trie的根节点（可以看成是把对手当成已经决策过的先手）的状态再次进行分类讨论：</p>
-<hr>
-<p>先手必败会有三种情况：</p>
-<ol>
-<li>根节点是个主动点</li>
-</ol>
-<p>那么对手可以先故意输k-1局保证主动然后再赢一局</p>
-<ol>
-<li>根节点是个必胜点</li>
-</ol>
-<p>那么无论怎么玩都是对手赢</p>
-<ol>
-<li>根节点是个必败点但是k是个偶数</li>
-</ol>
-<p>那么两人交替着当先手，偶数局后正好轮到对手获胜</p>
-<p>其余情况都是先手必胜</p>
-<hr>
-<hr>
-<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><pre><code class="lang-cpp">#include &lt;bits/stdc++.h&gt;
-using namespace std;
-template&lt;class t&gt; inline t read(t &amp;x){
-    x=0;char c=getchar();bool f=0;
-    while(!isdigit(c)) f|=c==&#39;-&#39;,c=getchar();
-    while(isdigit(c)) x=(x&lt;&lt;1)+(x&lt;&lt;3)+(c^48),c=getchar();
-    if(f) x=-x;return  x;
-}
-template&lt;class t&gt; inline void write(t x){
-    if(x&lt;0){putchar(&#39;-&#39;),write(-x);}
-    else{if(x&gt;9)write(x/10);putchar(&#39;0&#39;+x%10);}
-}
-
-const int N=1e5+5;
-int cnt,n,k;
-char s[N];
-
-struct node{
-    int nxt[26],s;
-       /*
-    s表示该节点的博弈状态=0/1/2/3
-    =0:必败
-    =1:必胜 
-    =2:主动胜败 
-    =3:被动胜败 
-    */
-}a[N];
-
-void ins(char *s){
-    int x=0;
-    for(int i=0;s[i];i++){
-        int k=s[i]-&#39;a&#39;;
-        if(!a[x].nxt[k]) a[x].nxt[k]=++cnt;
-        x=a[x].nxt[k];
-    }
-}
-
-void dfs(int x){
-    int son=0,cnt[4]={0};
-    for(int i=0;i&lt;26;i++) if(a[x].nxt[i]){
-        dfs(a[x].nxt[i]);
-        son++;
-        cnt[a[a[x].nxt[i]].s]++;
-    }
-    if(!son){
-        a[x].s=1;
-        return ;
-    } 
-    if(cnt[0]) a[x].s=1;
-    if(cnt[1]) a[x].s=0;
-    if(cnt[0]&amp;&amp;cnt[1]) a[x].s=3;
-    if(cnt[3]==son) a[x].s=2;
-    if(cnt[2]) a[x].s=3;
-}
-
-signed main(){
-    read(n);read(k);
-    for(int i=1;i&lt;=n;i++){
-        scanf(&quot;%s&quot;,s);
-        ins(s);
-    }
-    dfs(0);
-    if(a[0].s==2){
-        puts(&quot;Second&quot;);
-        return 0;
-    }
-    if(a[0].s==0&amp;&amp;!(k&amp;1)){
-        puts(&quot;Second&quot;);
-        return 0;
-    }
-    if(a[0].s==1){
-        puts(&quot;Second&quot;);
-        return 0;
-    }
-    puts(&quot;First&quot;);
-}
-</code></pre>
+          <p>今天开学！</p>
 
         </div>
         <!-- .entry-content -->
@@ -513,15 +399,15 @@ signed main(){
           
             <div class="post-nepre half previous">
           
-            <a href="/2020/01/02/开学!/" rel="prev">
+            <a href="/2020/01/06/P2048 [NOI2010]超级钢琴/" rel="prev">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.08/img/post/467_1.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.08/img/post/467_1.webp">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.32/img/post/524.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.32/img/post/524.webp">
               </div>
               <span class="label">
               Previous Post</span>
               <div class="info">
                 <h3>
-                开学!</h3>
+                P2048 [NOI2010]超级钢琴</h3>
                 <hr>
               </div>
             </a>
@@ -531,15 +417,15 @@ signed main(){
           
             <div class="post-nepre half next">
           
-            <a href="/2019/12/30/CF1270X Good Bye 2019/" rel="next">
+            <a href="/2019/12/31/CF455B A Lot of Games/" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.32/img/post/528.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.32/img/post/528.webp">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.32/img/post/524.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.32/img/post/524.webp">
               </div>
               <span class="label">
               Next Post</span>
               <div class="info">
                 <h3>
-                CF1270X Good Bye 2019</h3>
+                CF455B A Lot of Games</h3>
                 <hr>
               </div>
             </a>
@@ -563,7 +449,7 @@ signed main(){
 
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-          <a href="https://blog.yzcthinktwice.com/" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png" itemprop="image" alt="yzc" height="70" width="70"></a>
+          <a href="https://blog.yzcthinktwice.com/" class="profile gravatar"><img src="http://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.04/img/my.png" itemprop="image" alt="yzc" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
@@ -572,7 +458,7 @@ signed main(){
           </div>
         </div>
         <hr>
-        <p><i class="iconfont icon-write"></i>fighter</p>
+        <p><i class="iconfont icon-write"></i>OIer</p>
       </section>
     </main><!-- #main -->
   </div><!-- #primary -->
