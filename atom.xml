@@ -65,6 +65,28 @@
   </entry>
   
   <entry>
+    <title>CF1198E Rectangle Painting 1</title>
+    <link href="https://blog.yzcthinktwice.com/2020/01/06/CF1198D%20Rectangle%20Painting%201/"/>
+    <id>https://blog.yzcthinktwice.com/2020/01/06/CF1198D Rectangle Painting 1/</id>
+    <published>2020-01-06T11:13:04.000Z</published>
+    <updated>2020-01-06T11:30:26.087Z</updated>
+    
+    <summary type="html">
+    
+      CF1198E Rectangle Painting 1 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
     <title>P2149 [SDOI2009]Elaxia的路线</title>
     <link href="https://blog.yzcthinktwice.com/2020/01/06/P2149%20%5BSDOI2009%5DElaxia%E7%9A%84%E8%B7%AF%E7%BA%BF/"/>
     <id>https://blog.yzcthinktwice.com/2020/01/06/P2149 [SDOI2009]Elaxia的路线/</id>
@@ -461,30 +483,6 @@
       <category term="线段树" scheme="https://blog.yzcthinktwice.com/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
       <category term="欧拉函数" scheme="https://blog.yzcthinktwice.com/tags/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1151F Sonya and Informatics</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/17/CF1151F%20Sonya%20and%20Informatics/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/17/CF1151F Sonya and Informatics/</id>
-    <published>2019-12-17T10:00:04.000Z</published>
-    <updated>2019-12-17T14:14:50.876Z</updated>
-    
-    <summary type="html">
-    
-      CF1151F Sonya and Informatics 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-      <category term="矩阵乘法" scheme="https://blog.yzcthinktwice.com/tags/%E7%9F%A9%E9%98%B5%E4%B9%98%E6%B3%95/"/>
     
   </entry>
   
