@@ -160,9 +160,9 @@
       <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
       <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
   </entry>
   
@@ -234,9 +234,9 @@
     
       <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
-      <category term="贪心" scheme="https://blog.yzcthinktwice.com/tags/%E8%B4%AA%E5%BF%83/"/>
-    
       <category term="字典树" scheme="https://blog.yzcthinktwice.com/tags/%E5%AD%97%E5%85%B8%E6%A0%91/"/>
+    
+      <category term="贪心" scheme="https://blog.yzcthinktwice.com/tags/%E8%B4%AA%E5%BF%83/"/>
     
   </entry>
   
@@ -462,9 +462,9 @@
     
       <category term="线段树" scheme="https://blog.yzcthinktwice.com/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
-      <category term="括号序列" scheme="https://blog.yzcthinktwice.com/tags/%E6%8B%AC%E5%8F%B7%E5%BA%8F%E5%88%97/"/>
-    
       <category term="前缀" scheme="https://blog.yzcthinktwice.com/tags/%E5%89%8D%E7%BC%80/"/>
+    
+      <category term="括号序列" scheme="https://blog.yzcthinktwice.com/tags/%E6%8B%AC%E5%8F%B7%E5%BA%8F%E5%88%97/"/>
     
   </entry>
   
