@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.yzcthinktwice.com/"/>
-  <updated>2020-01-06T12:07:22.248Z</updated>
+  <updated>2020-01-09T12:10:29.764Z</updated>
   <id>https://blog.yzcthinktwice.com/</id>
   
   <author>
@@ -15,6 +15,86 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>P5787 二分图 /【模板】线段树分治</title>
+    <link href="https://blog.yzcthinktwice.com/2020/01/09/P5787%20%E4%BA%8C%E5%88%86%E5%9B%BE%20%E3%80%90%E6%A8%A1%E6%9D%BF%E3%80%91%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%88%86%E6%B2%BB/"/>
+    <id>https://blog.yzcthinktwice.com/2020/01/09/P5787 二分图 【模板】线段树分治/</id>
+    <published>2020-01-09T11:42:00.000Z</published>
+    <updated>2020-01-09T12:10:29.764Z</updated>
+    
+    <summary type="html">
+    
+      P5787 二分图 /【模板】线段树分治 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="线段树" scheme="https://blog.yzcthinktwice.com/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="二分图" scheme="https://blog.yzcthinktwice.com/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
+    
+      <category term="分治" scheme="https://blog.yzcthinktwice.com/tags/%E5%88%86%E6%B2%BB/"/>
+    
+      <category term="并查集" scheme="https://blog.yzcthinktwice.com/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+    
+      <category term="栈" scheme="https://blog.yzcthinktwice.com/tags/%E6%A0%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>P5903 【模板】树上 k 级祖先</title>
+    <link href="https://blog.yzcthinktwice.com/2020/01/09/P5903%20%E3%80%90%E6%A8%A1%E6%9D%BF%E3%80%91%E6%A0%91%E4%B8%8A%20k%20%E7%BA%A7%E7%A5%96%E5%85%88/"/>
+    <id>https://blog.yzcthinktwice.com/2020/01/09/P5903 【模板】树上 k 级祖先/</id>
+    <published>2020-01-09T11:39:00.000Z</published>
+    <updated>2020-01-09T12:10:22.767Z</updated>
+    
+    <summary type="html">
+    
+      P5903 【模板】树上 k 级祖先 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="转载" scheme="https://blog.yzcthinktwice.com/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+      <category term="长链剖分" scheme="https://blog.yzcthinktwice.com/tags/%E9%95%BF%E9%93%BE%E5%89%96%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>POJ2505 A multiplication game</title>
+    <link href="https://blog.yzcthinktwice.com/2020/01/09/POJ2505%20A%20multiplication%20game/"/>
+    <id>https://blog.yzcthinktwice.com/2020/01/09/POJ2505 A multiplication game/</id>
+    <published>2020-01-09T11:38:00.000Z</published>
+    <updated>2020-01-09T12:10:11.656Z</updated>
+    
+    <summary type="html">
+    
+      POJ2505 A multiplication game 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="博弈论" scheme="https://blog.yzcthinktwice.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
+    
+      <category term="POJ" scheme="https://blog.yzcthinktwice.com/tags/POJ/"/>
+    
+      <category term="SG函数" scheme="https://blog.yzcthinktwice.com/tags/SG%E5%87%BD%E6%95%B0/"/>
+    
+      <category term="找规律" scheme="https://blog.yzcthinktwice.com/tags/%E6%89%BE%E8%A7%84%E5%BE%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>CF1198F GCD Groups 2</title>
@@ -409,80 +489,6 @@
       <category term="图论" scheme="https://blog.yzcthinktwice.com/tags/%E5%9B%BE%E8%AE%BA/"/>
     
       <category term="构造" scheme="https://blog.yzcthinktwice.com/tags/%E6%9E%84%E9%80%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1067A Array Without Local Maximums</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1067A%20Array%20Without%20Local%20Maximums/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1067A Array Without Local Maximums/</id>
-    <published>2019-12-30T15:54:02.000Z</published>
-    <updated>2019-12-30T13:27:51.899Z</updated>
-    
-    <summary type="html">
-    
-      CF1067A Array Without Local Maximums 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1271D Portals</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1271D%20Portals/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1271D Portals/</id>
-    <published>2019-12-30T15:50:02.000Z</published>
-    <updated>2019-12-30T13:28:25.758Z</updated>
-    
-    <summary type="html">
-    
-      CF1271D Portals 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-      <category term="动态规划" scheme="https://blog.yzcthinktwice.com/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-      <category term="贪心" scheme="https://blog.yzcthinktwice.com/tags/%E8%B4%AA%E5%BF%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1114F Please, another Queries on Array?</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/17/CF1114F%20Please,%20another%20Queries%20on%20Array/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/17/CF1114F Please, another Queries on Array/</id>
-    <published>2019-12-17T10:00:05.000Z</published>
-    <updated>2019-12-17T14:10:05.140Z</updated>
-    
-    <summary type="html">
-    
-      CF1114F Please, another Queries on Array? 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="数学" scheme="https://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-      <category term="状压" scheme="https://blog.yzcthinktwice.com/tags/%E7%8A%B6%E5%8E%8B/"/>
-    
-      <category term="线段树" scheme="https://blog.yzcthinktwice.com/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
-    
-      <category term="欧拉函数" scheme="https://blog.yzcthinktwice.com/tags/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0/"/>
     
   </entry>
   
