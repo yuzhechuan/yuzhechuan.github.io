@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.yzcthinktwice.com/"/>
-  <updated>2020-01-09T12:10:29.764Z</updated>
+  <updated>2020-01-12T15:16:04.127Z</updated>
   <id>https://blog.yzcthinktwice.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>atcoder上蓝</title>
+    <link href="https://blog.yzcthinktwice.com/2020/01/12/atcoder%E4%B8%8A%E8%93%9D/"/>
+    <id>https://blog.yzcthinktwice.com/2020/01/12/atcoder上蓝/</id>
+    <published>2020-01-12T15:11:00.000Z</published>
+    <updated>2020-01-12T15:16:04.127Z</updated>
+    
+    <summary type="html">
+    
+      atcoder上蓝
+    
+    </summary>
+    
+      <category term="日记" scheme="https://blog.yzcthinktwice.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="AtCoder" scheme="https://blog.yzcthinktwice.com/tags/AtCoder/"/>
+    
+  </entry>
   
   <entry>
     <title>P5787 二分图 /【模板】线段树分治</title>
@@ -300,9 +320,9 @@
     
       <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
-      <category term="博弈论" scheme="https://blog.yzcthinktwice.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
-    
       <category term="字典树" scheme="https://blog.yzcthinktwice.com/tags/%E5%AD%97%E5%85%B8%E6%A0%91/"/>
+    
+      <category term="博弈论" scheme="https://blog.yzcthinktwice.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
     
   </entry>
   
@@ -346,9 +366,9 @@
     
       <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
     
-      <category term="构造" scheme="https://blog.yzcthinktwice.com/tags/%E6%9E%84%E9%80%A0/"/>
-    
       <category term="交互" scheme="https://blog.yzcthinktwice.com/tags/%E4%BA%A4%E4%BA%92/"/>
+    
+      <category term="构造" scheme="https://blog.yzcthinktwice.com/tags/%E6%9E%84%E9%80%A0/"/>
     
   </entry>
   
@@ -462,33 +482,9 @@
     
       <category term="线段树" scheme="https://blog.yzcthinktwice.com/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
-      <category term="前缀" scheme="https://blog.yzcthinktwice.com/tags/%E5%89%8D%E7%BC%80/"/>
-    
       <category term="括号序列" scheme="https://blog.yzcthinktwice.com/tags/%E6%8B%AC%E5%8F%B7%E5%BA%8F%E5%88%97/"/>
     
-  </entry>
-  
-  <entry>
-    <title>CF1266D Decreasing Debts</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1266D%20Decreasing%20Debts/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1266D Decreasing Debts/</id>
-    <published>2019-12-30T15:55:02.000Z</published>
-    <updated>2019-12-30T13:28:14.534Z</updated>
-    
-    <summary type="html">
-    
-      CF1266D Decreasing Debts 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-      <category term="图论" scheme="https://blog.yzcthinktwice.com/tags/%E5%9B%BE%E8%AE%BA/"/>
-    
-      <category term="构造" scheme="https://blog.yzcthinktwice.com/tags/%E6%9E%84%E9%80%A0/"/>
+      <category term="前缀" scheme="https://blog.yzcthinktwice.com/tags/%E5%89%8D%E7%BC%80/"/>
     
   </entry>
   
