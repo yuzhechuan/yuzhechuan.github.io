@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.yzcthinktwice.com/"/>
-  <updated>2020-01-12T15:16:04.127Z</updated>
+  <updated>2020-01-17T10:46:10.133Z</updated>
   <id>https://blog.yzcthinktwice.com/</id>
   
   <author>
@@ -15,6 +15,68 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GYM100712I Bahosain and Digits</title>
+    <link href="https://blog.yzcthinktwice.com/2020/01/16/GYM100712I%20Bahosain%20and%20Digits/"/>
+    <id>https://blog.yzcthinktwice.com/2020/01/16/GYM100712I Bahosain and Digits/</id>
+    <published>2020-01-16T14:03:00.000Z</published>
+    <updated>2020-01-17T10:46:10.133Z</updated>
+    
+    <summary type="html">
+    
+      GYM100712I Bahosain and Digits 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="GYM" scheme="https://blog.yzcthinktwice.com/tags/GYM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1270X Good Bye 2019</title>
+    <link href="https://blog.yzcthinktwice.com/2020/01/16/GYM100712X/"/>
+    <id>https://blog.yzcthinktwice.com/2020/01/16/GYM100712X/</id>
+    <published>2020-01-16T13:26:00.000Z</published>
+    <updated>2020-01-17T10:46:00.041Z</updated>
+    
+    <summary type="html">
+    
+      CF1270X Good Bye 2019 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="总集" scheme="https://blog.yzcthinktwice.com/tags/%E6%80%BB%E9%9B%86/"/>
+    
+      <category term="GYM" scheme="https://blog.yzcthinktwice.com/tags/GYM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF上蓝！</title>
+    <link href="https://blog.yzcthinktwice.com/2020/01/15/CF%E4%B8%8A%E7%B4%AB%EF%BC%81/"/>
+    <id>https://blog.yzcthinktwice.com/2020/01/15/CF上紫！/</id>
+    <published>2020-01-15T12:51:00.000Z</published>
+    <updated>2020-01-17T10:46:19.890Z</updated>
+    
+    <summary type="html">
+    
+      CF上紫
+    
+    </summary>
+    
+      <category term="日记" scheme="https://blog.yzcthinktwice.com/categories/%E6%97%A5%E8%AE%B0/"/>
+    
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+  </entry>
   
   <entry>
     <title>atcoder上蓝</title>
@@ -419,72 +481,6 @@
       <category term="构造" scheme="https://blog.yzcthinktwice.com/tags/%E6%9E%84%E9%80%A0/"/>
     
       <category term="基环树" scheme="https://blog.yzcthinktwice.com/tags/%E5%9F%BA%E7%8E%AF%E6%A0%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF700B Connecting Universities</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF700B%20Connecting%20Universities/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/30/CF700B Connecting Universities/</id>
-    <published>2019-12-30T15:58:02.000Z</published>
-    <updated>2019-12-30T13:29:22.741Z</updated>
-    
-    <summary type="html">
-    
-      CF700B Connecting Universities 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1268B Domino for Young</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1268B%20Domino%20for%20Young/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1268B Domino for Young/</id>
-    <published>2019-12-30T15:57:02.000Z</published>
-    <updated>2019-12-30T13:28:02.771Z</updated>
-    
-    <summary type="html">
-    
-      CF1268B Domino for Young 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1263E Editor</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1263E%20Editor/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1263E Editor/</id>
-    <published>2019-12-30T15:56:02.000Z</published>
-    <updated>2019-12-30T13:27:38.720Z</updated>
-    
-    <summary type="html">
-    
-      CF1263E Editor 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-      <category term="线段树" scheme="https://blog.yzcthinktwice.com/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
-    
-      <category term="括号序列" scheme="https://blog.yzcthinktwice.com/tags/%E6%8B%AC%E5%8F%B7%E5%BA%8F%E5%88%97/"/>
-    
-      <category term="前缀" scheme="https://blog.yzcthinktwice.com/tags/%E5%89%8D%E7%BC%80/"/>
     
   </entry>
   

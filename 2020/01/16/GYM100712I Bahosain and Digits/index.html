@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">atcoder上蓝 | THINK TWICE</title>
+  <title itemprop="name">GYM100712I Bahosain and Digits | THINK TWICE</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -337,11 +337,11 @@ var _hmt = _hmt || [];
 
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.35/img/post/545.webp);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.35/img/post/545.webp">
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.37/img/post/551.webp);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.37/img/post/551.webp">
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      atcoder上蓝</h1>
+      GYM100712I Bahosain and Digits</h1>
       <p class="entry-census">
         <span>
           <a href="https://blog.yzcthinktwice.com/">
@@ -353,7 +353,7 @@ var _hmt = _hmt || [];
         </span>
         <span class="bull">
         ·</span>
-        2020-1-12<span class="bull">
+        2020-1-16<span class="bull">
         ·</span>
       <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
@@ -367,9 +367,71 @@ var _hmt = _hmt || [];
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <p>atcoder一场ABC被我<a href="https://atcoder.jp/contests/abc151/standings?watching=think_twice" target="_blank" rel="noopener">AK</a>了。。。虽然F是复制洛谷的，1min秒杀，谁让他是经典题（最小圆覆盖）的弱化版的弱化版的弱化版的弱化版呢。。。</p>
-<p>然后就不出所料的上颜色了？？？</p>
-<p>我是浅蓝了！</p>
+          <h1 id="GYM100712I-Bahosain-and-Digits"><a href="#GYM100712I-Bahosain-and-Digits" class="headerlink" title="GYM100712I Bahosain and Digits"></a>GYM100712I Bahosain and Digits</h1><hr>
+<h3 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h3><p>考虑枚举k后对k进行判定</p>
+<p>设x[i]表示以i起始的k个数为一组需要一起做操作的次数</p>
+<p>容易想到这构成了一个膜10意义下的同余方程，使得每个数加上$\sum\limits_{j=0}^{k-1} x[i-j]$后在膜10意义下相同</p>
+<p>对k的判定也就是在确定这个方程是否有解</p>
+<p>注意到我们可以枚举最后每个数相同后会变成哪个数(0~9)</p>
+<p>这样也就可以计算得到x[1]</p>
+<p>记个前缀和，再往下递推也就得到了其他的x[i]</p>
+<p>最后再判定下最后的k个数能否通过之前几位的x[]变成我们枚举的那个数就好了</p>
+<hr>
+<h3 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h3><pre><code class="lang-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+template&lt;class t&gt; inline t read(t &amp;x){
+    char c=getchar();bool f=0;x=0;
+    while(!isdigit(c)) f|=c==&#39;-&#39;,c=getchar();
+    while(isdigit(c)) x=(x&lt;&lt;1)+(x&lt;&lt;3)+(c^48),c=getchar();
+    if(f) x=-x;return x;
+}
+template&lt;class t&gt; inline void write(t x){
+    if(x&lt;0) putchar(&#39;-&#39;),write(-x);
+    else{if(x&gt;9) write(x/10);putchar(&#39;0&#39;+x%10);}
+}
+
+#define int long long
+
+const int N=255;
+int x[N],a[N],pre[N],n;
+char s[N];
+
+bool check(int len){
+    for(x[1]=0;x[1]&lt;=9;x[1]++){ //枚举x[1]
+        int dig=(a[1]+x[1])%10; //计算得到最后都会变成哪个数
+        pre[1]=x[1]; //记个前缀
+        bool flag=1;
+        for(int i=2;i&lt;=n;i++){
+            int cur=pre[i-1]; //求个sum
+            if(i-len&gt;0) cur-=pre[i-len];
+            x[i]=((dig-a[i]-cur)%10+10)%10; //得到当前位的x[]
+            if(i+len-1&gt;n&amp;&amp;x[i]%10){ //如果最后k个数还要通过自身的操作来搞就是不合法的
+                flag=0;
+                break;
+            }
+            pre[i]=pre[i-1]+x[i];
+        }
+        if(flag) return 1;
+    }
+    return 0;
+}
+
+void doit(){
+    scanf(&quot;%s&quot;,s+1);
+    n=strlen(s+1);
+    for(int i=1;i&lt;=n;i++) a[i]=s[i]-&#39;0&#39;;
+    for(int i=n;i&gt;=1;i--) if(check(i)){
+        write(i);puts(&quot;&quot;);
+        return ;
+    }
+}
+
+signed main(){
+    int t;
+    read(t);
+    while(t--) doit();
+}
+</code></pre>
 
         </div>
         <!-- .entry-content -->
@@ -398,36 +460,19 @@ var _hmt = _hmt || [];
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
-          
-            <div class="post-nepre half previous">
-          
-            <a href="/2020/01/15/CF上紫！/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.37/img/post/550.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.37/img/post/550.webp">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                CF上蓝！</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
         
           
-            <div class="post-nepre half next">
+            <div class="post-nepre full next">
           
-            <a href="/2020/01/09/P5787 二分图 【模板】线段树分治/" rel="next">
+            <a href="/2020/01/16/GYM100712X/" rel="next">
               <div class="background">
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.34/img/post/538.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.34/img/post/538.webp">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.37/img/post/552.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/yuzhechuan/cdn@1.37/img/post/552.webp">
               </div>
               <span class="label">
               Next Post</span>
               <div class="info">
                 <h3>
-                P5787 二分图 /【模板】线段树分治</h3>
+                CF1270X Good Bye 2019</h3>
                 <hr>
               </div>
             </a>
@@ -460,7 +505,7 @@ var _hmt = _hmt || [];
           </div>
         </div>
         <hr>
-        <p><i class="iconfont icon-write"></i>OIer</p>
+        <p><i class="iconfont icon-write"></i>fighter</p>
       </section>
     </main><!-- #main -->
   </div><!-- #primary -->
