@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.yzcthinktwice.com/"/>
-  <updated>2020-01-17T10:46:10.133Z</updated>
+  <updated>2020-01-22T13:29:25.970Z</updated>
   <id>https://blog.yzcthinktwice.com/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>P4793 [AHOI2008]矩形藏宝地</title>
+    <link href="https://blog.yzcthinktwice.com/2020/01/18/P4793%20%5BAHOI2008%5D%E7%9F%A9%E5%BD%A2%E8%97%8F%E5%AE%9D%E5%9C%B0/"/>
+    <id>https://blog.yzcthinktwice.com/2020/01/18/P4793 [AHOI2008]矩形藏宝地/</id>
+    <published>2020-01-18T02:59:16.000Z</published>
+    <updated>2020-01-22T13:29:25.970Z</updated>
+    
+    <summary type="html">
+    
+      P4793 [AHOI2008]矩形藏宝地 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="树状数组" scheme="https://blog.yzcthinktwice.com/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
+    
+      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="cdq分治" scheme="https://blog.yzcthinktwice.com/tags/cdq%E5%88%86%E6%B2%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>洛谷打卡700天</title>
+    <link href="https://blog.yzcthinktwice.com/2020/01/18/%E6%B4%9B%E8%B0%B7%E6%89%93%E5%8D%A1700%E5%A4%A9/"/>
+    <id>https://blog.yzcthinktwice.com/2020/01/18/洛谷打卡700天/</id>
+    <published>2020-01-17T23:00:16.000Z</published>
+    <updated>2020-01-22T13:29:40.531Z</updated>
+    
+    <summary type="html">
+    
+      洛谷打卡700天
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>GYM100712I Bahosain and Digits</title>
@@ -41,7 +85,7 @@
     <link href="https://blog.yzcthinktwice.com/2020/01/16/GYM100712X/"/>
     <id>https://blog.yzcthinktwice.com/2020/01/16/GYM100712X/</id>
     <published>2020-01-16T13:26:00.000Z</published>
-    <updated>2020-01-17T10:46:00.041Z</updated>
+    <updated>2020-01-22T12:24:05.523Z</updated>
     
     <summary type="html">
     
@@ -79,6 +123,28 @@
   </entry>
   
   <entry>
+    <title>P5906 【模板】回滚莫队</title>
+    <link href="https://blog.yzcthinktwice.com/2020/01/13/P5906%20%E3%80%90%E6%A8%A1%E6%9D%BF%E3%80%91%E5%9B%9E%E6%BB%9A%E8%8E%AB%E9%98%9F/"/>
+    <id>https://blog.yzcthinktwice.com/2020/01/13/P5906 【模板】回滚莫队/</id>
+    <published>2020-01-13T07:42:48.000Z</published>
+    <updated>2020-01-22T13:35:37.847Z</updated>
+    
+    <summary type="html">
+    
+      P5906 【模板】回滚莫队 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+      <category term="莫队" scheme="https://blog.yzcthinktwice.com/tags/%E8%8E%AB%E9%98%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>atcoder上蓝</title>
     <link href="https://blog.yzcthinktwice.com/2020/01/12/atcoder%E4%B8%8A%E8%93%9D/"/>
     <id>https://blog.yzcthinktwice.com/2020/01/12/atcoder上蓝/</id>
@@ -95,6 +161,30 @@
     
     
       <category term="AtCoder" scheme="https://blog.yzcthinktwice.com/tags/AtCoder/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SP7001 VLATTICE - Visible Lattice Points</title>
+    <link href="https://blog.yzcthinktwice.com/2020/01/12/SP7001%20VLATTICE%20-%20Visible%20Lattice%20Points/"/>
+    <id>https://blog.yzcthinktwice.com/2020/01/12/SP7001 VLATTICE - Visible Lattice Points/</id>
+    <published>2020-01-12T09:13:16.000Z</published>
+    <updated>2020-01-22T13:30:15.074Z</updated>
+    
+    <summary type="html">
+    
+      SP7001 VLATTICE - Visible Lattice Points 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="数学" scheme="https://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="SPOJ" scheme="https://blog.yzcthinktwice.com/tags/SPOJ/"/>
+    
+      <category term="莫比乌斯反演" scheme="https://blog.yzcthinktwice.com/tags/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94/"/>
     
   </entry>
   
@@ -385,102 +475,6 @@
       <category term="字典树" scheme="https://blog.yzcthinktwice.com/tags/%E5%AD%97%E5%85%B8%E6%A0%91/"/>
     
       <category term="博弈论" scheme="https://blog.yzcthinktwice.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1270X Good Bye 2019</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1270X%20Good%20Bye%202019/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1270X Good Bye 2019/</id>
-    <published>2019-12-30T15:59:04.000Z</published>
-    <updated>2019-12-30T13:35:14.493Z</updated>
-    
-    <summary type="html">
-    
-      CF1270X Good Bye 2019 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="总集" scheme="https://blog.yzcthinktwice.com/tags/%E6%80%BB%E9%9B%86/"/>
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1270D Strange Device</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1270D%20Strange%20Device/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1270D Strange Device/</id>
-    <published>2019-12-30T15:59:03.000Z</published>
-    <updated>2019-12-30T13:28:45.703Z</updated>
-    
-    <summary type="html">
-    
-      CF1270D Strange Device 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-      <category term="交互" scheme="https://blog.yzcthinktwice.com/tags/%E4%BA%A4%E4%BA%92/"/>
-    
-      <category term="构造" scheme="https://blog.yzcthinktwice.com/tags/%E6%9E%84%E9%80%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1270E Divide Points</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1270E%20Divide%20Points/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1270E Divide Points/</id>
-    <published>2019-12-30T15:59:02.000Z</published>
-    <updated>2019-12-30T13:28:36.785Z</updated>
-    
-    <summary type="html">
-    
-      CF1270E Divide Points 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="数学" scheme="https://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-      <category term="构造" scheme="https://blog.yzcthinktwice.com/tags/%E6%9E%84%E9%80%A0/"/>
-    
-      <category term="几何" scheme="https://blog.yzcthinktwice.com/tags/%E5%87%A0%E4%BD%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1270G Subset with Zero Sum</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/30/CF1270G%20Subset%20with%20Zero%20Sum/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/30/CF1270G Subset with Zero Sum/</id>
-    <published>2019-12-30T15:59:01.000Z</published>
-    <updated>2019-12-30T13:29:14.900Z</updated>
-    
-    <summary type="html">
-    
-      CF1270G Subset with Zero Sum 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-      <category term="构造" scheme="https://blog.yzcthinktwice.com/tags/%E6%9E%84%E9%80%A0/"/>
-    
-      <category term="基环树" scheme="https://blog.yzcthinktwice.com/tags/%E5%9F%BA%E7%8E%AF%E6%A0%91/"/>
     
   </entry>
   
