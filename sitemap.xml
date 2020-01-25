@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.yzcthinktwice.com/links/index.html</loc>
+    
+    <lastmod>2020-01-25T11:01:46.651Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.yzcthinktwice.com/2020/01/13/P5906%20%E3%80%90%E6%A8%A1%E6%9D%BF%E3%80%91%E5%9B%9E%E6%BB%9A%E8%8E%AB%E9%98%9F/</loc>
     
     <lastmod>2020-01-22T13:35:37.847Z</lastmod>
@@ -618,13 +625,6 @@
   </url>
   
   <url>
-    <loc>https://blog.yzcthinktwice.com/links/index.html</loc>
-    
-    <lastmod>2019-10-27T14:44:38.022Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.yzcthinktwice.com/video/index.html</loc>
     
     <lastmod>2019-10-23T16:29:35.822Z</lastmod>
@@ -653,14 +653,14 @@
   </url>
   
   <url>
-    <loc>https://blog.yzcthinktwice.com/lab/index.html</loc>
+    <loc>https://blog.yzcthinktwice.com/donate/index.html</loc>
     
     <lastmod>2019-10-23T16:29:35.817Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.yzcthinktwice.com/donate/index.html</loc>
+    <loc>https://blog.yzcthinktwice.com/lab/index.html</loc>
     
     <lastmod>2019-10-23T16:29:35.817Z</lastmod>
     
