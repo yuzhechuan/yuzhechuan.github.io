@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.yzcthinktwice.com/"/>
-  <updated>2020-01-22T13:29:25.970Z</updated>
+  <updated>2020-01-26T14:59:54.791Z</updated>
   <id>https://blog.yzcthinktwice.com/</id>
   
   <author>
@@ -15,6 +15,106 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CF1267K Key Storage</title>
+    <link href="https://blog.yzcthinktwice.com/2020/01/26/CF1267K%20Key%20Storage/"/>
+    <id>https://blog.yzcthinktwice.com/2020/01/26/CF1267K Key Storage/</id>
+    <published>2020-01-26T11:04:17.000Z</published>
+    <updated>2020-01-26T14:59:54.791Z</updated>
+    
+    <summary type="html">
+    
+      CF1267K Key Storage 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="数学" scheme="https://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="转载" scheme="https://blog.yzcthinktwice.com/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+      <category term="进制" scheme="https://blog.yzcthinktwice.com/tags/%E8%BF%9B%E5%88%B6/"/>
+    
+      <category term="组合" scheme="https://blog.yzcthinktwice.com/tags/%E7%BB%84%E5%90%88/"/>
+    
+      <category term="容斥" scheme="https://blog.yzcthinktwice.com/tags/%E5%AE%B9%E6%96%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1267J Just Arrange the Icons</title>
+    <link href="https://blog.yzcthinktwice.com/2020/01/26/CF1267J%20Just%20Arrange%20the%20Icons/"/>
+    <id>https://blog.yzcthinktwice.com/2020/01/26/CF1267J Just Arrange the Icons/</id>
+    <published>2020-01-26T09:16:46.000Z</published>
+    <updated>2020-01-26T14:59:47.909Z</updated>
+    
+    <summary type="html">
+    
+      CF1267J Just Arrange the Icons 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="数学" scheme="https://blog.yzcthinktwice.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="构造" scheme="https://blog.yzcthinktwice.com/tags/%E6%9E%84%E9%80%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1267L Lexicography</title>
+    <link href="https://blog.yzcthinktwice.com/2020/01/26/CF1267L%20Lexicography/"/>
+    <id>https://blog.yzcthinktwice.com/2020/01/26/CF1267L Lexicography/</id>
+    <published>2020-01-26T07:40:17.000Z</published>
+    <updated>2020-01-26T14:59:39.325Z</updated>
+    
+    <summary type="html">
+    
+      CF1267L Lexicography 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="贪心" scheme="https://blog.yzcthinktwice.com/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+      <category term="构造" scheme="https://blog.yzcthinktwice.com/tags/%E6%9E%84%E9%80%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CF1286B Numbers on Tree</title>
+    <link href="https://blog.yzcthinktwice.com/2020/01/26/CF1286B%20Numbers%20on%20Tree/"/>
+    <id>https://blog.yzcthinktwice.com/2020/01/26/CF1286B Numbers on Tree/</id>
+    <published>2020-01-26T04:01:31.000Z</published>
+    <updated>2020-01-26T14:59:29.529Z</updated>
+    
+    <summary type="html">
+    
+      CF1286B Numbers on Tree 题解
+    
+    </summary>
+    
+      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
+    
+      <category term="构造" scheme="https://blog.yzcthinktwice.com/tags/%E6%9E%84%E9%80%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>P4793 [AHOI2008]矩形藏宝地</title>
@@ -385,96 +485,6 @@
       <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
     
       <category term="转载" scheme="https://blog.yzcthinktwice.com/tags/%E8%BD%AC%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CF1055F Tree and XOR</title>
-    <link href="https://blog.yzcthinktwice.com/2020/01/06/CF1055F%20Tree%20and%20XOR/"/>
-    <id>https://blog.yzcthinktwice.com/2020/01/06/CF1055F Tree and XOR/</id>
-    <published>2020-01-06T11:13:01.000Z</published>
-    <updated>2020-01-06T12:11:06.144Z</updated>
-    
-    <summary type="html">
-    
-      CF1055F Tree and XOR 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-      <category term="字典树" scheme="https://blog.yzcthinktwice.com/tags/%E5%AD%97%E5%85%B8%E6%A0%91/"/>
-    
-      <category term="贪心" scheme="https://blog.yzcthinktwice.com/tags/%E8%B4%AA%E5%BF%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>P2048 [NOI2010]超级钢琴</title>
-    <link href="https://blog.yzcthinktwice.com/2020/01/06/P2048%20%5BNOI2010%5D%E8%B6%85%E7%BA%A7%E9%92%A2%E7%90%B4/"/>
-    <id>https://blog.yzcthinktwice.com/2020/01/06/P2048 [NOI2010]超级钢琴/</id>
-    <published>2020-01-06T11:13:00.000Z</published>
-    <updated>2020-01-06T12:11:21.356Z</updated>
-    
-    <summary type="html">
-    
-      P2048 [NOI2010]超级钢琴 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="洛谷" scheme="https://blog.yzcthinktwice.com/tags/%E6%B4%9B%E8%B0%B7/"/>
-    
-      <category term="st表" scheme="https://blog.yzcthinktwice.com/tags/st%E8%A1%A8/"/>
-    
-      <category term="优先队列" scheme="https://blog.yzcthinktwice.com/tags/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>开学!</title>
-    <link href="https://blog.yzcthinktwice.com/2020/01/02/%E5%BC%80%E5%AD%A6!/"/>
-    <id>https://blog.yzcthinktwice.com/2020/01/02/开学!/</id>
-    <published>2020-01-01T23:00:00.000Z</published>
-    <updated>2020-01-06T12:11:41.833Z</updated>
-    
-    <summary type="html">
-    
-      今天开学!
-    
-    </summary>
-    
-      <category term="日记" scheme="https://blog.yzcthinktwice.com/categories/%E6%97%A5%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>CF455B A Lot of Games</title>
-    <link href="https://blog.yzcthinktwice.com/2019/12/31/CF455B%20A%20Lot%20of%20Games/"/>
-    <id>https://blog.yzcthinktwice.com/2019/12/31/CF455B A Lot of Games/</id>
-    <published>2019-12-31T15:58:02.000Z</published>
-    <updated>2020-01-06T12:12:00.162Z</updated>
-    
-    <summary type="html">
-    
-      CF455B A Lot of Games 题解
-    
-    </summary>
-    
-      <category term="算法" scheme="https://blog.yzcthinktwice.com/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="CF" scheme="https://blog.yzcthinktwice.com/tags/CF/"/>
-    
-      <category term="字典树" scheme="https://blog.yzcthinktwice.com/tags/%E5%AD%97%E5%85%B8%E6%A0%91/"/>
-    
-      <category term="博弈论" scheme="https://blog.yzcthinktwice.com/tags/%E5%8D%9A%E5%BC%88%E8%AE%BA/"/>
     
   </entry>
   
